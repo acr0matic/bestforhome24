@@ -10,17 +10,13 @@ $weight-ExtraBold: 800;
 $weight-Black: 900;
 
 // Размеры шрифта
-$font-size-0: 80px;
-$font-size-1: 60px;
-$font-size-2: 38px;
-$font-size-3: 30px;
-$font-size-4: 24px;
-$font-size-5: 21px;
-$font-size-6: 18px;
-$font-size-7: 16px;
-$font-size-8: 14px;
-$font-size-9: 12px;
+$heading-size: 36px;
+$heading-size--medium: 28px;
+$heading-size--small: 24px;
+
+$text-size--large: 18px;
+$text-size--medium: 16px;
+$text-size--small: 14px;
 
 // Межстрочные расстояния
-$line-height-0: 28px;
-$line-height-1: 38px;
+$line-height-main: 150%;
