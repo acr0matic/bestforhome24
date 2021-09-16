@@ -1,0 +1,12 @@
+.section {
+  &__title {
+    margin-bottom: 30px;
+
+    font-size: $heading-size--medium;
+    font-weight: $weight-Medium;
+  }
+
+  &__description {
+    font-size: $text-size--large;
+  }
+}

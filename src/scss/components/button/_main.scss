@@ -3,10 +3,13 @@
 // и подключение дополнительных вариаций
 // -----------------------------------------------------------------------------
 
-
 $button-outline__border: 2px solid $palette-yellow;
 $button-outline__hover: $palette-yellow;
 
+$button-primary__bg: $palette-yellow;
+$button-primary__bg--hover: lighter($palette-yellow, 10%);
+
 @import "button";
-@import "button-outline";
+@import "outline";
+@import "primary";
 

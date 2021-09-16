@@ -2,9 +2,9 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8"/>
-  <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport"/>
-  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport" />
+  <meta content="ie=edge" http-equiv="X-UA-Compatible" />
 
   <!-- Базовые мета-теги для поисковиков -->
   <title>Заголовок</title>
@@ -28,23 +28,23 @@
   <link href="img/favicons/apple-touch-icon-1024x1024.png" rel="apple-touch-icon" sizes="1024x1024">
 
   <!-- Метатеги которые выводят информацию о странице в поисковой запрос -->
-  <meta content="описание не длиннее 155 символов" name="description"/>
-  <meta content="мета-теги, шаблон, html, css, acr0matic" name="keywords"/>
+  <meta content="описание не длиннее 155 символов" name="description" />
+  <meta content="мета-теги, шаблон, html, css, acr0matic" name="keywords" />
 
   <!-- Метатеги для ссылок в социальных сетях -->
-  <meta content="ru_RU" property="og:locale"/>
+  <meta content="ru_RU" property="og:locale" />
   <meta content="" property="og:title">
-  <meta content="" property="og:description"/>
+  <meta content="" property="og:description" />
   <meta content="" property="og:image">
 
   <!-- Контролирует поведение поисковых систем при индексации страницы -->
-  <meta content="index,follow" name="robots"/>
+  <meta content="index,follow" name="robots" />
 
   <!-- Покраска адресной строки в мобильных Chrome, Firefox OS и Opera -->
-  <meta content="#4285f4" name="theme-color"/>
+  <meta content="#4285f4" name="theme-color" />
 
   <!-- Покраска для iOS Safari -->
-  <meta content="yes" name="apple-mobile-web-app-capable"/>
+  <meta content="yes" name="apple-mobile-web-app-capable" />
   <meta content="#4285f4" name="apple-mobile-web-app-status-bar-style">
 
   <!-- Место для счетков и аналитики -->
@@ -53,78 +53,120 @@
 
   <!-- Стили -->
   <!-- build:css css/style.min.css -->
-  <link href="css/style.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet" />
   <!-- endbuild -->
 </head>
 
 <body>
-<!-- Шапка -->
-<header id="header">
-  <div class="container">
-    <div class="header">
-      <div class="header__logo logo logo--header">
-        <a href="">
-          <img alt="" class="logo__image" src="img/logo.svg">
-        </a>
-      </div>
-      <!-- /.header__logo logo -->
-
-      <nav class="header__nav nav nav--header">
-        <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link link link--nav" href="">Главная</a></li>
-          <li class="nav__item dropdown">
-            <a class="nav__link link link--nav d-flex align-items-center" href="">
-              Каталог
-              <img alt="" class="dropdown__arrow" src="img/icons/control/arrow__dropdown.svg">
-            </a>
-          </li>
-          <li class="nav__item dropdown">
-            <a class="nav__link link link--nav d-flex align-items-center" href="">
-              Услуги
-              <img alt="" class="dropdown__arrow" src="img/icons/control/arrow__dropdown.svg">
-            </a>
-          </li>
-          <li class="nav__item"><a class="nav__link link link--nav" href="">Портфолио</a></li>
-          <li class="nav__item"><a class="nav__link link link--nav" href="">Статьи</a></li>
-          <li class="nav__item"><a class="nav__link link link--nav" href="">Контакты</a></li>
-        </ul>
-      </nav>
-      <!-- /.header__nav nav -->
-
-      <div class="header__callback">
-        <div class="d-flex flex-column me-3">
-          <a class="header__phone link link--contact mb-1" href="tel:+">+7 926 630-45-56</a>
-          <a class="header__phone link link--contact" href="tel:+">+7 977 415-28-17</a>
+  <!-- Шапка -->
+  <header id="header">
+    <div class="container">
+      <div class="header">
+        <div class="header__logo logo logo--header">
+          <a href="">
+            <img alt="" class="logo__image" src="img/logo.svg">
+          </a>
         </div>
+        <!-- /.header__logo logo -->
 
-        <button class="header__button button button-outline">Обратный звонок</button>
+        <nav class="header__nav nav nav--header">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link link link--nav" href="">Главная</a></li>
+            <li class="nav__item dropdown">
+              <a class="nav__link link link--nav d-flex align-items-center" href="">
+                Каталог
+                <img alt="" class="dropdown__arrow" src="img/icons/control/arrow__dropdown.svg">
+              </a>
+            </li>
+            <li class="nav__item dropdown">
+              <a class="nav__link link link--nav d-flex align-items-center" href="">
+                Услуги
+                <img alt="" class="dropdown__arrow" src="img/icons/control/arrow__dropdown.svg">
+              </a>
+            </li>
+            <li class="nav__item"><a class="nav__link link link--nav" href="">Портфолио</a></li>
+            <li class="nav__item"><a class="nav__link link link--nav" href="">Статьи</a></li>
+            <li class="nav__item"><a class="nav__link link link--nav" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <!-- /.header__nav nav -->
+
+        <div class="header__callback">
+          <div class="d-flex flex-column me-3">
+            <a class="header__phone link link--contact" href="tel:+">+7 926 630-45-56</a>
+            <a class="header__phone link link--contact" href="tel:+">+7 977 415-28-17</a>
+          </div>
+
+          <button class="header__button button button-outline">Обратный звонок</button>
+        </div>
+        <!-- /.header__callback -->
       </div>
-      <!-- /.header__callback -->
+      <!-- /.header -->
     </div>
-    <!-- /.header -->
-  </div>
-  <!-- /.container -->
-</header>
+    <!-- /.container -->
+  </header>
 
-<!-- Основной контент -->
-<main>
-  <section>
+  <!-- Основной контент -->
+  <main>
+    <section id="map">
+      <div class="container">
+        <h2 class="section__title">География нашей работы</h2>
 
-  </section>
-</main>
+        <div class="row align-items-center">
+          <div class="col-6">
+            <div id="map-container" class="map">
+              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aeb43c71a35f82b72f4fb211ee6d0101918a651b0d54c8fcffdf3354cc4e95772&amp;width=100%25&amp;height=475&amp;lang=ru_RU&amp;scroll=false"></script>
+            </div>
+            <!-- /.map -->
+          </div>
+          <!-- /.col-6 -->
 
-<!-- Подвал -->
-<footer id="footer">
+          <div class="col-6">
+            <form class="form form-map" action="" enctype="multipart/form-data">
+              <h3 class="form__title">Не увидели свой район или город?</h3>
+              <p class="form__description">Оставьте заявку, и наш менеджер перезвонит Вам и уточнит территорию по которой мы работаем!</p>
 
-</footer>
+              <div class="input mb-3 mt-4">
+                <input placeholder="Ваше имя" autocomplete="off" type="text" name="user_name" class="input__field">
+                <img data-tippy-content="Имя содержит недопустимые символы" class="input__warning" src="" alt="">
+              </div>
+              <!-- /.input -->
 
-<!-- Скрипты -->
-<!-- build:js js/script.min.js -->
-<script src="scripts/libraries/lazyload.js"></script>
-<script src="scripts/libraries/lodash.js"></script>
+              <div class="input input--error mb-3">
+                <input placeholder="Ваш телефон" autocomplete="off" type="tel" name="user_phone" class="input__field">
+                <img data-tippy-content="Номер телефона указан не полностью или содержит ошибки" class="input__warning" src="" alt="">
+              </div>
+              <!-- /.input -->
 
-<script src="scripts/main.js"></script>
-<!-- endbuild -->
+              <div class="input mb-4">
+                <textarea placeholder="Ваш вопрос" autocomplete="off" type="tel" name="user_phone" class="input__field input__field--box"></textarea>
+                <img data-tippy-content="Вопрос слишком короткий или содержит недопустимые символы" class="input__warning" src="" alt="">
+              </div>
+              <!-- /.input -->
+
+              <button data-sending="Отправка..."  class="form__button button button-primary" type="submit">Отправить</button>
+            </form>
+          </div>
+          <!-- /.col-6 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer id="footer">
+
+  </footer>
+
+  <!-- Скрипты -->
+  <!-- build:js js/script.min.js -->
+  <script src="scripts/libraries/lazyload.js"></script>
+  <script src="scripts/libraries/lodash.js"></script>
+
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
 </body>
 
 </html>

@@ -3,5 +3,10 @@
 // и подключение дополнительных вариаций
 // -----------------------------------------------------------------------------
 
-@import 'input';
-@import 'checkbox';
+$input__background: #fafafa;
+$input__border: #eeeeee;
+$input__border--focus: $palette-yellow;
+$input__border--error: #ff8282;
+
+@import "input";
+@import "checkbox";

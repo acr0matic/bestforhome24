@@ -1,0 +1,61 @@
+.input {
+  position: relative;
+
+  &__field {
+    width: 100%;
+
+    border: 1px solid $input__border;
+    border-radius: 5px;
+    outline: none;
+
+    padding: 20px 15px;
+    background-color: $input__background;
+
+    transition: $transition__component;
+
+    &--box {
+      resize: none;
+      height: 120px;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: $section-primary;
+      }
+    }
+
+    &:focus {
+      border-color: $input__border--focus;
+      background-color: $section-primary;
+    }
+  }
+
+  &__warning {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+
+    // width: 26px;
+    // height: 26px;
+
+    transform: translateY(-50%);
+
+    cursor: help;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: 0.2s ease;
+  }
+
+  &--error {
+    .input__field {
+      border-color: $input__border--error;
+    }
+
+    .input__warning {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
