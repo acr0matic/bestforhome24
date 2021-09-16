@@ -145,6 +145,10 @@ sftp-config.json
 .settings/
 .vscode/
 
+### Code ###
+# JetBrains WebStorm
+.idea/
+
 ### Other ###
 */*/compiled/*.js
 */css/*.css

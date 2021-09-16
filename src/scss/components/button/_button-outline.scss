@@ -1,0 +1,10 @@
+.button-outline {
+  border: $button-outline__border;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: $button-outline__hover;
+      color: $text-white;
+    }
+  }
+}

@@ -60,7 +60,50 @@
 <body>
 <!-- Шапка -->
 <header id="header">
+  <div class="container">
+    <div class="header">
+      <div class="header__logo logo logo--header">
+        <a href="">
+          <img alt="" class="logo__image" src="img/logo.svg">
+        </a>
+      </div>
+      <!-- /.header__logo logo -->
 
+      <nav class="header__nav nav nav--header">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link link link--nav" href="">Главная</a></li>
+          <li class="nav__item dropdown">
+            <a class="nav__link link link--nav d-flex align-items-center" href="">
+              Каталог
+              <img alt="" class="dropdown__arrow" src="img/icons/control/arrow__dropdown.svg">
+            </a>
+          </li>
+          <li class="nav__item dropdown">
+            <a class="nav__link link link--nav d-flex align-items-center" href="">
+              Услуги
+              <img alt="" class="dropdown__arrow" src="img/icons/control/arrow__dropdown.svg">
+            </a>
+          </li>
+          <li class="nav__item"><a class="nav__link link link--nav" href="">Портфолио</a></li>
+          <li class="nav__item"><a class="nav__link link link--nav" href="">Статьи</a></li>
+          <li class="nav__item"><a class="nav__link link link--nav" href="">Контакты</a></li>
+        </ul>
+      </nav>
+      <!-- /.header__nav nav -->
+
+      <div class="header__callback">
+        <div class="d-flex flex-column me-3">
+          <a class="header__phone link link--contact mb-1" href="tel:+">+7 926 630 45 56</a>
+          <a class="header__phone link link--contact" href="tel:+">+7 926 630 45 56</a>
+        </div>
+
+        <button class="header__button button button-outline">Обратный звонок</button>
+      </div>
+      <!-- /.header__callback -->
+    </div>
+    <!-- /.header -->
+  </div>
+  <!-- /.container -->
 </header>
 
 <!-- Основной контент -->

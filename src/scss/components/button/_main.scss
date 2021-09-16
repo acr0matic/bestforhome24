@@ -3,4 +3,10 @@
 // и подключение дополнительных вариаций
 // -----------------------------------------------------------------------------
 
-@import 'button';
+
+$button-outline__border: 2px solid #ecc731;
+$button-outline__hover: #ecc731;
+
+@import "button";
+@import "button-outline";
+

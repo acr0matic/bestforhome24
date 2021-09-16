@@ -1,0 +1,24 @@
+.button {
+  outline: none;
+  border: none;
+
+  padding: 12px 36px;
+
+  background-color: transparent;
+  border-radius: 5px;
+
+  cursor: pointer;
+  transition: 0.15s ease;
+
+  white-space: nowrap;
+  font-size: $text-size--large;
+
+  @include breakpoint($breakpoint-laptop--large) {
+    font-size: $text-size--medium;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}

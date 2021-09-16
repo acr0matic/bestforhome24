@@ -1,6 +1,9 @@
 .nav {
-  &__list {
+  display: block;
 
+  &__list {
+    display: flex;
+    align-items: center;
   }
 
   &__item {
@@ -8,6 +11,18 @@
   }
 
   &__link {
+    font-size: $text-size--large;
 
+    @include breakpoint($breakpoint-laptop--large) {
+      font-size: $text-size--medium;
+    }
+  }
+
+  &--header {
+    .nav__item {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
   }
 }
