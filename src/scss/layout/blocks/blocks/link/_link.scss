@@ -1,0 +1,21 @@
+$link__hover: $palette-yellow;
+
+.link {
+  transition: $transition__text;
+
+  &--nav {
+    @media (hover: hover) {
+      &:hover {
+        color: $link__hover;
+      }
+    }
+  }
+
+  &--contact {
+    @media (hover: hover) {
+      &:hover {
+        color: $link__hover;
+      }
+    }
+  }
+}

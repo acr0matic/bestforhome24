@@ -1,6 +1,18 @@
 .dropdown {
+  @media (hover: hover) {
+    &:hover {
+      .dropdown__arrow {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
   &__arrow {
-    width: 16px;
+    width: 12px;
+    margin-top: 2px;
     margin-left: 5px;
+
+
+    transition: $transition__icon;
   }
 }

@@ -11,6 +11,7 @@
   }
 
   &__link {
+    display: block;
     font-size: $text-size--large;
 
     @include breakpoint($breakpoint-laptop--large) {
@@ -23,6 +24,10 @@
       &:not(:last-child) {
         margin-right: 30px;
       }
+    }
+
+    .nav__link {
+      padding: 5px 0;
     }
   }
 }
