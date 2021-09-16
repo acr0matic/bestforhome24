@@ -108,51 +108,185 @@
 
   <!-- Основной контент -->
   <main>
-    <section id="map">
+    <section class="section" id="map">
       <div class="container">
-        <h2 class="section__title">География нашей работы</h2>
+        <div class="map">
+          <h2 class="section__title">География нашей работы</h2>
 
-        <div class="row align-items-center">
-          <div class="col-6">
-            <div id="map-container" class="map">
-              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aeb43c71a35f82b72f4fb211ee6d0101918a651b0d54c8fcffdf3354cc4e95772&amp;width=100%25&amp;height=475&amp;lang=ru_RU&amp;scroll=false"></script>
+          <div class="row align-items-center">
+            <div class="col-6">
+              <div id="map-container" class="map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aeb43c71a35f82b72f4fb211ee6d0101918a651b0d54c8fcffdf3354cc4e95772&amp;width=100%25&amp;height=475&amp;lang=ru_RU&amp;scroll=false"></script>
+              </div>
+              <!-- /.map -->
             </div>
-            <!-- /.map -->
+            <!-- /.col-6 -->
+
+            <div class="col-6">
+              <form class="form form-map" action="" enctype="multipart/form-data">
+                <h3 class="form__title">Не увидели свой район или город?</h3>
+                <p class="form__description">Оставьте заявку, и наш менеджер перезвонит Вам и уточнит территорию по которой мы работаем!</p>
+
+                <div class="input mb-3 mt-4">
+                  <input placeholder="Ваше имя" autocomplete="off" type="text" name="user_name" class="input__field">
+                  <img data-tippy-content="Имя содержит недопустимые символы" class="input__warning" src="" alt="">
+                </div>
+                <!-- /.input -->
+
+                <div class="input input--error mb-3">
+                  <input placeholder="Ваш телефон" autocomplete="off" type="tel" name="user_phone" class="input__field">
+                  <img data-tippy-content="Номер телефона указан не полностью или содержит ошибки" class="input__warning" src="" alt="">
+                </div>
+                <!-- /.input -->
+
+                <div class="input mb-4">
+                  <textarea placeholder="Ваш вопрос" autocomplete="off" type="tel" name="user_phone" class="input__field input__field--box"></textarea>
+                  <img data-tippy-content="Вопрос слишком короткий или содержит недопустимые символы" class="input__warning" src="" alt="">
+                </div>
+                <!-- /.input -->
+
+                <button data-sending="Отправка..." class="form__button button button-primary" type="submit">Отправить</button>
+              </form>
+            </div>
+            <!-- /.col-6 -->
           </div>
-          <!-- /.col-6 -->
-
-          <div class="col-6">
-            <form class="form form-map" action="" enctype="multipart/form-data">
-              <h3 class="form__title">Не увидели свой район или город?</h3>
-              <p class="form__description">Оставьте заявку, и наш менеджер перезвонит Вам и уточнит территорию по которой мы работаем!</p>
-
-              <div class="input mb-3 mt-4">
-                <input placeholder="Ваше имя" autocomplete="off" type="text" name="user_name" class="input__field">
-                <img data-tippy-content="Имя содержит недопустимые символы" class="input__warning" src="" alt="">
-              </div>
-              <!-- /.input -->
-
-              <div class="input input--error mb-3">
-                <input placeholder="Ваш телефон" autocomplete="off" type="tel" name="user_phone" class="input__field">
-                <img data-tippy-content="Номер телефона указан не полностью или содержит ошибки" class="input__warning" src="" alt="">
-              </div>
-              <!-- /.input -->
-
-              <div class="input mb-4">
-                <textarea placeholder="Ваш вопрос" autocomplete="off" type="tel" name="user_phone" class="input__field input__field--box"></textarea>
-                <img data-tippy-content="Вопрос слишком короткий или содержит недопустимые символы" class="input__warning" src="" alt="">
-              </div>
-              <!-- /.input -->
-
-              <button data-sending="Отправка..."  class="form__button button button-primary" type="submit">Отправить</button>
-            </form>
-          </div>
-          <!-- /.col-6 -->
+          <!-- /.row -->
         </div>
-        <!-- /.row -->
+        <!-- /.map -->
       </div>
       <!-- /.container -->
     </section>
+
+    <section class="section" id="order">
+      <div class="container">
+        <div class="order">
+          <h2 class="section__title">Схема заказа</h2>
+          <p class="section__description">Подробная схема рассказывающая и объясняющая, каким образом происходит заказ и его обработка. Предлагаем Вам с ней ознакомиться, чтобы иметь лучшее представление о том, как работает наша компания.</p>
+
+          <ul class="order__list">
+            <li class="order__item">
+              <div class="row">
+                <div class="col-6">
+                  <div class="order__picture">
+                    <img class="order__image image image--cover" src="img/page/main/order/checkout.jpg" alt="">
+                  </div>
+                  <!-- /.order__picture -->
+                </div>
+                <!-- /.col-6 -->
+
+                <div class="col-6">
+                  <div class="order__content">
+                    <h3 class="order__title">Вы выбираете изделие или услугу</h3>
+                    <p class="order__description">На сайте предоставлены калькуляторы по различным услугам. Вы можете заказать услугу или изделие через них или же позвонить нашему менеджеру</p>
+                  </div>
+                  <!-- /.order-list__content -->
+                </div>
+                <!-- /.col-6 -->
+              </div>
+              <!-- /.row -->
+            </li>
+            <!-- /.order-list__item -->
+
+            <li class="order__item">
+              <div class="row">
+                <div class="col-6">
+                  <div class="order__picture">
+                    <img class="order__image image image--cover" src="img/page/main/order/measuring.jpg" alt="">
+                  </div>
+                  <!-- /.order__picture -->
+                </div>
+                <!-- /.col-6 -->
+
+                <div class="col-6">
+                  <div class="order__content">
+                    <h3 class="order__title">К Вам выезжает наш специалист на замер</h3>
+                    <p class="order__description">Мастер-консультант поможет с выбором цветового решения, даст рекомендации по конструкциям изделий и произведет точный замер места установки</p>
+                  </div>
+                  <!-- /.order-list__content -->
+                </div>
+                <!-- /.col-6 -->
+              </div>
+              <!-- /.row -->
+            </li>
+            <!-- /.order-list__item -->
+
+            <li class="order__item">
+              <div class="row">
+                <div class="col-6">
+                  <div class="order__picture">
+                    <img class="order__image image image--cover" src="img/page/main/order/contract.jpg" alt="">
+                  </div>
+                  <!-- /.order__picture -->
+                </div>
+                <!-- /.col-6 -->
+
+                <div class="col-6">
+                  <div class="order__content">
+                    <h3 class="order__title">Мы заключаем с Вами договор</h3>
+                    <p class="order__description">Уточняем детали проекта, вносим в него изменения, если это необходимо и заключаем договор. В нем прописаны условия исполнения заказа, а так же рабочие сроки.</p>
+                  </div>
+                  <!-- /.order-list__content -->
+                </div>
+                <!-- /.col-6 -->
+              </div>
+              <!-- /.row -->
+            </li>
+            <!-- /.order-list__item -->
+
+            <li class="order__item">
+              <div class="row">
+                <div class="col-6">
+                  <div class="order__picture">
+                    <img class="order__image image image--cover" src="img/page/main/order/crafting.jpg" alt="">
+                  </div>
+                  <!-- /.order__picture -->
+                </div>
+                <!-- /.col-6 -->
+
+                <div class="col-6">
+                  <div class="order__content">
+                    <h3 class="order__title">Начинаем изготовление вашего заказа
+                    </h3>
+                    <p class="order__description">На сайте предоставлены калькуляторы по различным услугам. Вы можете заказать услугу или изделие через них или же позвонить нашему менеджеру</p>
+                  </div>
+                  <!-- /.order-list__content -->
+                </div>
+                <!-- /.col-6 -->
+              </div>
+              <!-- /.row -->
+            </li>
+            <!-- /.order-list__item -->
+
+            <li class="order__item">
+              <div class="row">
+                <div class="col-6">
+                  <div class="order__picture">
+                    <img class="order__image image image--cover" src="img/page/main/order/delivery.jpg" alt="">
+                  </div>
+                  <!-- /.order__picture -->
+                </div>
+                <!-- /.col-6 -->
+
+                <div class="col-6">
+                  <div class="order__content">
+                    <h3 class="order__title">Доставка, установка и гарантия</h3>
+                    <p class="order__description">Доставка и монтаж изделия не включаются в сумму заказа. Цену доставки за пределы города и в другие города, уточняйте у менеджеров нашего салона.</p>
+                  </div>
+                  <!-- /.order-list__content -->
+                </div>
+                <!-- /.col-6 -->
+              </div>
+              <!-- /.row -->
+            </li>
+            <!-- /.order-list__item -->
+          </ul>
+          <!-- /.order-scheme__list -->
+        </div>
+        <!-- /.order -->
+      </div>
+      <!-- /.container -->
+    </section>
+
   </main>
 
   <!-- Подвал -->
