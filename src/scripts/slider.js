@@ -7,3 +7,8 @@ const useful = new Swiper('.slider-useful', {
   slidesPerView: 4,
   spaceBetween: 25,
 });
+
+const feedback = new Swiper('.slider-feedback', {
+  slidesPerView: 2,
+  spaceBetween: 25,
+});

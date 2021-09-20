@@ -1,0 +1,46 @@
+#feedback {
+
+}
+
+.feedback {
+  &__card {
+    display: flex;
+    height: 100%;
+
+    box-shadow: $shadow-primary;
+  }
+
+  &__picture {
+    width: 35%;
+  }
+
+  &__image {
+
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    width: 65%;
+    padding: 20px;
+  }
+
+  &__text {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    margin-bottom: 10px;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: auto;
+    color: $text-gray;
+  }
+}
