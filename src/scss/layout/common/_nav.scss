@@ -30,4 +30,16 @@
       padding: 5px 0;
     }
   }
+
+  &--footer {
+    .nav__list {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav__link {
+      font-size: $text-size--large;
+      color: $text-gray;
+    }
+  }
 }

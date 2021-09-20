@@ -4,8 +4,89 @@
 
 #footer {
   margin-top: 90px;
+  padding: 45px 0;
+
+  background-color: $section-footer;
 }
 
 .footer {
+  color: $text-white;
 
+  a {
+    color: $text-white;
+  }
+
+  &__row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &:last-child {
+      padding-top: 15px;
+
+      border-top: 1px solid #383838;
+      text-align: right;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 45px;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    // align-items: flex-end;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+
+    transition: $transition__icon;
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &__phone {
+    font-size: $text-size--large;
+  }
+
+  &__privacy {
+    display: block;
+  }
+
+  &__copyright {
+    display: block;
+    color: $text-gray;
+    font-size: $text-size--small;
+  }
+
+
+  &__logo {
+
+  }
+
+  &__title {
+    margin-bottom: 15px;
+
+    font-size: $heading-size--small - 3;
+    font-weight: $weight-Medium;
+  }
+
+  &__nav {
+  }
+
+  &__link {
+    display: block;
+  }
 }
