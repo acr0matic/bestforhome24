@@ -1,6 +1,24 @@
+$margin: 30px;
+
 .section {
   &:not(:last-child) {
     margin-bottom: 90px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: $margin;
+
+    .section__title {
+      margin-bottom: 0;
+    }
+
+    .link {
+      color: $text-gray;
+    }
   }
 
   &__title {
@@ -11,7 +29,7 @@
   }
 
   &__description {
-    margin-bottom: 30px;
+    margin-bottom: $margin;
 
     font-size: $text-size--large;
   }

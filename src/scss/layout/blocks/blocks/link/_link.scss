@@ -18,4 +18,21 @@ $link__hover: $palette-yellow;
       }
     }
   }
+
+  &--arrow {
+    display: flex;
+    align-items: center;
+
+    @media (hover: hover) {
+      &:hover {
+        .link__arrow {
+          transform: translateX(5px);
+
+          path {
+            fill: $palette-yellow;
+          }
+        }
+      }
+    }
+  }
 }
