@@ -1,5 +1,4 @@
 #feedback {
-
 }
 
 .feedback {
@@ -7,7 +6,10 @@
     display: flex;
     height: 100%;
 
-    box-shadow: $shadow-primary;
+    border-radius: $border-radius--medium;
+    overflow: hidden;
+
+    background-color: #f1f0f0;
   }
 
   &__picture {
@@ -15,7 +17,6 @@
   }
 
   &__image {
-
   }
 
   &__wrapper {

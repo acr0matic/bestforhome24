@@ -1,0 +1,18 @@
+#callback {
+}
+
+.callback {
+  .link--contact {
+    display: inline-block;
+    margin: 5px 0 15px 0;
+
+    font-size: $heading-size--small;
+    // color: $text-white;
+  }
+
+  &__picture {
+    height: 250px;
+    overflow: hidden;
+    border-radius: $border-radius--medium;
+  }
+}
