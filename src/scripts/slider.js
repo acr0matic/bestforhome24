@@ -12,3 +12,12 @@ const feedback = new Swiper('.slider-feedback', {
   slidesPerView: 2,
   spaceBetween: 25,
 });
+
+const hero = new Swiper('.slider-hero', {
+  slidesPerView: 1,
+  loop: true,
+
+  autoplay: {
+    delay: 5000,
+  },
+});
