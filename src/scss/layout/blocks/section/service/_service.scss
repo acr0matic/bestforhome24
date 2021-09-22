@@ -1,0 +1,60 @@
+#home {
+  #service {
+  }
+
+  .service {
+    &__item {
+      position: relative;
+      box-shadow: $shadow-primary;
+      overflow: hidden;
+
+      border-radius: $border-radius--medium;
+      background-color: #ffffff;
+
+      @media (hover: hover) {
+        &:hover {
+          .service__image {
+            transform: scale(1.05);
+          }
+
+          .service__link {
+            color: $palette-yellow;
+
+            .link__arrow {
+              transform: translateX(5px);
+
+              path {
+                fill: $palette-yellow;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__picture {
+      height: 210px;
+      overflow: hidden;
+    }
+
+    &__image {
+      backface-visibility: hidden;
+      transition: $transition__image;
+    }
+
+    &__content {
+      padding: 15px;
+    }
+
+    &__title {
+      margin-top: 10px;
+
+      font-weight: $weight-Medium;
+      font-size: $text-size--large;
+    }
+
+    &__link {
+      color: $text-gray;
+    }
+  }
+}

@@ -9,11 +9,13 @@
     border-radius: $border-radius--medium;
     overflow: hidden;
 
-    background-color: #f1f0f0;
+    background-color: #ffffff;
+    box-shadow: $shadow-primary;
   }
 
   &__picture {
     width: 35%;
+    padding: 15px;
   }
 
   &__image {

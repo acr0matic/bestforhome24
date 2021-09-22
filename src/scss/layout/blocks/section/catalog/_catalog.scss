@@ -1,0 +1,52 @@
+#home {
+  #catalog {
+  }
+
+  .catalog {
+    &__item {
+      position: relative;
+      overflow: hidden;
+
+      border-radius: $border-radius--medium;
+
+      @media (hover: hover) {
+        &:hover {
+          .catalog__image {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+
+    &__picture {
+      height: 350px;
+      overflow: hidden;
+    }
+
+    &__image {
+      backface-visibility: hidden;
+      transition: $transition__image;
+    }
+
+    &__content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+
+      padding: 10px 15px;
+
+      color: $text-white;
+      background: rgba($color: #000000, $alpha: 0.5);
+    }
+
+    &__title {
+      font-weight: $weight-Medium;
+      font-size: $heading-size--small;
+    }
+
+    &__description {
+      font-size: $text-size--large;
+    }
+  }
+}
