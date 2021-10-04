@@ -12,7 +12,7 @@
     background-color: $input__background;
 
     transition: $transition__component;
-    font-size: $text-size--small;
+    font-size: $text-size--medium;
 
     &--box {
       resize: none;
@@ -32,6 +32,7 @@
 
     &::placeholder {
       color: $text-gray;
+      // font-size: $text-size--small;
     }
   }
 
