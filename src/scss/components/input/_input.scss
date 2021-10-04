@@ -12,6 +12,7 @@
     background-color: $input__background;
 
     transition: $transition__component;
+    font-size: $text-size--small;
 
     &--box {
       resize: none;
@@ -28,6 +29,13 @@
       border-color: $input__border--focus;
       background-color: $section-primary;
     }
+
+    &::placeholder {
+      color: $text-gray;
+    }
+  }
+
+  &__select {
   }
 
   &__warning {

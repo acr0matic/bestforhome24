@@ -1,0 +1,38 @@
+.choices {
+  &__inner {
+    position: relative;
+    border-radius: $border-radius--medium;
+    background-color: $input__background;
+
+    border-color: $input__border;
+
+    transition: $transition__component;
+
+    &::after {
+      content: url("../img/icons/control/arrow__dropdown.svg");
+      position: absolute;
+      top: 12px;
+      right: 20px;
+
+      width: 14px;
+      height: 14px;
+
+      border: none;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: $section-primary;
+      }
+    }
+  }
+
+  &__placeholder {
+    opacity: 1;
+    color: $text-gray;
+  }
+
+  &::after {
+    display: none;
+  }
+}

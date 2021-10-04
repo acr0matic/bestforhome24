@@ -259,8 +259,12 @@
                   </h3>
 
                   <div class="input">
-                    <input placeholder="Выберите из списка" autocomplete="off" type="number" name="" class="input__field">
-                    <img data-tippy-content="" class="input__warning" src="" alt="">
+                    <select class="input__select" data-trigger name="calculator_type">
+                      <option value="">Выберите из списка</option>
+                      <option value="nets">Москитные сетки</option>
+                      <option value="curtains">Рулонные шторы</option>
+                    </select>
+                    <!-- /.input -->
                   </div>
                   <!-- /.input -->
                 </div>
@@ -275,8 +279,14 @@
                   </h3>
 
                   <div class="input">
-                    <input placeholder="Выберите из списка" autocomplete="off" type="number" name="" class="input__field">
-                    <img data-tippy-content="" class="input__warning" src="" alt="">
+                    <select class="input__select" data-trigger name="calculator_type">
+                      <option value="">Выберите из списка</option>
+                      <option value="english">Английский язык</option>
+                      <option value="сhess">Шахматы</option>
+                      <option value="speech">Логопед</option>
+                      <option value="music">Музыкальная студия</option>
+                    </select>
+                    <!-- /.input -->
                   </div>
                   <!-- /.input -->
                 </div>
@@ -1267,6 +1277,7 @@
   <script src="scripts/libraries/lazyload.js"></script>
   <script src="scripts/libraries/lodash.js"></script>
   <script src="scripts/libraries/swiper.js"></script>
+  <script src="scripts/libraries/choices.min.js"></script>
 
   <script src="scripts/slider.js"></script>
   <script src="scripts/header.js"></script>
