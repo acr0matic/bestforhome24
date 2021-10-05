@@ -8,40 +8,58 @@
       overflow: hidden;
 
       border-radius: $border-radius--medium;
+      box-shadow: $shadow-primary;
 
       @media (hover: hover) {
         &:hover {
           .catalog__image {
             transform: scale(1.05);
           }
+
+          .catalog__link {
+            color: $palette-yellow;
+
+            .link__arrow {
+              transform: translateX(5px);
+
+              path {
+                fill: $palette-yellow;
+              }
+            }
+          }
         }
       }
     }
 
     &__picture {
-      height: 350px;
+      height: 300px;
       overflow: hidden;
     }
 
     &__image {
-
     }
 
     &__content {
-      position: absolute;
-      bottom: 0;
-      left: 0;
       width: 100%;
 
-      padding: 10px 15px;
+      padding: 20px;
 
-      color: $text-white;
-      background: rgba($color: #000000, $alpha: 0.5);
+      background: $section-primary;
+    }
+
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
     &__title {
       font-weight: $weight-Medium;
       font-size: $heading-size--small;
+    }
+
+    &__link {
+      color: $text-gray;
     }
 
     &__description {

@@ -1,7 +1,9 @@
 .form-callback {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  .form__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   .input {
     flex-grow: 1;
