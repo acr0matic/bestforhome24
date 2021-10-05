@@ -7,7 +7,7 @@ const useful = new Swiper('.slider-useful', {
   slidesPerView: 1,
   spaceBetween: 25,
 
-  breakpoints:{
+  breakpoints: {
     992: {
       slidesPerView: 3,
     },
@@ -16,11 +16,21 @@ const useful = new Swiper('.slider-useful', {
       slidesPerView: 4,
     },
   },
+
+  navigation: {
+    nextEl: '.slider-useful__next',
+    prevEl: '.slider-useful__prev',
+  },
 });
 
 const feedback = new Swiper('.slider-feedback', {
   slidesPerView: 2,
   spaceBetween: 25,
+
+  navigation: {
+    nextEl: '.slider-feedback__next',
+    prevEl: '.slider-feedback__prev',
+  },
 });
 
 const hero = new Swiper('.slider-hero', {
