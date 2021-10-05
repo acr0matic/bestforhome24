@@ -7,7 +7,6 @@
   }
 
   &__item {
-
   }
 
   &__link {
@@ -20,6 +19,10 @@
   }
 
   &--header {
+    @include breakpoint($breakpoint-laptop--medium) {
+      display: none;
+    }
+
     .nav__item {
       &:not(:last-child) {
         margin-right: 30px;
@@ -40,6 +43,10 @@
     .nav__link {
       font-size: $text-size--large;
       color: $text-gray;
+
+      @include breakpoint($breakpoint-laptop--medium) {
+        font-size: $text-size--medium;
+      }
     }
   }
 }

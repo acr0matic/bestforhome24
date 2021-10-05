@@ -60,6 +60,10 @@
     line-height: 150%;
 
     transition: color 0.15s ease;
+
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: $text-size--small;
+    }
   }
 
   &__policy {

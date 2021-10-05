@@ -35,6 +35,10 @@
     &__picture {
       height: 210px;
       overflow: hidden;
+
+      @include breakpoint($breakpoint-laptop--medium) {
+        height: 170px;
+      }
     }
 
     &__image {

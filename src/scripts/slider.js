@@ -4,8 +4,18 @@
 
 const useful = new Swiper('.slider-useful', {
   // loop: true,
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 25,
+
+  breakpoints:{
+    992: {
+      slidesPerView: 3,
+    },
+
+    1200: {
+      slidesPerView: 4,
+    },
+  },
 });
 
 const feedback = new Swiper('.slider-feedback', {

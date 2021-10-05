@@ -71,9 +71,7 @@
     font-size: $text-size--small;
   }
 
-
   &__logo {
-
   }
 
   &__title {
@@ -81,6 +79,10 @@
 
     font-size: $heading-size--small - 3;
     font-weight: $weight-Medium;
+
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: $text-size--large;
+    }
   }
 
   &__nav {

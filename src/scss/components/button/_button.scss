@@ -15,6 +15,7 @@
 
   white-space: nowrap;
   font-size: $text-size--large;
+  text-align: center;
 
   @include breakpoint($breakpoint-laptop--large) {
     font-size: $text-size--medium;

@@ -36,6 +36,11 @@
 
     font-size: $text-size--large;
     font-weight: $weight-Medium;
+
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: $text-size--medium;
+      line-height: 165%;
+    }
   }
 
   &__action {

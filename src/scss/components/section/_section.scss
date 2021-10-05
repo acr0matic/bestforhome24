@@ -26,11 +26,19 @@ $margin: 30px;
 
     font-size: $heading-size--medium;
     font-weight: $weight-Medium;
+
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: $heading-size--small;
+    }
   }
 
   &__description {
     margin-bottom: $margin;
 
     font-size: $text-size--large;
+
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: $text-size--medium;
+    }
   }
 }
