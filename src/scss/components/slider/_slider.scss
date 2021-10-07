@@ -12,6 +12,35 @@
     padding: 15px;
   }
 
+  &-pagination {
+    position: static;
+    margin-top: 10px;
+
+    &-bullet {
+      width: 16px;
+      height: 16px;
+
+      opacity: 1;
+
+      background-color: #ebebeb;
+      transition: $transition__icon;
+
+      &:not(:last-child) {
+        margin-right: 15px !important;
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          background-color: $palette-yellow;
+        }
+      }
+
+      &-active {
+        background-color: $palette-yellow;
+      }
+    }
+  }
+
   &__control {
     display: flex;
     align-items: center;

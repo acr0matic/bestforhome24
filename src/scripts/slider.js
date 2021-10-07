@@ -36,8 +36,10 @@ const feedback = new Swiper('.slider-feedback', {
 const hero = new Swiper('.slider-hero', {
   slidesPerView: 1,
   loop: true,
+  spaceBetween: 10,
 
   autoplay: {
     delay: 5000,
+    disableOnInteraction: false,
   },
 });

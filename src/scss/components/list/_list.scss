@@ -1,0 +1,25 @@
+.list {
+  &__item {
+    font-size: $text-size--large;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &--mark {
+    .list__item {
+      // display: flex;
+      // align-items: center;
+
+      &::before {
+        content: url("../img/icons/misc/check.svg");
+        display: inline-block;
+        width: 21px;
+        height: 21px;
+
+        margin-right: 10px;
+      }
+    }
+  }
+}

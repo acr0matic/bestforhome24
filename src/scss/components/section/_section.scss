@@ -30,6 +30,10 @@ $margin: 30px;
     @include breakpoint($breakpoint-laptop--medium) {
       font-size: $heading-size--small;
     }
+
+    span {
+      color: $text-yellow;
+    }
   }
 
   &__description {

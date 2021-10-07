@@ -6,7 +6,7 @@ const modalParams = {
 MicroModal.init(modalParams);
 
 
-tippy('.input__warning[data-tippy-content]', {
+tippy('[data-tippy-content]', {
   placement: 'right',
   allowHTML: true,
   maxWidth: 300,

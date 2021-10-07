@@ -3,8 +3,10 @@
 // -----------------------------------------------------------------------------
 
 // Общие фрагметы, которые встречаются на всех страницах
+@import "common/page";
 @import "common/header";
 @import "common/nav";
+@import "common/mobile-menu";
 @import "common/footer";
 
 // Фрагметы отдельных блоков
