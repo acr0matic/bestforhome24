@@ -718,7 +718,7 @@
             <!-- /.col-6 -->
 
             <div class="col-6 col-xl-5">
-              <form class="form form-map" action="" enctype="multipart/form-data">
+              <form class="form form-map" action="">
                 <h3 class="form__title">Не увидели свой район или город?</h3>
                 <p class="form__description">Оставьте заявку, и наш менеджер перезвонит Вам и уточнит территорию по которой мы работаем!</p>
 
@@ -728,13 +728,13 @@
                 </div>
                 <!-- /.input -->
 
-                <div class="input input--error mb-3">
-                  <input placeholder="Ваш телефон" autocomplete="off" type="tel" name="user_phone" class="input__field">
+                <div class="input mb-3">
+                  <input data-required placeholder="Ваш телефон" autocomplete="off" type="tel" name="user_phone" class="input__field">
                   <img data-tippy-content="Номер телефона указан не полностью или содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">
                 </div>
                 <!-- /.input -->
 
-                <div class="input input--error mb-4 pb-1">
+                <div class="input mb-4 pb-1">
                   <label class="checkbox">
                     <input type="checkbox">
                     <span class="checkbox__mark"></span>
@@ -1284,8 +1284,8 @@
               <form action="" class="form form-callback">
                 <div class="form__wrapper">
                   <div class="input me-3">
-                    <input placeholder="Номер телефона" autocomplete="off" type="tel" name="" class="input__field">
-                    <img data-tippy-content="" class="input__warning" src="img/icons/misc/warning.svg" alt="">
+                    <input data-required placeholder="Номер телефона" autocomplete="off" type="tel" name="" class="input__field">
+                    <img data-tippy-content="Номер телефона указан не полностью или содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">
                   </div>
                   <!-- /.input -->
 
@@ -1293,7 +1293,7 @@
                 </div>
                 <!-- /.form__wrapper -->
 
-                <div class="input input--error mt-4">
+                <div class="input mt-4">
                   <label class="checkbox">
                     <input type="checkbox">
                     <span class="checkbox__mark"></span>
@@ -1518,7 +1518,7 @@
             Укажите Ваш имя и номер телефона, мы свяжемся с Вами в ближайшее время, согласуем удобное время и дату
           </p>
 
-          <form class="form" action="" enctype="multipart/form-data">
+          <form class="form" action="">
             <div class="input mb-3 mt-4">
               <input placeholder="Ваше имя" autocomplete="off" type="text" name="user_name" class="input__field">
               <img data-tippy-content="Имя содержит недопустимые символы" class="input__warning" src="img/icons/misc/warning.svg" alt="">
@@ -1526,12 +1526,12 @@
             <!-- /.input -->
 
             <div class="input mb-4">
-              <input placeholder="Ваш телефон" autocomplete="off" type="tel" name="user_phone" class="input__field">
+              <input data-required placeholder="Ваш телефон" autocomplete="off" type="tel" name="user_phone" class="input__field">
               <img data-tippy-content="Номер телефона указан не полностью или содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">
             </div>
             <!-- /.input -->
 
-            <div class="input input--error mb-4 pb-1">
+            <div class="input mb-4 pb-1">
               <label class="checkbox">
                 <input type="checkbox">
                 <span class="checkbox__mark"></span>
@@ -1540,7 +1540,7 @@
             </div>
             <!-- /.input -->
 
-            <button disabled data-sending="Отправка..." class="form__button button button-primary mx-auto" type="submit">Отправить</button>
+            <button data-sending="Отправка..." class="form__button button button-primary mx-auto" type="submit">Отправить</button>
           </form>
         </main>
       </div>
@@ -1559,11 +1559,14 @@
   <script src="scripts/libraries/micromodal.min.js"></script>
   <script src="scripts/libraries/popper.js"></script>
   <script src="scripts/libraries/tippy.js"></script>
+  <script src="scripts/libraries/imask.js"></script>
+  <script src="scripts/libraries/forms.js"></script>
 
   <script src="scripts/init.js"></script>
   <script src="scripts/slider.js"></script>
   <script src="scripts/header.js"></script>
   <script src="scripts/calculator.js"></script>
+  <script src="scripts/forms.js"></script>
   <script src="scripts/main.js"></script>
   <!-- endbuild -->
 </body>
