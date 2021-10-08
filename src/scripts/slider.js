@@ -4,7 +4,7 @@
 
 const useful = new Swiper('.slider-useful', {
   // loop: true,
-  slidesPerView: 1,
+  slidesPerView: 'auto',
   spaceBetween: 25,
 
   breakpoints: {
@@ -24,8 +24,14 @@ const useful = new Swiper('.slider-useful', {
 });
 
 const feedback = new Swiper('.slider-feedback', {
-  slidesPerView: 2,
+  slidesPerView: 'auto',
   spaceBetween: 25,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+  },
 
   navigation: {
     nextEl: '.slider-feedback__next',

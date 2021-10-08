@@ -18,6 +18,10 @@
     overflow: hidden;
 
     border-radius: $border-radius--medium;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      height: 180px;
+    }
   }
 
   &__image {

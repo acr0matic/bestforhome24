@@ -31,6 +31,16 @@
     &:not(:last-child) {
       margin-bottom: 45px;
     }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__nav {
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 50%;
+    }
   }
 
   &__contact {
@@ -42,6 +52,7 @@
   &__social {
     display: flex;
     align-items: center;
+    width: 100%;
   }
 
   &__icon {
@@ -59,6 +70,13 @@
 
   &__phone {
     font-size: $text-size--large;
+  }
+
+  &__company {
+    @include breakpoint($breakpoint-mobile--large) {
+      margin-top: 30px;
+      text-align: center;
+    }
   }
 
   &__privacy {
@@ -83,9 +101,10 @@
     @include breakpoint($breakpoint-laptop--medium) {
       font-size: $text-size--large;
     }
-  }
 
-  &__nav {
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: $text-size--medium;
+    }
   }
 
   &__link {

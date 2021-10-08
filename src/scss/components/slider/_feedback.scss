@@ -1,5 +1,9 @@
 .slider-feedback {
   .swiper-slide {
     height: initial;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 80%;
+    }
   }
 }

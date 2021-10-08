@@ -1,6 +1,10 @@
 #callback {
   padding: 65px 0;
   box-shadow: $shadow-primary;
+
+  @include breakpoint($breakpoint-mobile--large) {
+    padding: 35px 0;
+  }
 }
 
 .callback {
@@ -9,12 +13,15 @@
     margin: 5px 0 15px 0;
 
     font-size: $heading-size--small;
-    // color: $text-white;
   }
 
   &__picture {
     height: 320px;
     overflow: hidden;
     border-radius: $border-radius--medium;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      display: none;
+    }
   }
 }

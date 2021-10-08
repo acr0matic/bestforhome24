@@ -25,6 +25,10 @@
     .logo__image {
       max-width: 200px;
       margin: 0 auto;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        max-width: 160px;
+      }
     }
   }
 }

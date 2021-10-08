@@ -12,6 +12,11 @@ $margin: 30px;
 
     margin-bottom: $margin;
 
+    @include breakpoint($breakpoint-mobile--large) {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+
     .section__title {
       margin-bottom: 0;
     }

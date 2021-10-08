@@ -2,6 +2,12 @@
 }
 
 .useful {
+  .swiper__control {
+    @include breakpoint($breakpoint-mobile--large) {
+      display: none;
+    }
+  }
+
   &__card {
     display: flex;
     flex-direction: column;
@@ -15,7 +21,10 @@
   }
 
   &__picture {
+    flex-shrink: 0;
+
     width: 100%;
+    height: 180px;
   }
 
   &__wrapper {

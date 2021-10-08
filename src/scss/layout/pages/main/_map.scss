@@ -14,5 +14,10 @@
     border-radius: $border-radius--medium;
 
     box-shadow: $shadow-primary;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      height: 210px;
+      margin-bottom: 30px;
+    }
   }
 }

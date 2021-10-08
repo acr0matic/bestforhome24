@@ -3,9 +3,23 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      flex-direction: column;
+    }
   }
 
   .input {
     flex-grow: 1;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 100%;
+    }
+  }
+
+  .button {
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 100%;
+    }
   }
 }
