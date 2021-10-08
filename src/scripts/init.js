@@ -12,3 +12,6 @@ tippy('[data-tippy-content]', {
   maxWidth: 300,
   theme: 'flat',
 });
+
+const accordion = document.querySelectorAll('.handorgel')
+_.forEach(accordion, (item) => new handorgel(item));

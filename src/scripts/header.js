@@ -24,3 +24,18 @@ function Dropdown(dropdown, action) {
   if (action === 'hide') dropdown.parentNode.classList.remove(className);
   else if (action === 'toggle') dropdown.parentNode.classList.toggle(className);
 }
+
+/* Логика для мобильного меню */
+const mobileMenuButton = document.querySelector('.header__mobile');
+const mobileMenu = document.getElementById('mobile-menu');
+const mobileOverlay = mobileMenu.querySelector('.mobile-menu__overlay');
+
+mobileMenuButton.addEventListener('click', () => {
+  mobileMenuButton.classList.toggle('is-active');
+  mobileMenu.classList.toggle('mobile-menu--open');
+});
+
+mobileOverlay.addEventListener('click', () => {
+  mobileMenuButton.classList.remove('is-active');
+  mobileMenu.classList.remove('mobile-menu--open');
+});

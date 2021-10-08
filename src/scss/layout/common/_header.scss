@@ -13,11 +13,19 @@
 
   background-color: $section-primary;
   box-shadow: $shadow-primary;
+
+  @include breakpoint($breakpoint-mobile--large) {
+    padding: 10px 0;
+  }
 }
 
 .header {
   display: flex;
   align-items: center;
+
+  @include breakpoint($breakpoint-mobile--large) {
+    justify-content: space-between;
+  }
 
   &__logo {
   }
@@ -31,6 +39,10 @@
     align-items: center;
 
     margin-left: auto;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      display: none;
+    }
   }
 
   &__phone {
@@ -38,6 +50,19 @@
 
     @include breakpoint($breakpoint-laptop--large) {
       font-size: $text-size--medium;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: $text-size--large;
+      font-weight: $weight-Medium;
+    }
+  }
+
+  &__mobile {
+    display: none;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      display: block;
     }
   }
 }
