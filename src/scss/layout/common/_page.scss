@@ -3,5 +3,9 @@
     font-size: $heading-size--large;
     font-weight: $weight-Bold;
     line-height: 120%;
+
+    @include breakpoint($breakpoint-laptop--large) {
+      font-size: $heading-size--large - 4;
+    }
   }
 }
