@@ -8,4 +8,8 @@
   &--cover {
     object-fit: cover;
   }
+
+  &[class~="lazy"] {
+    visibility: hidden;
+  }
 }
