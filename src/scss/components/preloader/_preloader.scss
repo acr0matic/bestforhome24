@@ -1,0 +1,17 @@
+.preloader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 48px;
+  height: 48px;
+
+  transform: translate(-50%, -50%);
+
+  transition: $transition__icon;
+
+  &--hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

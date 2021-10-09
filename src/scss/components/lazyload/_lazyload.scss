@@ -1,4 +1,5 @@
 .lazy {
+  visibility: hidden;
   transition: 0.2s ease;
 }
 
@@ -7,5 +8,5 @@
 }
 
 .loaded {
-  opacity: 1;
+  visibility: visible;
 }
