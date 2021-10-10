@@ -2,6 +2,11 @@
   &__item {
     font-size: $text-size--large;
 
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: $text-size--small;
+      line-height: 130%;
+    }
+
     &:not(:last-child) {
       margin-bottom: 10px;
     }
@@ -9,9 +14,6 @@
 
   &--mark {
     .list__item {
-      // display: flex;
-      // align-items: center;
-
       &::before {
         content: url("../img/icons/misc/check.svg");
         display: inline-block;
@@ -19,6 +21,10 @@
         height: 21px;
 
         margin-right: 10px;
+
+        @include breakpoint($breakpoint-mobile--large) {
+          display: none;
+        }
       }
     }
   }

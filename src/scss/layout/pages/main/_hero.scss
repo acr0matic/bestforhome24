@@ -5,6 +5,12 @@
   background-image: url("../img/page/main/hero/background.svg");
   background-size: 100%;
 
+  @include breakpoint($breakpoint-mobile--large) {
+    margin-bottom: 0;
+    padding: 0;
+    background-size: 200%;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -14,6 +20,10 @@
     height: 100px;
 
     background: linear-gradient(0deg, #ffffff 20%, rgba(255, 255, 255, 0) 100%);
+
+    @include breakpoint($breakpoint-mobile--large) {
+      display: none;
+    }
   }
 }
 
@@ -23,13 +33,27 @@
   }
 
   &__title {
+    @include breakpoint($breakpoint-mobile--large) {
+      margin-bottom: 10px;
+    }
   }
 
   &__subtitle {
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: $text-size--medium;
+      line-height: 120%;
+    }
+  }
+
+  &__advantages {
   }
 
   &__slider {
     height: 100%;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      display: none;
+    }
   }
 
   &__picture {

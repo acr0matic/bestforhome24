@@ -8,6 +8,10 @@
   &__item {
     &:not(:last-child) {
       margin-bottom: 30px;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        margin-bottom: 56px;
+      }
     }
   }
 
@@ -33,6 +37,11 @@
 
     font-size: $heading-size--small - 3;
     font-weight: $weight-Regular;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      margin-bottom: 15px;
+      font-size: $text-size--large;
+    }
   }
 
   &__description {

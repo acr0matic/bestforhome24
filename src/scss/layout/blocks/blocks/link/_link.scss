@@ -3,6 +3,13 @@ $link__hover: $palette-yellow;
 .link {
   transition: $transition__text;
 
+  &__arrow {
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
   &--nav {
     @media (hover: hover) {
       &:hover {
@@ -22,6 +29,10 @@ $link__hover: $palette-yellow;
   &--arrow {
     display: flex;
     align-items: center;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: $text-size--small;
+    }
 
     @media (hover: hover) {
       &:hover {

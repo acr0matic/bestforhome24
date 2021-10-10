@@ -61,8 +61,8 @@
 
     transition: color 0.15s ease;
 
-    @include breakpoint($breakpoint-laptop--medium) {
-      font-size: $text-size--small;
+    @include breakpoint($breakpoint-mobile--medium) {
+      font-size: $text-size--small - 2;
     }
   }
 

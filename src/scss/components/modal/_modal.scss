@@ -12,6 +12,10 @@
     justify-content: center;
 
     background: rgba(0, 0, 0, 0.7);
+
+    @include breakpoint($breakpoint-mobile--large) {
+      align-items: flex-end;
+    }
   }
 
   &__container {
@@ -22,6 +26,19 @@
 
     padding: 30px;
     background-color: $modal-bg__primary;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 100%;
+      max-width: 360px !important;
+      max-height: 495px;
+
+      overflow: auto;
+
+      padding: 30px 20px;
+
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
   }
 
   &__header {
@@ -33,9 +50,22 @@
 
   &__title {
     font-size: $heading-size--small;
+    font-weight: $weight-Medium;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: $text-size--large;
+    }
+
+    @include breakpoint($breakpoint-mobile) {
+      font-size: $text-size--medium;
+    }
   }
 
   &__description {
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: $text-size--small;
+      line-height: 160%;
+    }
   }
 
   &__close {

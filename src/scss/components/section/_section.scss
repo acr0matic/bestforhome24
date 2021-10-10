@@ -1,4 +1,5 @@
 $margin: 30px;
+$margin--mobile: 15px;
 
 .section {
   &:not(:last-child) {
@@ -15,6 +16,8 @@ $margin: 30px;
     @include breakpoint($breakpoint-mobile--large) {
       flex-direction: column-reverse;
       align-items: flex-start;
+
+      margin-bottom: $margin--mobile;
     }
 
     .section__title {
@@ -34,6 +37,11 @@ $margin: 30px;
 
     @include breakpoint($breakpoint-laptop--medium) {
       font-size: $heading-size--small;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      margin-bottom: $margin--mobile;
+      font-size: $heading-size--small - 3;
     }
 
     span {
