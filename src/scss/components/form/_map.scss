@@ -1,0 +1,7 @@
+.form-map {
+  .form__title {
+    @include breakpoint($breakpoint-mobile--large) {
+      display: none;
+    }
+  }
+}

@@ -4,6 +4,10 @@ $margin--mobile: 15px;
 .section {
   &:not(:last-child) {
     margin-bottom: 90px;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      margin-bottom: 65px;
+    }
   }
 
   &__header {
