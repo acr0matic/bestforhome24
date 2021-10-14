@@ -52,6 +52,14 @@
     }
   }
 
+  &--section {
+    .nav__item {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+
   &--footer {
     .nav__list {
       flex-direction: column;

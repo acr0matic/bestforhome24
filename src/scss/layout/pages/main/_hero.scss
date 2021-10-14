@@ -1,67 +1,73 @@
-#hero {
-  position: relative;
-  padding: 30px;
+#home {
+  #hero {
+    position: relative;
+    padding: 30px;
 
-  background-image: url("../img/page/main/hero/background.svg");
-  background-size: 100%;
-
-  @include breakpoint($breakpoint-mobile--large) {
-    margin-bottom: 20px;
-    padding: 0;
-    background-size: 200%;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-
-    background: linear-gradient(0deg, #ffffff 20%, rgba(255, 255, 255, 0) 100%);
+    background-image: url("../img/page/main/hero/background.svg");
+    background-size: 100%;
 
     @include breakpoint($breakpoint-mobile--large) {
-      height: 50px;
+      margin-bottom: 20px;
+      padding: 0;
+      background-size: 200%;
     }
-  }
-}
 
-.hero {
-  &__content {
-    padding: 45px 0;
-  }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
 
-  &__title {
-    @include breakpoint($breakpoint-mobile--large) {
-      margin-bottom: 10px;
+      background: linear-gradient(
+        0deg,
+        #ffffff 20%,
+        rgba(255, 255, 255, 0) 100%
+      );
+
+      @include breakpoint($breakpoint-mobile--large) {
+        height: 50px;
+      }
     }
   }
 
-  &__subtitle {
-    @include breakpoint($breakpoint-mobile--large) {
-      font-size: $text-size--medium;
-      line-height: 120%;
+  .hero {
+    &__content {
+      padding: 45px 0;
     }
-  }
 
-  &__advantages {
-  }
-
-  &__slider {
-    height: 100%;
-
-    @include breakpoint($breakpoint-mobile--large) {
-      display: none;
+    &__title {
+      @include breakpoint($breakpoint-mobile--large) {
+        margin-bottom: 10px;
+      }
     }
-  }
 
-  &__picture {
-    height: 100%;
-    overflow: hidden;
-    border-radius: $border-radius--medium;
-  }
+    &__subtitle {
+      @include breakpoint($breakpoint-mobile--large) {
+        font-size: $text-size--medium;
+        line-height: 120%;
+      }
+    }
 
-  &__image {
+    &__advantages {
+    }
+
+    &__slider {
+      height: 100%;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        display: none;
+      }
+    }
+
+    &__picture {
+      height: 100%;
+      overflow: hidden;
+      border-radius: $border-radius--medium;
+    }
+
+    &__image {
+    }
   }
 }
