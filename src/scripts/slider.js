@@ -49,3 +49,14 @@ const hero = new Swiper('.slider-hero', {
     disableOnInteraction: false,
   },
 });
+
+const constuction = new Swiper('.slider-constuction', {
+  slidesPerView: 2,
+  spaceBetween: 20,
+
+
+  navigation: {
+    nextEl: '.slider-constuction__next',
+    prevEl: '.slider-constuction__prev',
+  },
+});
