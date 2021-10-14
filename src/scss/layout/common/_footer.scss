@@ -73,9 +73,13 @@
   }
 
   &__company {
+    white-space: nowrap;
+
     @include breakpoint($breakpoint-mobile--large) {
       margin-top: 30px;
       text-align: center;
+
+      white-space: normal;
     }
   }
 
