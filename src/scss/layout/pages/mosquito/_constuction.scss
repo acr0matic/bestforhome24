@@ -33,7 +33,9 @@
   &__price {
     display: block;
     margin-bottom: 10px;
+
     color: $text-gray;
+    font-size: $text-size--small;
   }
 
   &__description {

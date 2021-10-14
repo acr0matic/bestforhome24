@@ -60,3 +60,14 @@ const constuction = new Swiper('.slider-constuction', {
     prevEl: '.slider-constuction__prev',
   },
 });
+
+
+const material = new Swiper('.slider-material', {
+  slidesPerView: 5,
+  spaceBetween: 20,
+
+  navigation: {
+    nextEl: '.slider-material__next',
+    prevEl: '.slider-material__prev',
+  },
+});

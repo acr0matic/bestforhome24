@@ -1,0 +1,33 @@
+#material {
+}
+
+.material {
+  &__item {
+    padding: 15px;
+    border-radius: $border-radius--large;
+    box-shadow: $shadow-primary;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 10px;
+  }
+
+  &__name {
+    font-size: $heading-size--small - 3;
+    font-weight: $weight-Medium;
+  }
+
+  &__price {
+    color: $text-gray;
+    font-size: $text-size--small;
+  }
+
+  &__help {
+    width: 20px;
+    cursor: help;
+  }
+}

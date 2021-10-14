@@ -45,7 +45,7 @@
   <section id="constuction" class="section">
     <div class="container">
       <div class="constuction">
-        <h2 class="constuction__title section__title">Виды конструкций</h2>
+        <h2 class="section__title">Виды конструкций</h2>
         <div class="constuction__slider position-relative">
           <div class="swiper swiper--shadow slider-constuction">
             <div class="swiper-wrapper">
@@ -131,6 +131,171 @@
         <!-- /.constuction__slider -->
       </div>
       <!-- /.constuction -->
+    </div>
+    <!-- /.container -->
+  </section>
+
+  <section id="material" class="section">
+    <div class="container">
+      <div class="material">
+        <h2 class="section__title">Виды полотна</h2>
+        <p class="hero__description section__description">
+          Наша компания изготавливает москитные сетки и рулонные шторы уже больше 10 лет. Каждая сетка или штора делается строго индивидуально под Ваши окна. В нашем каталоге тысячи цветов и вариаций рисунков для штор, а также, все возможные виды антимоскитного полотна для любой формы москитной сетки.
+        </p>
+        <div class="material__slider position-relative">
+          <div class="swiper swiper--shadow slider-material">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="material__item">
+                  <div class="material__picture">
+                    <img src="img/catalog/mosquito/material/standart.svg" alt="" class="material__image image">
+                  </div>
+                  <!-- /.material__picture -->
+
+                  <div class="material__content">
+                    <div class="material__header">
+                      <h3 class="material__name">
+                        <a href="" class="link link--nav">Стандарт</a>
+                      </h3>
+                      <img data-tippy-content="Размер ячейки: 1,1x1,1 мм. <br> Толщина нити: 0.28 мм." src="img/icons/misc/help.svg" alt="" class="material__help">
+                    </div>
+                    <!-- /.material__header -->
+                    <span class="material__price">От 1 000р</span>
+                  </div>
+                  <!-- /.material__content -->
+                </div>
+                <!-- /.constuction__item -->
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                <div class="material__item">
+                  <div class="material__picture">
+                    <img src="img/catalog/mosquito/material/advanced.svg" alt="" class="material__image image">
+                  </div>
+                  <!-- /.material__picture -->
+
+                  <div class="material__content">
+                    <div class="material__header">
+                      <h3 class="material__name">
+                        <a href="" class="link link--nav">Антимошка</a>
+                      </h3>
+                      <img data-tippy-content="Размер ячейки: 1,1x1,1 мм. <br> Толщина нити: 0.28 мм." src="img/icons/misc/help.svg" alt="" class="material__help">
+                    </div>
+                    <!-- /.material__header -->
+                    <span class="material__price">От 1 000р</span>
+                  </div>
+                  <!-- /.material__content -->
+                </div>
+                <!-- /.constuction__item -->
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                <div class="material__item">
+                  <div class="material__picture">
+                    <img src="img/catalog/mosquito/material/dust.svg" alt="" class="material__image image">
+                  </div>
+                  <!-- /.material__picture -->
+
+                  <div class="material__content">
+                    <div class="material__header">
+                      <h3 class="material__name">
+                        <a href="" class="link link--nav">Антипыль</a>
+                      </h3>
+                      <img data-tippy-content="Размер ячейки: 1,1x1,1 мм. <br> Толщина нити: 0.28 мм." src="img/icons/misc/help.svg" alt="" class="material__help">
+                    </div>
+                    <!-- /.material__header -->
+                    <span class="material__price">От 1 000р</span>
+                  </div>
+                  <!-- /.material__content -->
+                </div>
+                <!-- /.constuction__item -->
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                <div class="material__item">
+                  <div class="material__picture">
+                    <img src="img/catalog/mosquito/material/dust.svg" alt="" class="material__image image">
+                  </div>
+                  <!-- /.material__picture -->
+
+                  <div class="material__content">
+                    <div class="material__header">
+                      <h3 class="material__name">
+                        <a href="" class="link link--nav">Антипыль</a>
+                      </h3>
+                      <img data-tippy-content="Размер ячейки: 1,1x1,1 мм. <br> Толщина нити: 0.28 мм." src="img/icons/misc/help.svg" alt="" class="material__help">
+                    </div>
+                    <!-- /.material__header -->
+                    <span class="material__price">От 1 000р</span>
+                  </div>
+                  <!-- /.material__content -->
+                </div>
+                <!-- /.constuction__item -->
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                <div class="material__item">
+                  <div class="material__picture">
+                    <img src="img/catalog/mosquito/material/dust.svg" alt="" class="material__image image">
+                  </div>
+                  <!-- /.material__picture -->
+
+                  <div class="material__content">
+                    <div class="material__header">
+                      <h3 class="material__name">
+                        <a href="" class="link link--nav">Антипыль</a>
+                      </h3>
+                      <img data-tippy-content="Размер ячейки: 1,1x1,1 мм. <br> Толщина нити: 0.28 мм." src="img/icons/misc/help.svg" alt="" class="material__help">
+                    </div>
+                    <!-- /.material__header -->
+                    <span class="material__price">От 1 000р</span>
+                  </div>
+                  <!-- /.material__content -->
+                </div>
+                <!-- /.constuction__item -->
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                <div class="material__item">
+                  <div class="material__picture">
+                    <img src="img/catalog/mosquito/material/dust.svg" alt="" class="material__image image">
+                  </div>
+                  <!-- /.material__picture -->
+
+                  <div class="material__content">
+                    <div class="material__header">
+                      <h3 class="material__name">
+                        <a href="" class="link link--nav">Антипыль</a>
+                      </h3>
+                      <img data-tippy-content="Размер ячейки: 1,1x1,1 мм. <br> Толщина нити: 0.28 мм." src="img/icons/misc/help.svg" alt="" class="material__help">
+                    </div>
+                    <!-- /.material__header -->
+                    <span class="material__price">От 1 000р</span>
+                  </div>
+                  <!-- /.material__content -->
+                </div>
+                <!-- /.constuction__item -->
+              </div>
+              <!-- /.swiper-slide -->
+            </div>
+            <!-- /.swiper-wrapper -->
+          </div>
+          <!-- /.swiper constuction-slider -->
+
+          <div class="swiper__control">
+            <div class="swiper-button-prev slider-material__prev"></div>
+            <div class="swiper-button-next slider-material__next"></div>
+          </div>
+          <!-- /.swiper__control -->
+        </div>
+        <!-- /.constuction__slider -->
+      </div>
+      <!-- /.material -->
     </div>
     <!-- /.container -->
   </section>
