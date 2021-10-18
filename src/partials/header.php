@@ -289,3 +289,16 @@
     <!-- /.mobile-menu__container -->
   </div>
   <!-- /.mobile-menu -->
+
+  <div class="widget">
+    <a class="widget__link widget__link--hide" href="https://api.whatsapp.com/send?phone=" target="_blank">
+      <img src="img/icons/widget/whatsapp.svg" alt="" class="widget__icon widget__icon--small">
+    </a>
+
+    <a class="widget__link widget__link--hide" href="https://t.me/" target="_blank">
+      <img src="img/icons/widget/telegram.svg" alt="" class="widget__icon widget__icon--small">
+    </a>
+
+    <img id="widget" src="img/icons/widget/widget.svg" alt="" class="widget__icon">
+  </div>
+  <!-- /.widget -->
