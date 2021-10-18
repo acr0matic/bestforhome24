@@ -1,0 +1,62 @@
+.widget {
+  position: fixed;
+  z-index: 50;
+  right: 30px;
+  bottom: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include breakpoint($breakpoint-mobile--large) {
+    right: 20px;
+    bottom: 30px;
+  }
+
+  &__link {
+    &--hide {
+      pointer-events: none;
+
+      .widget__icon {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+
+  &__icon {
+    width: 65px;
+    height: 65px;
+
+    margin-bottom: 10px;
+
+    opacity: 1;
+    visibility: visible;
+
+    cursor: pointer;
+    transition: all 0.15s ease;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 55px;
+      height: 55px;
+    }
+
+    &--small {
+      width: 55px;
+      height: 55px;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        width: 45px;
+        height: 45px;
+      }
+    }
+
+    &:hover {
+      opacity: 0.7;
+
+      @include breakpoint($breakpoint-tablet) {
+        opacity: 1;
+      }
+    }
+  }
+}

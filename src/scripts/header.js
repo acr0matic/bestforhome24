@@ -40,3 +40,19 @@ mobileOverlay.addEventListener('click', () => {
   mobileBurger.classList.remove('is-active');
   mobileMenu.classList.remove('mobile-menu--open');
 });
+
+const widget = document.getElementById('widget');
+const widgetIcons = document.querySelectorAll('.widget__link--hide')
+
+widget.addEventListener('click', () => {
+  _.forEach(widgetIcons, icon => {
+    icon.classList.toggle('widget__link--hide');
+  })
+});
+
+_.forEach(['click', 'touchstart'], evt => {
+  window.addEventListener(evt, (e) => {
+    if (!widget.contains(e.target))
+      _.forEach(widgetIcons, icon => icon.classList.add('widget__link--hide'));
+  })
+});
