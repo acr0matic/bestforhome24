@@ -2,10 +2,25 @@
 }
 
 .material {
+  .swiper__control {
+    @include breakpoint($breakpoint-mobile--large) {
+      display: none;
+    }
+  }
+
   &__item {
     padding: 15px;
     border-radius: $border-radius--large;
     box-shadow: $shadow-primary;
+  }
+
+  &__picture {
+    width: 100%;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      max-width: 180px;
+      margin: 0 auto;
+    }
   }
 
   &__header {
@@ -19,6 +34,10 @@
   &__name {
     font-size: $heading-size--small - 3;
     font-weight: $weight-Medium;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: $text-size--large;
+    }
   }
 
   &__price {

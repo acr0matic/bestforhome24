@@ -2,6 +2,12 @@
 }
 
 .constuction {
+  .swiper__control {
+    @include breakpoint($breakpoint-mobile--large) {
+      display: none;
+    }
+  }
+
   &__item {
     display: flex;
 
@@ -9,10 +15,23 @@
     border-radius: $border-radius--large;
 
     box-shadow: $shadow-primary;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      flex-direction: column;
+      height: 100%;
+    }
   }
 
   &__picture {
     width: 35%;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      display: none;
+      width: 100%;
+      max-width: 140px;
+
+      margin: 0 auto;
+    }
   }
 
   &__content {
@@ -23,11 +42,37 @@
     width: 65%;
 
     padding: 10px 20px;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 100%;
+
+      padding: 10px 0;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+  }
+
+  &__help {
+    display: none;
+
+    width: 20px;
+    margin-left: 15px;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      display: block;
+    }
   }
 
   &__name {
     font-size: $heading-size--small - 3;
     font-weight: $weight-Medium;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: $text-size--large;
+    }
   }
 
   &__price {
@@ -43,9 +88,24 @@
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: $text-size--small;
+      line-height: 180%;
+    }
   }
 
   &__action {
     margin-top: auto;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      margin-top: 15px;
+    }
+
+    .button {
+      // @include breakpoint($breakpoint-mobile--large) {
+      //   margin: 0 auto;
+      // }
+    }
   }
 }

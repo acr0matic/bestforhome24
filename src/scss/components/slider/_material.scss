@@ -1,0 +1,7 @@
+.slider-material {
+  .swiper-slide {
+    @include breakpoint($breakpoint-mobile--large) {
+      max-width: 240px;
+    }
+  }
+}

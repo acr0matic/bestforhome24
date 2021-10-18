@@ -1,13 +1,18 @@
 #catalog {
   #hero {
-
   }
 
   .hero {
     &__background {
       width: 100%;
       height: 350px;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        height: 200px;
+      }
     }
+
+    &__image {}
 
     &__content {
       margin-top: 30px;

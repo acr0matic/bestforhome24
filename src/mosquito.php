@@ -15,15 +15,12 @@
             <nav class="nav nav--section">
               <ul class="nav__list">
                 <li class="nav__item">
-                  <a class="nav__link link link--nav" href="#constuction">Виды конструкций</a>
-                </li>
-
-                <li class="nav__item">
-                  <a class="nav__link link link--nav" href="">Виды полотна</a>
-                </li>
-
-                <li class="nav__item">
-                  <a class="nav__link link link--nav" href="">Калькулятор</a>
+                  <a class="nav__link link link--nav link--arrow" href="">
+                    Перейти к калькулятору
+                    <svg class="link__arrow svg ms-2" width="13" height="10" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.83007 0.139209L9.86053 3.16392C10.0465 3.34953 10.0465 3.65047 9.86053 3.83608L6.83007 6.86079C6.64411 7.0464 6.3426 7.0464 6.15663 6.86079C5.97067 6.67518 5.97067 6.37424 6.15663 6.18863L8.37418 3.97529L0 3.97529L0 3.02471L8.37418 3.02471L6.15663 0.811367C5.97067 0.625755 5.97067 0.32482 6.15663 0.139209C6.3426 -0.0464029 6.64411 -0.0464029 6.83007 0.139209Z" fill="#969696"></path>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -57,7 +54,14 @@
                   <!-- /.constuction__picture -->
 
                   <div class="constuction__content">
-                    <h3 class="constuction__name">Рамочная сетка</h3>
+                    <div class="constuction__header">
+                      <h3 class="constuction__name">Рамочная сетка</h3>
+                      <a class="constuction__lightbox" data-fslightbox="id-1" href="img/catalog/mosquito/constuction/standart.svg">
+                        <img src="img/icons/misc/help.svg" alt="" class="constuction__help">
+                      </a>
+                    </div>
+                    <!-- /.construction__header -->
+
                     <span class="constuction__price">от 1 000р</span>
                     <p class="constuction__description">Отличаются простотой в установке. комплектация полотном антипыль и антикошка. Возможна комплектация полотном антипыль и антикошка.</p>
 
@@ -80,7 +84,14 @@
                   <!-- /.constuction__picture -->
 
                   <div class="constuction__content">
-                    <h3 class="constuction__name">Внутренняя сетка</h3>
+                    <div class="constuction__header">
+                      <h3 class="constuction__name">Внутренняя сетка</h3>
+                      <a class="constuction__lightbox" data-fslightbox="id-1" href="img/catalog/mosquito/constuction/standart.svg">
+                        <img src="img/icons/misc/help.svg" alt="" class="constuction__help">
+                      </a>
+                    </div>
+                    <!-- /.construction__header -->
+
                     <span class="constuction__price">от 1 300р</span>
                     <p class="constuction__description">Отличаются простотой в установке, уходе и низкой ценой. Возможна комплектация полотном антипыль и антикошка. Возможна комплектация полотном антипыль и антикошка.</p>
 
@@ -103,7 +114,14 @@
                   <!-- /.constuction__picture -->
 
                   <div class="constuction__content">
-                    <h3 class="constuction__name">Внутренняя сетка</h3>
+                    <div class="constuction__header">
+                      <h3 class="constuction__name">Рамочная сетка</h3>
+                      <a class="constuction__lightbox" data-fslightbox="id-1" href="img/catalog/mosquito/constuction/standart.svg">
+                        <img src="img/icons/misc/help.svg" alt="" class="constuction__help">
+                      </a>
+                    </div>
+                    <!-- /.construction__header -->
+
                     <span class="constuction__price">от 1 300р</span>
                     <p class="constuction__description">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Букв ручеек несколько, заманивший большого курсивных, маленькая коварный домах своего океана но все точках всемогущая? Правилами что путь вскоре знаках.</p>
 
@@ -139,9 +157,7 @@
     <div class="container">
       <div class="material">
         <h2 class="section__title">Виды полотна</h2>
-        <p class="hero__description section__description">
-          Наша компания изготавливает москитные сетки и рулонные шторы уже больше 10 лет. Каждая сетка или штора делается строго индивидуально под Ваши окна. В нашем каталоге тысячи цветов и вариаций рисунков для штор, а также, все возможные виды антимоскитного полотна для любой формы москитной сетки.
-        </p>
+
         <div class="material__slider position-relative">
           <div class="swiper swiper--shadow slider-material">
             <div class="swiper-wrapper">
@@ -299,6 +315,10 @@
     </div>
     <!-- /.container -->
   </section>
+
+  <?php include_once('partials/calculator.php'); ?>
+
+  <?php include_once('partials/callback.php'); ?>
 </main>
 
 <?php include_once('partials/footer.php'); ?>

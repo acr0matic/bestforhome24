@@ -51,9 +51,19 @@ const hero = new Swiper('.slider-hero', {
 });
 
 const constuction = new Swiper('.slider-constuction', {
-  slidesPerView: 2,
-  spaceBetween: 20,
+  slidesPerView: 'auto',
+  spaceBetween: 25,
+  autoHeight: true,
 
+  breakpoints: {
+    768: {
+      slidesPerView: 1,
+    },
+
+    996: {
+      slidesPerView: 2,
+    }
+  },
 
   navigation: {
     nextEl: '.slider-constuction__next',
@@ -63,8 +73,20 @@ const constuction = new Swiper('.slider-constuction', {
 
 
 const material = new Swiper('.slider-material', {
-  slidesPerView: 5,
   spaceBetween: 20,
+
+  slidesPerView: 'auto',
+  spaceBetween: 25,
+
+  breakpoints: {
+    996: {
+      slidesPerView: 4,
+    },
+
+    1200: {
+      slidesPerView: 5,
+    },
+  },
 
   navigation: {
     nextEl: '.slider-material__next',
