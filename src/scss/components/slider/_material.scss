@@ -1,7 +1,10 @@
 .slider-material {
   .swiper-slide {
+    display: flex;
+    height: initial;
+
     @include breakpoint($breakpoint-mobile--large) {
-      max-width: 240px;
+      width: 80%;
     }
   }
 }

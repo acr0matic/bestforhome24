@@ -10,6 +10,7 @@
 
   &__item {
     display: flex;
+    align-items: stretch;
 
     padding: 15px;
     border-radius: $border-radius--large;
@@ -23,7 +24,9 @@
   }
 
   &__picture {
-    width: 35%;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 140px;
 
     @include breakpoint($breakpoint-mobile--large) {
       display: none;
@@ -37,9 +40,6 @@
   &__content {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-
-    width: 65%;
 
     padding: 10px 20px;
 
@@ -85,7 +85,7 @@
 
   &__description {
     display: -webkit-box;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
 
@@ -97,15 +97,10 @@
 
   &__action {
     margin-top: auto;
+  }
 
-    @include breakpoint($breakpoint-mobile--large) {
-      margin-top: 15px;
-    }
-
-    .button {
-      // @include breakpoint($breakpoint-mobile--large) {
-      //   margin: 0 auto;
-      // }
-    }
+  &__link {
+    font-size: $text-size--small;
+    color: $text-gray;
   }
 }
