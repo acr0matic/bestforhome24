@@ -180,146 +180,146 @@
 
         <div class="row">
           <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-5">
-            <div class="service__item">
-              <div class="service__picture position-relative">
+            <div class="card">
+              <div class="card__picture position-relative">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
-                <img data-src="img/section/catalog/adjustment.jpg" alt="" class="service__image image image--cover lazy">
+                <img data-src="img/section/catalog/adjustment.jpg" alt="" class="card__image image image--cover lazy">
               </div>
-              <!-- /.service__picture -->
+              <!-- /.card__picture -->
 
-              <div class="service__content">
-                <h3 class="service__title">Регулировка окон</h3>
-                <span class="service__link link link--arrow">Подробнее
+              <div class="card__content">
+                <h3 class="card__title">Регулировка окон</h3>
+                <span class="card__link link link--arrow">Подробнее
                   <svg class="link__arrow svg ms-2" width="13" height="10" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M6.83007 0.139209L9.86053 3.16392C10.0465 3.34953 10.0465 3.65047 9.86053 3.83608L6.83007 6.86079C6.64411 7.0464 6.3426 7.0464 6.15663 6.86079C5.97067 6.67518 5.97067 6.37424 6.15663 6.18863L8.37418 3.97529L0 3.97529L0 3.02471L8.37418 3.02471L6.15663 0.811367C5.97067 0.625755 5.97067 0.32482 6.15663 0.139209C6.3426 -0.0464029 6.64411 -0.0464029 6.83007 0.139209Z" fill="#969696"></path>
                   </svg>
                 </span>
               </div>
-              <!-- /.service__content -->
+              <!-- /.card__content -->
 
               <a class="stretched-link" href=""></a>
             </div>
-            <!-- /.service__item -->
+            <!-- /.card -->
           </div>
           <!-- /.col-4 -->
 
           <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-5">
-            <div class="service__item">
-              <div class="service__picture position-relative">
+            <div class="card">
+              <div class="card__picture position-relative">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
-                <img data-src="img/section/catalog/lock.jpg" alt="" class="service__image image image--cover lazy">
+                <img data-src="img/section/catalog/lock.jpg" alt="" class="card__image image image--cover lazy">
               </div>
-              <!-- /.service__picture -->
+              <!-- /.card__picture -->
 
-              <div class="service__content">
-                <h3 class="service__title">Замки от детей</h3>
-                <span class="service__link link link--arrow">Подробнее
+              <div class="card__content">
+                <h3 class="card__title">Замки от детей</h3>
+                <span class="card__link link link--arrow">Подробнее
                   <svg class="link__arrow svg ms-2" width="13" height="10" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M6.83007 0.139209L9.86053 3.16392C10.0465 3.34953 10.0465 3.65047 9.86053 3.83608L6.83007 6.86079C6.64411 7.0464 6.3426 7.0464 6.15663 6.86079C5.97067 6.67518 5.97067 6.37424 6.15663 6.18863L8.37418 3.97529L0 3.97529L0 3.02471L8.37418 3.02471L6.15663 0.811367C5.97067 0.625755 5.97067 0.32482 6.15663 0.139209C6.3426 -0.0464029 6.64411 -0.0464029 6.83007 0.139209Z" fill="#969696"></path>
                   </svg>
                 </span>
               </div>
-              <!-- /.service__content -->
+              <!-- /.card__content -->
 
               <a class="stretched-link" href=""></a>
             </div>
-            <!-- /.service__item -->
+            <!-- /.card -->
           </div>
           <!-- /.col-4 -->
 
           <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-5">
-            <div class="service__item">
-              <div class="service__picture position-relative">
+            <div class="card">
+              <div class="card__picture position-relative">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
-                <img data-src="img/section/catalog/limiter.jpg" alt="" class="service__image image image--cover lazy">
+                <img data-src="img/section/catalog/limiter.jpg" alt="" class="card__image image image--cover lazy">
               </div>
-              <!-- /.service__picture -->
+              <!-- /.card__picture -->
 
-              <div class="service__content">
-                <h3 class="service__title">Ограничители (гребенки)</h3>
-                <span class="service__link link link--arrow">Подробнее
+              <div class="card__content">
+                <h3 class="card__title">Ограничители (гребенки)</h3>
+                <span class="card__link link link--arrow">Подробнее
                   <svg class="link__arrow svg ms-2" width="13" height="10" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M6.83007 0.139209L9.86053 3.16392C10.0465 3.34953 10.0465 3.65047 9.86053 3.83608L6.83007 6.86079C6.64411 7.0464 6.3426 7.0464 6.15663 6.86079C5.97067 6.67518 5.97067 6.37424 6.15663 6.18863L8.37418 3.97529L0 3.97529L0 3.02471L8.37418 3.02471L6.15663 0.811367C5.97067 0.625755 5.97067 0.32482 6.15663 0.139209C6.3426 -0.0464029 6.64411 -0.0464029 6.83007 0.139209Z" fill="#969696"></path>
                   </svg>
                 </span>
               </div>
-              <!-- /.service__content -->
+              <!-- /.card__content -->
 
               <a class="stretched-link" href=""></a>
             </div>
-            <!-- /.service__item -->
+            <!-- /.card -->
           </div>
           <!-- /.col-4 -->
 
           <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-0">
-            <div class="service__item">
-              <div class="service__picture position-relative">
+            <div class="card">
+              <div class="card__picture position-relative">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
-                <img data-src="img/section/catalog/tinting.jpg" alt="" class="service__image image image--cover lazy">
+                <img data-src="img/section/catalog/tinting.jpg" alt="" class="card__image image image--cover lazy">
               </div>
-              <!-- /.service__picture -->
+              <!-- /.card__picture -->
 
-              <div class="service__content">
-                <h3 class="service__title">Тонировка окон</h3>
-                <span class="service__link link link--arrow">Подробнее
+              <div class="card__content">
+                <h3 class="card__title">Тонировка окон</h3>
+                <span class="card__link link link--arrow">Подробнее
                   <svg class="link__arrow svg ms-2" width="13" height="10" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M6.83007 0.139209L9.86053 3.16392C10.0465 3.34953 10.0465 3.65047 9.86053 3.83608L6.83007 6.86079C6.64411 7.0464 6.3426 7.0464 6.15663 6.86079C5.97067 6.67518 5.97067 6.37424 6.15663 6.18863L8.37418 3.97529L0 3.97529L0 3.02471L8.37418 3.02471L6.15663 0.811367C5.97067 0.625755 5.97067 0.32482 6.15663 0.139209C6.3426 -0.0464029 6.64411 -0.0464029 6.83007 0.139209Z" fill="#969696"></path>
                   </svg>
                 </span>
               </div>
-              <!-- /.service__content -->
+              <!-- /.card__content -->
 
               <a class="stretched-link" href=""></a>
             </div>
-            <!-- /.service__item -->
+            <!-- /.card -->
           </div>
           <!-- /.col-4 -->
 
           <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-0">
-            <div class="service__item">
-              <div class="service__picture position-relative">
+            <div class="card">
+              <div class="card__picture position-relative">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
-                <img data-src="img/section/catalog/compressor.png" alt="" class="service__image image image--cover lazy">
+                <img data-src="img/section/catalog/compressor.png" alt="" class="card__image image image--cover lazy">
               </div>
-              <!-- /.service__picture -->
+              <!-- /.card__picture -->
 
-              <div class="service__content">
-                <h3 class="service__title">Замена уплотнителя</h3>
-                <span class="service__link link link--arrow">Подробнее
+              <div class="card__content">
+                <h3 class="card__title">Замена уплотнителя</h3>
+                <span class="card__link link link--arrow">Подробнее
                   <svg class="link__arrow svg ms-2" width="13" height="10" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M6.83007 0.139209L9.86053 3.16392C10.0465 3.34953 10.0465 3.65047 9.86053 3.83608L6.83007 6.86079C6.64411 7.0464 6.3426 7.0464 6.15663 6.86079C5.97067 6.67518 5.97067 6.37424 6.15663 6.18863L8.37418 3.97529L0 3.97529L0 3.02471L8.37418 3.02471L6.15663 0.811367C5.97067 0.625755 5.97067 0.32482 6.15663 0.139209C6.3426 -0.0464029 6.64411 -0.0464029 6.83007 0.139209Z" fill="#969696"></path>
                   </svg>
                 </span>
               </div>
-              <!-- /.service__content -->
+              <!-- /.card__content -->
 
               <a class="stretched-link" href=""></a>
             </div>
-            <!-- /.service__item -->
+            <!-- /.card -->
           </div>
           <!-- /.col-4 -->
 
           <div class="col-12 col-sm-6 col-lg-4">
-            <div class="service__item">
-              <div class="service__picture position-relative">
+            <div class="card">
+              <div class="card__picture position-relative">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
-                <img data-src="img/section/catalog/limiter.jpg" alt="" class="service__image image image--cover lazy">
+                <img data-src="img/section/catalog/limiter.jpg" alt="" class="card__image image image--cover lazy">
               </div>
-              <!-- /.service__picture -->
+              <!-- /.card__picture -->
 
-              <div class="service__content">
-                <h3 class="service__title">Ограничители (гребенки)</h3>
-                <span class="service__link link link--arrow">Подробнее
+              <div class="card__content">
+                <h3 class="card__title">Ограничители (гребенки)</h3>
+                <span class="card__link link link--arrow">Подробнее
                   <svg class="link__arrow svg ms-2" width="13" height="10" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M6.83007 0.139209L9.86053 3.16392C10.0465 3.34953 10.0465 3.65047 9.86053 3.83608L6.83007 6.86079C6.64411 7.0464 6.3426 7.0464 6.15663 6.86079C5.97067 6.67518 5.97067 6.37424 6.15663 6.18863L8.37418 3.97529L0 3.97529L0 3.02471L8.37418 3.02471L6.15663 0.811367C5.97067 0.625755 5.97067 0.32482 6.15663 0.139209C6.3426 -0.0464029 6.64411 -0.0464029 6.83007 0.139209Z" fill="#969696"></path>
                   </svg>
                 </span>
               </div>
-              <!-- /.service__content -->
+              <!-- /.card__content -->
 
               <a class="stretched-link" href=""></a>
             </div>
-            <!-- /.service__item -->
+            <!-- /.card -->
           </div>
           <!-- /.col-4 -->
         </div>
@@ -492,140 +492,7 @@
     <!-- /.container -->
   </section>
 
-  <section class="section" id="order">
-    <div class="container">
-      <div class="order">
-        <h2 class="section__title">Схема заказа</h2>
-        <p class="section__description">Подробная схема рассказывающая и объясняющая, каким образом происходит заказ и его обработка. Предлагаем Вам с ней ознакомиться, чтобы иметь лучшее представление о том, как работает наша компания.</p>
-
-        <ul class="order__list">
-          <li class="order__item">
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <div class="order__picture position-relative">
-                  <img src="img/misc/preloader.svg" class="preloader" alt="">
-                  <img class="order__image image image--cover lazy" data-src="img/page/main/order/checkout.jpg" alt="">
-                </div>
-                <!-- /.order__picture -->
-              </div>
-              <!-- /.col-6 -->
-
-              <div class="col-12 col-md-6">
-                <div class="order__content">
-                  <h3 class="order__title">Вы выбираете изделие или услугу</h3>
-                  <p class="order__description">На сайте предоставлены калькуляторы по различным услугам. Вы можете заказать услугу или изделие через них или же позвонить нашему менеджеру</p>
-                </div>
-                <!-- /.order-list__content -->
-              </div>
-              <!-- /.col-6 -->
-            </div>
-            <!-- /.row -->
-          </li>
-          <!-- /.order-list__item -->
-
-          <li class="order__item">
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <div class="order__picture position-relative">
-                  <img src="img/misc/preloader.svg" class="preloader" alt="">
-                  <img class="order__image image image--cover lazy" data-src="img/page/main/order/measuring.jpg" alt="">
-                </div>
-                <!-- /.order__picture -->
-              </div>
-              <!-- /.col-6 -->
-
-              <div class="col-12 col-md-6">
-                <div class="order__content">
-                  <h3 class="order__title">К Вам выезжает наш специалист на замер</h3>
-                  <p class="order__description">Мастер-консультант поможет с выбором цветового решения, даст рекомендации по конструкциям изделий и произведет точный замер места установки</p>
-                </div>
-                <!-- /.order-list__content -->
-              </div>
-              <!-- /.col-6 -->
-            </div>
-            <!-- /.row -->
-          </li>
-          <!-- /.order-list__item -->
-
-          <li class="order__item">
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <div class="order__picture position-relative">
-                  <img src="img/misc/preloader.svg" class="preloader" alt="">
-                  <img class="order__image image image--cover lazy" data-src="img/page/main/order/contract.jpg" alt="">
-                </div>
-                <!-- /.order__picture -->
-              </div>
-              <!-- /.col-6 -->
-
-              <div class="col-12 col-md-6">
-                <div class="order__content">
-                  <h3 class="order__title">Мы заключаем с Вами договор</h3>
-                  <p class="order__description">Уточняем детали проекта, вносим в него изменения, если это необходимо и заключаем договор. В нем прописаны условия исполнения заказа, а так же рабочие сроки.</p>
-                </div>
-                <!-- /.order-list__content -->
-              </div>
-              <!-- /.col-6 -->
-            </div>
-            <!-- /.row -->
-          </li>
-          <!-- /.order-list__item -->
-
-          <li class="order__item">
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <div class="order__picture position-relative">
-                  <img src="img/misc/preloader.svg" class="preloader" alt="">
-                  <img class="order__image image image--cover lazy" data-src="img/page/main/order/crafting.jpg" alt="">
-                </div>
-                <!-- /.order__picture -->
-              </div>
-              <!-- /.col-6 -->
-
-              <div class="col-12 col-md-6">
-                <div class="order__content">
-                  <h3 class="order__title">Начинаем изготовление вашего заказа
-                  </h3>
-                  <p class="order__description">На сайте предоставлены калькуляторы по различным услугам. Вы можете заказать услугу или изделие через них или же позвонить нашему менеджеру</p>
-                </div>
-                <!-- /.order-list__content -->
-              </div>
-              <!-- /.col-6 -->
-            </div>
-            <!-- /.row -->
-          </li>
-          <!-- /.order-list__item -->
-
-          <li class="order__item">
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <div class="order__picture position-relative">
-                  <img src="img/misc/preloader.svg" class="preloader" alt="">
-                  <img class="order__image image image--cover lazy" data-src="img/page/main/order/delivery.jpg" alt="">
-                </div>
-                <!-- /.order__picture -->
-              </div>
-              <!-- /.col-6 -->
-
-              <div class="col-12 col-md-6">
-                <div class="order__content">
-                  <h3 class="order__title">Доставка, установка и гарантия</h3>
-                  <p class="order__description">Доставка и монтаж изделия не включаются в сумму заказа. Цену доставки за пределы города и в другие города, уточняйте у менеджеров нашего салона.</p>
-                </div>
-                <!-- /.order-list__content -->
-              </div>
-              <!-- /.col-6 -->
-            </div>
-            <!-- /.row -->
-          </li>
-          <!-- /.order-list__item -->
-        </ul>
-        <!-- /.order-scheme__list -->
-      </div>
-      <!-- /.order -->
-    </div>
-    <!-- /.container -->
-  </section>
+  <?php include_once('partials/order.php'); ?>
 
   <section class="section" id="useful">
     <div class="container">

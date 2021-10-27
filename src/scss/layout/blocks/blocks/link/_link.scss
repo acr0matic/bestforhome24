@@ -11,6 +11,8 @@ $link__hover: $palette-yellow;
   }
 
   &--nav {
+    cursor: pointer;
+
     @media (hover: hover) {
       &:hover {
         color: $link__hover;
