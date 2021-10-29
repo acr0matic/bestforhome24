@@ -1,0 +1,23 @@
+.showcase-advantage {
+  display: flex;
+  align-items: flex-start;
+
+  &__icon {
+    width: 48px;
+    height: 48px;
+
+    margin-right: 20px;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+
+    font-weight: $weight-Medium;
+    font-size: $text-size--large;
+  }
+
+  &__description {
+    font-size: $text-size--small;
+    line-height: 160%;
+  }
+}
