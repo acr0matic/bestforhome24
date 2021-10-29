@@ -509,6 +509,7 @@
         <!-- /.section__header -->
 
         <div class="slider">
+
           <div class="swiper swiper--shadow slider-useful">
             <div class="swiper-wrapper">
               <div class="swiper-slide">

@@ -1,0 +1,7 @@
+.slider-portfolio {
+  .swiper-slide {
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 80%;
+    }
+  }
+}

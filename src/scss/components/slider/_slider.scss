@@ -12,6 +12,22 @@
     padding: 15px;
   }
 
+  &--mobile {
+    .swiper-wrapper {
+      @include breakpoint($breakpoint-mobile--large) {
+        flex-wrap: nowrap;
+        margin: 0;
+      }
+    }
+
+    .swiper-slide {
+      @include breakpoint($breakpoint-mobile--large) {
+        width: 100%;
+        padding: 0;
+      }
+    }
+  }
+
   &-pagination {
     position: static;
     margin-top: 10px;

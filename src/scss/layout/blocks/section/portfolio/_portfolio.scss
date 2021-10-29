@@ -1,0 +1,10 @@
+#portfolio {
+  .portfolio {
+    &__picture {
+      height: 200px;
+      overflow: hidden;
+
+      border-radius: $border-radius--medium;
+    }
+  }
+}

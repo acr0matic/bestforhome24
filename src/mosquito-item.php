@@ -153,7 +153,6 @@
       <div class="compatibility">
         <h2 class="section__title">Какое полотно подходит</h2>
 
-
         <div class="material__slider position-relative">
           <div class="swiper swiper--shadow slider-material">
             <div class="swiper-wrapper">
@@ -379,6 +378,63 @@
   </section>
 
   <?php include_once('partials/calculator.php'); ?>
+
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="portfolio">
+        <h2 class="section__title">Наши работы</h2>
+        <p class="section__description">Подробная схема рассказывающая и объясняющая, каким образом происходит заказ и его обработка. Предлагаем Вам с ней ознакомиться, чтобы иметь лучшее представление о том, как работает наша компания.</p>
+
+        <div class="slider">
+          <div class="swiper swiper--mobile slider-portfolio">
+            <div class="swiper-wrapper row">
+              <div class="swiper-slide col-3">
+                <div class="portfolio__picture position-relative">
+                  <img src="img/misc/preloader.svg" class="preloader" alt="">
+                  <img data-src="img/portfolio/1.jpg" alt="" class="portfolio__image image image--cover lazy">
+                </div>
+                <!-- /.portfolio__picture -->
+              </div>
+              <!-- /.swiper-slide col-3 -->
+
+              <div class="swiper-slide col-3">
+                <div class="portfolio__picture position-relative">
+                  <img src="img/misc/preloader.svg" class="preloader" alt="">
+                  <img data-src="img/portfolio/2.jpg" alt="" class="portfolio__image image image--cover lazy">
+                </div>
+                <!-- /.portfolio__picture -->
+              </div>
+              <!-- /.swiper-slide col-3 -->
+
+
+              <div class="swiper-slide col-3">
+                <div class="portfolio__picture position-relative">
+                  <img src="img/misc/preloader.svg" class="preloader" alt="">
+                  <img data-src="img/portfolio/3.jpg" alt="" class="portfolio__image image image--cover lazy">
+                </div>
+                <!-- /.portfolio__picture -->
+              </div>
+              <!-- /.swiper-slide col-3 -->
+
+              <div class="swiper-slide col-3">
+                <div class="portfolio__picture position-relative">
+                  <img src="img/misc/preloader.svg" class="preloader" alt="">
+                  <img data-src="img/portfolio/4.jpg" alt="" class="portfolio__image image image--cover lazy">
+                </div>
+                <!-- /.portfolio__picture -->
+              </div>
+              <!-- /.swiper-slide col-3 -->
+            </div>
+            <!-- /.swiper-wrapper -->
+          </div>
+          <!-- /.swiper swiper--mobile -->
+        </div>
+        <!-- /.slider -->
+      </div>
+      <!-- /.portfolio -->
+    </div>
+    <!-- /.container -->
+  </section>
 
   <?php include_once('partials/order.php'); ?>
 

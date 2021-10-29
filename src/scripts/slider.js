@@ -96,9 +96,16 @@ const gallery = new Swiper('.slider-gallery', {
   slidesPerView: 1,
   spaceBetween: 10,
   grabCursor: true,
-  loop:  true,
+  loop: true,
 
   autoplay: {
     delay: 3000,
   },
 });
+
+if (window.matchMedia('(max-width: 576px)').matches) {
+  const portfolio = new Swiper('.slider-portfolio', {
+    slidesPerView: 'auto',
+    spaceBetween: 25,
+  });
+}
