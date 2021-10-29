@@ -1,9 +1,12 @@
 #blog {
   padding-top: 30px;
+
+  @include breakpoint($breakpoint-mobile--large) {
+    padding-top: 15px;
+  }
 }
 
 .blog {
   &__card {
-
   }
 }
