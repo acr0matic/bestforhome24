@@ -15,7 +15,7 @@
             <nav class="nav nav--section">
               <ul class="nav__list">
                 <li class="nav__item">
-                  <a class="nav__link link link--nav link--arrow" href="">
+                  <a class="nav__link link link--nav link--arrow" href="#calculator">
                     Перейти к калькулятору
                     <svg class="link__arrow svg ms-2" width="13" height="10" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M6.83007 0.139209L9.86053 3.16392C10.0465 3.34953 10.0465 3.65047 9.86053 3.83608L6.83007 6.86079C6.64411 7.0464 6.3426 7.0464 6.15663 6.86079C5.97067 6.67518 5.97067 6.37424 6.15663 6.18863L8.37418 3.97529L0 3.97529L0 3.02471L8.37418 3.02471L6.15663 0.811367C5.97067 0.625755 5.97067 0.32482 6.15663 0.139209C6.3426 -0.0464029 6.64411 -0.0464029 6.83007 0.139209Z" fill="#969696"></path>

@@ -16,8 +16,7 @@ tippy('[data-tippy-content]', {
 const accordion = document.querySelectorAll('.handorgel')
 _.forEach(accordion, (item) => new handorgel(item));
 
-pv.init({
-  block: {
-    speed: 5,
-  },
+new SmoothScroll('a[href*="#"]', {
+  speed: 500,
+  speedAsDuration: true,
 });

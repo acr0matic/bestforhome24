@@ -227,6 +227,7 @@
 <script src="scripts/libraries/forms.js"></script>
 <script src="scripts/libraries/handorgel.min.js"></script>
 <script src="scripts/libraries/fslightbox.js"></script>
+<script src="scripts/libraries/smoothScroll.js"></script>
 
 <script src="scripts/init.js"></script>
 <script src="scripts/lazyload.js"></script>
