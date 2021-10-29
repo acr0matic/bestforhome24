@@ -73,8 +73,6 @@ const constuction = new Swiper('.slider-constuction', {
 
 
 const material = new Swiper('.slider-material', {
-  spaceBetween: 20,
-
   slidesPerView: 'auto',
   spaceBetween: 25,
 
@@ -91,5 +89,16 @@ const material = new Swiper('.slider-material', {
   navigation: {
     nextEl: '.slider-material__next',
     prevEl: '.slider-material__prev',
+  },
+});
+
+const gallery = new Swiper('.slider-gallery', {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  grabCursor: true,
+  loop:  true,
+
+  autoplay: {
+    delay: 3000,
   },
 });

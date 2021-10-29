@@ -92,16 +92,6 @@
     <!-- /.container -->
   </section>
 
-  <script data-b24-form="click/1/cx2vzw" data-skip-moving="true">
-    (function(w, d, u) {
-      var s = d.createElement('script');
-      s.async = true;
-      s.src = u + '?' + (Date.now() / 180000 | 0);
-      var h = d.getElementsByTagName('script')[0];
-      h.parentNode.insertBefore(s, h);
-    })(window, document, 'https://cdn-ru.bitrix24.ru/b11724294/crm/form/loader_1.js');
-  </script>
-
   <?php include_once('partials/callback.php'); ?>
 </main>
 

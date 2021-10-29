@@ -1,0 +1,29 @@
+#showcase {
+  padding-top: 30px;
+}
+
+.showcase {
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__picture {
+    width: 100%;
+    height: 358px;
+
+    overflow: hidden;
+    border-radius: $border-radius--medium;
+  }
+
+  &__description {
+    height: 235px;
+    overflow: auto;
+  }
+
+  &__action {
+    display: flex;
+    align-items: center;
+
+    margin-top: 20px;
+  }
+}
