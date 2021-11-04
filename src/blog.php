@@ -29,7 +29,7 @@
           <!-- /.col-3 -->
 
           <div class="col-12 col-md-8">
-            <div class="blog__card blog-card mb-4 mb-md-0">
+            <div class="blog__card blog-card mb-4">
               <div class="blog-card__picture">
                 <img src="img/page/main/useful/1.jpg" alt="" class="blog-card__image image image--cover">
               </div>
@@ -47,7 +47,7 @@
             </div>
             <!-- /.blog__card blog-card -->
 
-            <div class="blog__card blog-card mb-4 mb-md-0">
+            <div class="blog__card blog-card mb-4">
               <div class="blog-card__picture">
                 <img src="img/page/main/useful/1.jpg" alt="" class="blog-card__image image image--cover">
               </div>
@@ -65,7 +65,7 @@
             </div>
             <!-- /.blog__card blog-card -->
 
-            <div class="blog__card blog-card mb-4 mb-md-0">
+            <div class="blog__card blog-card">
               <div class="blog-card__picture">
                 <img src="img/page/main/useful/1.jpg" alt="" class="blog-card__image image image--cover">
               </div>

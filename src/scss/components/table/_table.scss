@@ -1,0 +1,42 @@
+.table {
+  width: 100%;
+
+  &--calculator {
+    tbody {
+      td {
+        @include first-child() {
+          width: 50%;
+          font-weight: $weight-Medium;
+        }
+
+        &:nth-child(2) {
+          width: 30%;
+        }
+
+        @include last-child() {
+          width: 20%;
+        }
+      }
+    }
+  }
+
+  th {
+    text-align: left;
+    font-weight: $weight-Bold;
+  }
+
+  td,
+  th {
+    padding: 8px 12px;
+  }
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr,
+th,
+td {
+  border: $table-border;
+}

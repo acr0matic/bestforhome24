@@ -5,7 +5,6 @@ const modalParams = {
 
 MicroModal.init(modalParams);
 
-
 tippy('[data-tippy-content]', {
   placement: 'right',
   allowHTML: true,
@@ -16,7 +15,7 @@ tippy('[data-tippy-content]', {
 const accordion = document.querySelectorAll('.handorgel')
 _.forEach(accordion, (item) => new handorgel(item));
 
-new SmoothScroll('a[href*="#"]', {
+const scrollController = new SmoothScroll('a[href*="#"]', {
   speed: 500,
   speedAsDuration: true,
 });

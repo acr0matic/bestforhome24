@@ -103,6 +103,50 @@ const gallery = new Swiper('.slider-gallery', {
   },
 });
 
+const calculator = new Swiper('.slider-calculator', {
+  slidesPerView: 1,
+  spaceBetween: 25,
+  autoHeight: true,
+  allowTouchMove: false,
+  speed: 500,
+
+  on: {
+    init: (slider) => {
+      const container = slider.el.parentNode;
+      const prevButton = container.querySelector('.calculator__prev');
+      const nextButton = container.querySelector('.calculator__next');
+
+      prevButton.addEventListener('click', () => {
+        slider.slidePrev();
+        ChangeState();
+      });
+
+      nextButton.addEventListener('click', () => {
+        slider.slideNext();
+        ChangeState();
+      });
+
+      const ChangeState = () => {
+        if (slider.isEnd) {
+          Disable(nextButton);
+          Enable(prevButton);
+        }
+
+        else {
+          Disable(prevButton);
+          Enable(nextButton);
+        }
+
+        // Глобальная переменная "calculator" в скрипте main.js
+        scrollController.animateScroll(Calculator);
+      }
+
+      const Disable = (element) => element.setAttribute('disabled', 'disabled')
+      const Enable = (element) => element.removeAttribute('disabled');
+    }
+  }
+});
+
 if (window.matchMedia('(max-width: 576px)').matches) {
   const portfolio = new Swiper('.slider-portfolio', {
     slidesPerView: 'auto',

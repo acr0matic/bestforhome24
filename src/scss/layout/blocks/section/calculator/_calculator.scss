@@ -20,9 +20,46 @@
 
   &__body {
     padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #f3f3f3;
+  }
+
+  &__footer {
+    padding-top: 25px;
+  }
+
+  &__slider {
+    padding: 2px;
+  }
+
+  &__control {
+    display: flex;
+    align-items: center;
+  }
+
+  &__info {
+    color: $text-gray;
+    font-size: $text-size--small;
+
+    line-height: 160%;
+  }
+
+  &__prev {
+    margin-left: auto;
+  }
+
+  &__next {
   }
 
   &__wrapper {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__additional {
+    display: flex;
+    align-items: center;
   }
 
   &__border {
