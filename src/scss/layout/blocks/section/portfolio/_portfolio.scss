@@ -1,10 +1,99 @@
 #portfolio {
+  padding-top: 15px;
+
+  @include breakpoint($breakpoint-mobile--large) {
+    padding-top: 10px;
+  }
+
   .portfolio {
-    &__picture {
-      height: 200px;
-      overflow: hidden;
+    &__menu {
+      position: sticky;
+      top: 125px;
+      left: 0;
+
+      width: 100%;
+      height: 465px;
 
       border-radius: $border-radius--medium;
+      padding: 10px 10px 10px 0;
+
+      box-shadow: $shadow-primary;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        height: 215px;
+      }
+    }
+
+    &__category,
+    &__list {
+      padding: 10px 15px 5px 15px;
+
+    }
+
+    &__category,
+    &__subcategory {
+      cursor: pointer;
+      transition: $transition__text;
+
+      @media (hover: hover) {
+        &:hover {
+          color: $text-yellow;
+        }
+      }
+    }
+
+    &__category {
+      font-size: 18px;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        font-size: $text-size--medium;
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #f3f3f3;
+      }
+    }
+
+    &__subcategory {
+      color: $text-gray;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        font-size: $text-size--small;
+      }
+    }
+
+    &__wrapper {
+      max-height: 100%;
+      overflow: auto;
+
+      padding-right: 10px;
+    }
+
+    &__highlight {
+      color: $text-yellow;
+    }
+
+    &__picture {
+      height: 230px;
+
+      border-radius: $border-radius--medium;
+      overflow: hidden;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        height: 110px;
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          img {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+
+    &__image {
+      transition: $transition__image;
     }
   }
 }
