@@ -6,7 +6,7 @@
       <div class="showcase__row">
         <div class="container">
           <div class="row">
-            <div class="col-5">
+            <div class="col-12 col-md-5 mb-3 mb-md-0">
               <div class="slider">
                 <div class="swiper slider-gallery">
                   <div class="swiper-wrapper">
@@ -34,7 +34,7 @@
             </div>
             <!-- /.col-6 -->
 
-            <div class="col-7 p-3">
+            <div class="col-12 col-md-7 p-3">
               <h1 class="showcase__title section__title page__title"><span>РАМОЧНЫЕ</span> МОСКИТНЫЕ СЕТКИ</h1>
               <p class="showcase__description custom-scrollbar">
                 Рамочная москитная сетка — удобная в эксплуатации конструкция. Мы делаем рамочные москитные сетки на окна любых размеров. В «Оконном сервисе» можно заказать «москитку» в рамке на комнатные оконные рамы, на балкон, эркер и другие.
@@ -43,7 +43,7 @@
               </p>
 
               <div class="showcase__action">
-                <button data-micromodal-trigger="modal-callback" class="button button-outline me-3">Заказать</button>
+                <button data-micromodal-trigger="modal-callback" class="button button-outline me-md-3 mb-2 mb-md-0">Заказать</button>
                 <button class="button button-primary">Калькулятор</button>
               </div>
               <!-- /.showcase__action -->
@@ -59,7 +59,7 @@
       <div class="showcase__row showcase__row--secondary">
         <div class="container">
           <div class="row">
-            <div class="col-4">
+            <div class="col-12 col-md-4">
               <div class="showcase__advantage showcase-advantage">
                 <img class="showcase-advantage__icon" src="img/icons/icon.svg" alt="">
 
@@ -75,7 +75,7 @@
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-4">
+            <div class="col-12 col-md-4 mt-4 mt-md-0">
               <div class="showcase__advantage showcase-advantage">
                 <img class="showcase-advantage__icon" src="img/icons/icon.svg" alt="">
 
@@ -91,7 +91,7 @@
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-4">
+            <div class="col-12 col-md-4 mt-4 mt-md-0">
               <div class="showcase__advantage showcase-advantage">
                 <img class="showcase-advantage__icon" src="img/icons/icon.svg" alt="">
 
@@ -107,7 +107,7 @@
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-4 mt-5">
+            <div class="col-12 col-md-4 mt-4 mt-md-5">
               <div class="showcase__advantage showcase-advantage">
                 <img class="showcase-advantage__icon" src="img/icons/icon.svg" alt="">
 
@@ -123,7 +123,7 @@
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-4 mt-5">
+            <div class="col-12 col-md-4 mt-4 mt-md-5">
               <div class="showcase__advantage showcase-advantage">
                 <img class="showcase-advantage__icon" src="img/icons/icon.svg" alt="">
 
