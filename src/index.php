@@ -5,7 +5,7 @@
   <section id="hero" class="section">
     <div class="container">
       <div class="hero">
-        <div class="row position-relative">
+        <div class="row position-relative align-items-center">
           <div class="col-12 col-md-6">
             <div class="hero__content">
               <h1 class="hero__title page__title section__title">
@@ -23,6 +23,12 @@
                 </ul>
               </div>
               <!-- /.hero__advantages -->
+
+              <div class="hero__action">
+                <button class="button button-primary me-md-3 mb-3 mb-md-0">Калькулятор</button>
+                <button data-micromodal-trigger="modal-callback" class="button button-outline">Вызвать замерщика</button>
+              </div>
+              <!-- /.hero__action -->
             </div>
             <!-- /.hero__content -->
           </div>
@@ -367,7 +373,7 @@
 
               <div class="input mb-4 pb-1">
                 <label class="checkbox">
-                  <input type="checkbox">
+                  <input type="checkbox" class="checkbox__privacy">
                   <span class="checkbox__mark"></span>
                   <span class="checkbox__label">Я согласен на обработку моих персональных данных. <br> <a href="policy.html" class="checkbox__policy">Открыть политику конфиденциальности</a></span>
                 </label>

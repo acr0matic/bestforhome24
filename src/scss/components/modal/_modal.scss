@@ -122,12 +122,30 @@
     }
   }
 
+  @keyframes mmslideInMobile {
+    from {
+      transform: translateY(30%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
   @keyframes mmslideOut {
     from {
       transform: translateY(0);
     }
     to {
       transform: translateY(-10%);
+    }
+  }
+
+  @keyframes mmslideOutMobile {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(30%);
     }
   }
 }
@@ -146,6 +164,10 @@
 
 .micromodal-slide[aria-hidden="false"] .modal__container {
   animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+
+  @include breakpoint($breakpoint-mobile--large) {
+    animation: mmslideInMobile 0.3s cubic-bezier(0, 0, 0.2, 1);
+  }
 }
 
 .micromodal-slide[aria-hidden="true"] .modal__overlay {
@@ -154,6 +176,10 @@
 
 .micromodal-slide[aria-hidden="true"] .modal__container {
   animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+
+  @include breakpoint($breakpoint-mobile--large) {
+    animation: mmslideOutMobile 0.3s cubic-bezier(0, 0, 0.2, 1);
+  }
 }
 
 .micromodal-slide .modal__container,
