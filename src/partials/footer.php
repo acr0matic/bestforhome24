@@ -235,6 +235,7 @@
 <script src="scripts/calculator.js"></script>
 <script src="scripts/forms.js"></script>
 <script src="scripts/main.js"></script>
+<script src="scripts/mobile.js"></script>
 <!-- endbuild -->
 </body>
 

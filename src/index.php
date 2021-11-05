@@ -33,32 +33,36 @@
               <div class="swiper slider-hero">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <div class="hero__picture">
-                      <img class="hero__image image image--cover" src="img/page/main/hero/1.jpg" alt="">
+                    <div class="hero__picture position-relative">
+                      <img src="img/misc/preloader.svg" class="preloader" alt="">
+                      <img class="hero__image image image--cover lazy" data-src="img/page/main/hero/1.jpg" alt="">
                     </div>
                     <!-- /.hero__picture -->
                   </div>
                   <!-- /.swiper-slide -->
 
                   <div class="swiper-slide">
-                    <div class="hero__picture">
-                      <img class="hero__image image image--cover" src="img/page/main/hero/2.jpg" alt="">
+                    <div class="hero__picture position-relative">
+                      <img src="img/misc/preloader.svg" class="preloader" alt="">
+                      <img class="hero__image image image--cover lazy" data-src="img/page/main/hero/2.jpg" alt="">
                     </div>
                     <!-- /.hero__picture -->
                   </div>
                   <!-- /.swiper-slide -->
 
                   <div class="swiper-slide">
-                    <div class="hero__picture">
-                      <img class="hero__image image image--cover" src="img/page/main/hero/3.jpg" alt="">
+                    <div class="hero__picture position-relative">
+                      <img src="img/misc/preloader.svg" class="preloader" alt="">
+                      <img class="hero__image image image--cover lazy" data-src="img/page/main/hero/3.jpg" alt="">
                     </div>
                     <!-- /.hero__picture -->
                   </div>
                   <!-- /.swiper-slide -->
 
                   <div class="swiper-slide">
-                    <div class="hero__picture">
-                      <img class="hero__image image image--cover" src="img/page/main/hero/4.jpg" alt="">
+                    <div class="hero__picture position-relative">
+                      <img src="img/misc/preloader.svg" class="preloader" alt="">
+                      <img class="hero__image image image--cover lazy" data-src="img/page/main/hero/4.jpg" alt="">
                     </div>
                     <!-- /.hero__picture -->
                   </div>

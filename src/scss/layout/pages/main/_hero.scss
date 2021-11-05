@@ -35,6 +35,10 @@
   .hero {
     &__content {
       padding: 45px 0;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        padding: 20px 0 45px 0;
+      }
     }
 
     &__title {
@@ -57,7 +61,7 @@
       height: 100%;
 
       @include breakpoint($breakpoint-mobile--large) {
-        display: none;
+        margin: 15px 0;
       }
     }
 

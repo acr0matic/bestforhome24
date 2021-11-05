@@ -7,6 +7,10 @@
   }
 
   @include breakpoint($breakpoint-mobile--large) {
-    height: 150px;
+    height: 210px;
+  }
+
+    @include breakpoint($breakpoint-mobile--medium) {
+    height: 180px;
   }
 }
