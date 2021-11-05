@@ -196,7 +196,7 @@
 
           <div class="input mb-4 pb-1">
             <label class="checkbox">
-              <input type="checkbox">
+              <input type="checkbox" class="checkbox__privacy">
               <span class="checkbox__mark"></span>
               <span class="checkbox__label">Я согласен на обработку моих персональных данных. <br> <a href="policy.html" class="checkbox__policy">Открыть политику конфиденциальности</a></span>
             </label>

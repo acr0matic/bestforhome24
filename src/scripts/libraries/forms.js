@@ -9,7 +9,7 @@ class Form {
     this.action = form.getAttribute('action');
     this.redirect = form.getAttribute('data-redirect');
 
-    this.privacy = form.querySelector('input[type=checkbox]');
+    this.privacy = form.querySelector('input[class=checkbox__privacy]');
     this.submit = form.querySelector('button[type=submit]');
     this.fields = form.querySelectorAll('.input__field');
     this.required = form.querySelectorAll('[data-required]');

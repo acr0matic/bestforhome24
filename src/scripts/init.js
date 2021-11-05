@@ -6,7 +6,6 @@ const modalParams = {
 MicroModal.init(modalParams);
 
 tippy('[data-tippy-content]', {
-  placement: 'right',
   allowHTML: true,
   maxWidth: 300,
   theme: 'flat',

@@ -1,4 +1,6 @@
 #calculator {
+  overflow-x: hidden;
+
   margin-top: -120px;
   padding-top: 120px;
 
@@ -12,6 +14,17 @@
   padding: 45px;
   border-radius: $border-radius--large;
   box-shadow: $shadow-primary;
+
+  @include breakpoint($breakpoint-mobile--large) {
+    padding: 15px;
+    border-radius: $border-radius--medium;
+  }
+
+  .form__button {
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 100%;
+    }
+  }
 
   &__header {
     border-bottom: 2px solid #f3f3f3;
@@ -35,6 +48,14 @@
   &__control {
     display: flex;
     align-items: center;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      flex-direction: column-reverse;
+
+      .button {
+        width: 100%;
+      }
+    }
   }
 
   &__info {
@@ -42,6 +63,14 @@
     font-size: $text-size--small;
 
     line-height: 160%;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: 12px;
+
+      br {
+        display: none;
+      }
+    }
   }
 
   &__prev {
@@ -78,6 +107,10 @@
 
     font-weight: $weight-Regular;
     font-size: $text-size--large;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: $text-size--medium;
+    }
   }
 
   &__link {
@@ -87,6 +120,10 @@
 
   &__preview {
     margin: 20px auto 0 auto;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      display: none;
+    }
   }
 
   &__group {
@@ -94,10 +131,18 @@
     margin-top: -10px;
 
     color: $text-gray;
+    overflow: auto;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      padding-bottom: 10px;
+    }
   }
 
   &__value {
     position: relative;
+
+    flex-shrink: 0;
+
     text-overflow: ellipsis;
     overflow: hidden;
 
@@ -139,6 +184,11 @@
       img {
         width: 100px;
         height: 100px;
+
+        @include breakpoint($breakpoint-mobile--large) {
+          width: 70px;
+          height: 70px;
+        }
       }
     }
 
@@ -162,11 +212,19 @@
   &__color {
     width: 60px;
 
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 45px;
+    }
+
     &::after {
       content: "";
       display: block;
       width: 100%;
       height: 60px;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        height: 45px;
+      }
     }
 
     &--white::after {

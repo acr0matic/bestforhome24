@@ -9,6 +9,10 @@
     font-size: $text-size--medium;
     transition: $transition__component;
 
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: $text-size--small;
+    }
+
     &::after {
       content: url("../img/icons/control/arrow__dropdown.svg");
       position: absolute;

@@ -8,7 +8,7 @@
           <div class="swiper-slide">
             <div class="calculator__header">
               <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-md-6 mb-4 mb-md-0">
                   <div class="calculator__wrapper">
                     <h3 class="calculator__title">
                       Категория услуги
@@ -28,7 +28,7 @@
                 </div>
                 <!-- /.col-6 -->
 
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <div class="calculator__wrapper">
                     <h3 class="calculator__title">
                       Вид услуги
@@ -56,7 +56,7 @@
 
             <div class="calculator__body">
               <div class="row">
-                <div class="col-xl-4 pe-4 calculator__border">
+                <div class="col-xl-4 pe-4 mb-4 mb-md-0 calculator__border">
                   <div class="calculator__wrapper">
                     <h3 class="calculator__title">
                       Конструкция
@@ -111,12 +111,12 @@
                 </div>
                 <!-- /.col-6 -->
 
-                <div class="col-xl-8 ps-4">
-                  <div class="row mb-5">
-                    <div class="col-5">
+                <div class="col-xl-8 ps-md-4">
+                  <div class="row mb-4 mb-md-5">
+                    <div class="col-6 col-md-5">
                       <div class="calculator__wrapper">
                         <h3 class="calculator__title">Цвет</h3>
-                        <div class="calculator__group">
+                        <div class="calculator__group custom-scrollbar">
                           <label class="calculator__value calculator__color calculator__color--white">
                             Белый
                             <input type="radio" name="color" checked>
@@ -132,16 +132,16 @@
                             <input type="radio" name="color">
                           </label>
                         </div>
-                        <!-- /.calculator__group -->
+                        <!-- /.calculator__group custom-scrollbar -->
                       </div>
                       <!-- /.calculator__wrapper -->
                     </div>
                     <!-- /.col-6 -->
 
-                    <div class="col-7">
+                    <div class="col-6 col-md-7">
                       <div class="calculator__wrapper">
                         <h3 class="calculator__title">Крепежи</h3>
-                        <div class="calculator__group">
+                        <div class="calculator__group custom-scrollbar">
                           <label class="calculator__value calculator__value--image calculator__handle">
                             Пластик
                             <input type="radio" name="fasteners" checked>
@@ -160,7 +160,7 @@
                             <img class=" calculator__image" src="img/section/calculator/fasteners/plunger-fasteners.jpg" alt="">
                           </label>
                         </div>
-                        <!-- /.calculator__group -->
+                        <!-- /.calculator__group custom-scrollbar -->
                       </div>
                       <!-- /.calculator__wrapper -->
                     </div>
@@ -169,10 +169,10 @@
                   <!-- /.row -->
 
                   <div class="row">
-                    <div class="col-5">
+                    <div class="col-6 col-md-5">
                       <div class="calculator__wrapper">
                         <h3 class="calculator__title">Ручки</h3>
-                        <div class="calculator__group">
+                        <div class="calculator__group custom-scrollbar">
                           <label class="calculator__value calculator__value--image calculator__corner">
                             Пластик
                             <input type="radio" name="handle" checked>
@@ -185,16 +185,16 @@
                             <img class=" calculator__image" src="img/section/calculator/corner/corner-metal.jpg" alt="">
                           </label>
                         </div>
-                        <!-- /.calculator__group -->
+                        <!-- /.calculator__group custom-scrollbar -->
                       </div>
                       <!-- /.calculator__wrapper -->
                     </div>
                     <!-- /.col-6 -->
 
-                    <div class="col-7">
+                    <div class="col-6 col-md-7">
                       <div class="calculator__wrapper">
                         <h3 class="calculator__title">Углы</h3>
-                        <div class="calculator__group">
+                        <div class="calculator__group custom-scrollbar">
                           <label class="calculator__value calculator__value--image calculator__fasteners">
                             Пластик
                             <input type="radio" name="corner" checked>
@@ -207,7 +207,7 @@
                             <img class="calculator__image" src="img/section/calculator/handle/handle-metal.jpg" alt="">
                           </label>
                         </div>
-                        <!-- /.calculator__group -->
+                        <!-- /.calculator__group custom-scrollbar -->
                       </div>
                       <!-- /.calculator__wrapper -->
                     </div>
@@ -226,7 +226,7 @@
           <div class="swiper-slide">
             <div class="calculator__body pt-0">
               <div class="row">
-                <div class="col-6">
+                <div class="col-12 mb-4 mb-md-0 col-md-6">
                   <div class="calculator__wrapper">
                     <h3 class="calculator__title">
                       Сводка
@@ -289,7 +289,7 @@
                 </div>
                 <!-- /.col-6 -->
 
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <div class="calculator__wrapper">
                     <h3 class="calculator__title">
                       Дополнительные услуги
@@ -339,14 +339,14 @@
 
                     <div class="input mb-4 pb-1">
                       <label class="checkbox">
-                        <input type="checkbox">
+                        <input type="checkbox" class="checkbox__privacy">
                         <span class="checkbox__mark"></span>
                         <span class="checkbox__label">Я согласен на обработку моих персональных данных. <br> <a href="policy.html" class="checkbox__policy">Открыть политику конфиденциальности</a></span>
                       </label>
                     </div>
                     <!-- /.input -->
 
-                    <button data-sending="Отправка..." class="form__button button button-primary ms-auto" type="submit">Отправить</button>
+                    <button data-sending="Отправка..." class="form__button button button-primary ms-auto" type="submit">Отправить заявку</button>
                   </div>
                   <!-- /.calculator__wrapper -->
                 </div>
@@ -363,8 +363,8 @@
       <!-- /.swiper slider-calculator -->
 
       <div class="calculator__footer">
-        <div class="row align-items-center m-0">
-          <div class="col-6">
+        <div class="row align-items-center m-0 flex-column-reverse flex-md-row">
+          <div class="col-12 col-md-6 px-0">
             <p class="calculator__info">
               Cтоимость указанная в калькуляторе не является публичной офертой.
               <br>
@@ -373,10 +373,10 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-5 offset-1 pe-0">
+          <div class="col-12 col-md-5 offset-md-1 px-0 mb-4 mb-md-0">
             <div class="calculator__control">
               <button type="button" class="calculator__prev button button-primary" disabled>Назад</button>
-              <button type="button" class="calculator__next button button-primary ms-3">Далее</button>
+              <button type="button" class="calculator__next button button-primary mb-3 mb-md-0 ms-md-3">Далее</button>
             </div>
             <!-- /.calculator__control -->
           </div>
