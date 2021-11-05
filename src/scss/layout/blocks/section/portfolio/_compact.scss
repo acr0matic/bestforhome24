@@ -1,3 +1,22 @@
 #portfolio-compact {
+ .portfolio {
+    &__picture {
+      height: 230px;
 
+      border-radius: $border-radius--medium;
+      overflow: hidden;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        height: 110px;
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          img {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+  }
 }
