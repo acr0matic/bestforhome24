@@ -4,7 +4,66 @@
 // -----------------------------------------------------------------------------
 
 .handorgel {
+  &--block {
+    border: none;
+    box-shadow: $shadow-primary;
+    border-radius: $border-radius--large;
+
+    .handorgel__header__button {
+      justify-content: space-between;
+
+      border: none;
+      border-radius: $border-radius--medium;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        padding: 10px 20px;
+      }
+    }
+
+    .handorgel__header__text {
+      padding-right: 25px;
+      line-height: 180%;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        font-size: $text-size--medium;
+        line-height: 160%;
+      }
+    }
+
+    .handorgel__content__inner {
+      border-top: $border-primary;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        padding: 10px 20px;
+      }
+    }
+
+    .handorgel__indicator {
+      margin-left: auto;
+    }
+
+    .handorgel__arrow {
+      width: 16px;
+    }
+
+    .handorgel__content {
+      background-color: $section-primary;
+      border-radius: $border-radius--large;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        font-size: $text-size--small;
+        line-height: 180%;
+      }
+    }
+  }
+
   &__header {
+    &--focus {
+      .handorgel__header__button {
+        background-color: $section-primary;
+      }
+    }
+
     &--open {
       .handorgel__header__button {
         background-color: $section-primary;
@@ -32,6 +91,10 @@
 
   &__content {
     border: none;
+  }
+
+  &__indicator {
+    transition: $transition__icon;
   }
 
   &__arrow {
@@ -69,8 +132,6 @@
 
     .handorgel__indicator {
       margin-left: 10px;
-
-      transition: $transition__icon;
     }
 
     .handorgel__header--active .handorgel__icon path,

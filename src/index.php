@@ -753,6 +753,8 @@
     <!-- /.container -->
   </section>
 
+  <?php include_once('partials/faq.php'); ?>
+
   <?php include_once('partials/callback.php'); ?>
 </main>
 
