@@ -1,0 +1,29 @@
+#textblock {
+}
+
+.textblock {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 90px;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        margin-bottom: 65px;
+      }
+    }
+  }
+
+  &__title {
+  }
+
+  &__picture {
+    height: 320px;
+    overflow: hidden;
+
+    border-radius: $border-radius--medium;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      height: 180px;
+      margin-bottom: 20px;
+    }
+  }
+}

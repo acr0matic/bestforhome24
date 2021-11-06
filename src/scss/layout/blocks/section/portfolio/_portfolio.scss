@@ -80,7 +80,7 @@
       overflow: hidden;
 
       @include breakpoint($breakpoint-mobile--large) {
-        height: 110px;
+        height: 180px;
       }
 
       @media (hover: hover) {

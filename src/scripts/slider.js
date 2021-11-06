@@ -48,6 +48,12 @@ const hero = new Swiper('.slider-hero', {
     delay: 5000,
     disableOnInteraction: false,
   },
+
+  on: {
+    afterInit: () => {
+      lazyLoadInstance.update();
+    }
+  }
 });
 
 const constuction = new Swiper('.slider-constuction', {
