@@ -63,7 +63,7 @@
     <div class="container">
       <div class="header">
         <div class="header__logo logo logo--header">
-          <a href="">
+          <a href="index.php">
             <img alt="" class="logo__image" src="img/logo.svg">
           </a>
         </div>
@@ -71,7 +71,7 @@
 
         <nav class="header__nav nav nav--header">
           <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link link link--nav" href="">Главная</a></li>
+            <li class="nav__item"><a class="nav__link link link--nav" href="index.php">Главная</a></li>
             <li class="nav__item dropdown">
               <span class="dropdown__header nav__link link link--nav d-flex align-items-center">
                 Каталог
@@ -81,20 +81,20 @@
               <div class="dropdown__content">
                 <div class="row">
                   <div class="col-6 d-flex flex-column align-items-start">
-                    <a class="link link--nav dropdown__item" href="https://brandigital.ru/design">Москитные сетки</a>
-                    <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="">Внутренняя</a>
-                    <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="">Москитная дверь</a>
-                    <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="">Стандарт</a>
-                    <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="">Антипыль</a>
-                    <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="">Антипыльца</a>
-                    <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="">Антикошка</a>
-                    <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="">Ультравью</a>
-                    <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="">Проведал</a>
+                    <a class="link link--nav dropdown__item" href="mosquito.php">Москитные сетки</a>
+                    <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="mosquito-item.php">Внутренняя</a>
+                    <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="mosquito-item.php">Москитная дверь</a>
+                    <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="mosquito-item.php">Стандарт</a>
+                    <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="mosquito-item.php">Антипыль</a>
+                    <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="mosquito-item.php">Антипыльца</a>
+                    <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="mosquito-item.php">Антикошка</a>
+                    <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="mosquito-item.php">Ультравью</a>
+                    <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="mosquito-item.php">Проведал</a>
                   </div>
                   <!-- /.col-6 -->
 
                   <div class="col-6 d-flex flex-column align-items-start">
-                    <a class="link link--nav dropdown__item" href="https://brandigital.ru/design">Рулонные шторы</a>
+                    <a class="link link--nav dropdown__item" href="mosquito.php">Рулонные шторы</a>
                     <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="">Жалюзи</a>
                     <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="">День-Ночь</a>
                     <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="">Плиссе</a>
@@ -115,18 +115,18 @@
 
               <div class="dropdown__content dropdown__content--small">
                 <div class="d-flex flex-column align-items-start">
-                  <a class="link link--nav dropdown__item" href="https://brandigital.ru/design">Тонировка окон</a>
-                  <a class="link link--nav dropdown__item" href="https://brandigital.ru/design">Регулировка окон</a>
-                  <a class="link link--nav dropdown__item" href="https://brandigital.ru/design">Замки от детей</a>
-                  <a class="link link--nav dropdown__item" href="https://brandigital.ru/design">Замена уплотнителя</a>
-                  <a class="link link--nav dropdown__item" href="https://brandigital.ru/design">Ограничители</a>
+                  <a class="link link--nav dropdown__item" href="service.php">Тонировка окон</a>
+                  <a class="link link--nav dropdown__item" href="service.php">Регулировка окон</a>
+                  <a class="link link--nav dropdown__item" href="service.php">Замки от детей</a>
+                  <a class="link link--nav dropdown__item" href="service.php">Замена уплотнителя</a>
+                  <a class="link link--nav dropdown__item" href="service.php">Ограничители</a>
                 </div>
                 <!-- /.d-flex-->
               </div>
               <!-- /.dropdown__content -->
             </li>
-            <li class="nav__item"><a class="nav__link link link--nav" href="">Портфолио</a></li>
-            <li class="nav__item"><a class="nav__link link link--nav" href="">Статьи</a></li>
+            <li class="nav__item"><a class="nav__link link link--nav" href="portfolio.php">Портфолио</a></li>
+            <li class="nav__item"><a class="nav__link link link--nav" href="blog.php">Статьи</a></li>
           </ul>
         </nav>
         <!-- /.header__nav nav -->
@@ -162,7 +162,7 @@
       <div class="mobile-menu__wrapper">
         <nav class="mobile-menu__nav nav nav--mobile">
           <ul class="nav__list">
-            <li class="nav__item mb-2"><a href="" class="nav__link">Главная</a></li>
+            <li class="nav__item mb-2"><a href="index.php" class="nav__link">Главная</a></li>
             <li class="nav__item mb-2">
               <div class="handorgel handorgel--menu">
                 <div class="handorgel__header">
@@ -181,15 +181,15 @@
                   <div class="handorgel__content__inner">
                     <p class="handorgel__content__text">
                     <ul class="mobile-menu__list">
-                      <li class="nav__item nav__item--small"><a href="" class="nav__link">Весь каталог</a></li>
-                      <li class="nav__item nav__item--small"><a href="" class="nav__link">Внутренняя</a></li>
-                      <li class="nav__item nav__item--small"><a href="" class="nav__link">Москитная дверь</a></li>
-                      <li class="nav__item nav__item--small"><a href="" class="nav__link">Стандарт</a></li>
-                      <li class="nav__item nav__item--small"><a href="" class="nav__link">Антипыль</a></li>
-                      <li class="nav__item nav__item--small"><a href="" class="nav__link">Антипыльца</a></li>
-                      <li class="nav__item nav__item--small"><a href="" class="nav__link">Антикошка</a></li>
-                      <li class="nav__item nav__item--small"><a href="" class="nav__link">Ультравью</a></li>
-                      <li class="nav__item nav__item--small"><a href="" class="nav__link">Проведал</a></li>
+                      <li class="nav__item nav__item--small"><a href="mosquito.php" class="nav__link">Весь каталог</a></li>
+                      <li class="nav__item nav__item--small"><a href="mosquito-item.php" class="nav__link">Внутренняя</a></li>
+                      <li class="nav__item nav__item--small"><a href="mosquito-item.php" class="nav__link">Москитная дверь</a></li>
+                      <li class="nav__item nav__item--small"><a href="mosquito-item.php" class="nav__link">Стандарт</a></li>
+                      <li class="nav__item nav__item--small"><a href="mosquito-item.php" class="nav__link">Антипыль</a></li>
+                      <li class="nav__item nav__item--small"><a href="mosquito-item.php" class="nav__link">Антипыльца</a></li>
+                      <li class="nav__item nav__item--small"><a href="mosquito-item.php" class="nav__link">Антикошка</a></li>
+                      <li class="nav__item nav__item--small"><a href="mosquito-item.php" class="nav__link">Ультравью</a></li>
+                      <li class="nav__item nav__item--small"><a href="mosquito-item.php" class="nav__link">Проведал</a></li>
                     </ul>
                     </p>
                   </div>
@@ -253,11 +253,11 @@
                   <div class="handorgel__content__inner">
                     <p class="handorgel__content__text">
                     <ul class="mobile-menu__dropdown">
-                      <li class="nav__item nav__item--small"><a href="" class="nav__link">Тонировка окон</a></li>
-                      <li class="nav__item nav__item--small"><a href="" class="nav__link">Регулировка окон</a></li>
-                      <li class="nav__item nav__item--small"><a href="" class="nav__link">Замки от детей</a></li>
-                      <li class="nav__item nav__item--small"><a href="" class="nav__link">Замена уплотнителя</a></li>
-                      <li class="nav__item nav__item--small"><a href="" class="nav__link">Ограничители</a></li>
+                      <li class="nav__item nav__item--small"><a href="service.php" class="nav__link">Тонировка окон</a></li>
+                      <li class="nav__item nav__item--small"><a href="service.php" class="nav__link">Регулировка окон</a></li>
+                      <li class="nav__item nav__item--small"><a href="service.php" class="nav__link">Замки от детей</a></li>
+                      <li class="nav__item nav__item--small"><a href="service.php" class="nav__link">Замена уплотнителя</a></li>
+                      <li class="nav__item nav__item--small"><a href="service.php" class="nav__link">Ограничители</a></li>
                     </ul>
                     </p>
                   </div>
@@ -267,8 +267,8 @@
               </div>
               <!-- /.handorgel-->
             </li>
-            <li class="nav__item mb-2"><a href="" class="nav__link">Портфолио</a></li>
-            <li class="nav__item mb-2"><a href="" class="nav__link">Статьи</a></li>
+            <li class="nav__item mb-2"><a href="portfolio.php" class="nav__link">Портфолио</a></li>
+            <li class="nav__item mb-2"><a href="blog.php" class="nav__link">Статьи</a></li>
           </ul>
         </nav>
 
