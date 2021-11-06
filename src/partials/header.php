@@ -127,13 +127,12 @@
             </li>
             <li class="nav__item"><a class="nav__link link link--nav" href="">Портфолио</a></li>
             <li class="nav__item"><a class="nav__link link link--nav" href="">Статьи</a></li>
-            <li class="nav__item"><a class="nav__link link link--nav" href="">Контакты</a></li>
           </ul>
         </nav>
         <!-- /.header__nav nav -->
 
         <div class="header__callback">
-          <div class="d-flex flex-column me-3">
+          <div class="d-flex flex-column me-4">
             <a class="header__phone link link--contact" href="tel:+">+7 926 630-45-56</a>
             <a class="header__phone link link--contact" href="tel:+">+7 977 415-28-17</a>
           </div>
@@ -270,7 +269,6 @@
             </li>
             <li class="nav__item mb-2"><a href="" class="nav__link">Портфолио</a></li>
             <li class="nav__item mb-2"><a href="" class="nav__link">Статьи</a></li>
-            <li class="nav__item"><a href="" target="_blank" class="nav__link">Контакты</a></li>
           </ul>
         </nav>
 

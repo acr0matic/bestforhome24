@@ -38,8 +38,6 @@
     display: flex;
     align-items: center;
 
-    margin-left: auto;
-
     @include breakpoint($breakpoint-mobile--large) {
       display: none;
     }
@@ -48,12 +46,7 @@
   &__phone {
     font-size: $text-size--large;
 
-    @include breakpoint($breakpoint-laptop--large) {
-      font-size: $text-size--medium;
-    }
-
     @include breakpoint($breakpoint-mobile--large) {
-      font-size: $text-size--large;
       font-weight: $weight-Medium;
     }
   }
