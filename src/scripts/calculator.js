@@ -1,3 +1,45 @@
+const data = {
+  'production': {
+    'mosquito': {
+      'price': {
+        'standart': 500,
+      },
+
+      'naming': {
+        'standart': 'Стандарт',
+        'antidust': 'Антипыль',
+        'antipollen': 'Антипыльца',
+        'anticat': 'Антикошка',
+        'ultraview': 'Ультравью',
+        'common': 'Рамочная сетка',
+        'inner': 'Внутренняя сетка',
+        'provedal': 'Раздвижная сетка',
+        'door': 'Дверная сетка'
+      }
+    },
+
+    'curtains': {
+      'price': {
+        'standart': 500,
+      },
+
+      'naming': {
+        'jalusie': 'Вертикальные жалюзи',
+        'jalusie-h': 'Горизонтальные жалюзи',
+        'zebra': 'День-ночь',
+        'plisse': 'Плиссе',
+        'grand': 'Гранд',
+        'grand-zebra': 'Гранд день-ночь',
+        'grand-plisse': 'Гранд плиссе',
+      }
+    },
+  },
+
+  'service': {
+
+  },
+}
+
 class CalculatorController {
   constructor(ref) {
     this.calc = ref;
@@ -20,10 +62,17 @@ class CalculatorController {
       _.forEach(group, (radio) => radio.addEventListener('change', () => this.UpdateRadio(group)));
     });
 
-    this.select[0].addEventListener('choice', () => {
-      this.choices[1].clearChoices();
+    this.select[0].addEventListener('highlightChoice', () => {
+      const current = this.choices[0].getValue(true);
+      const values = data['production'][current]['naming'];
 
-      console.log(this.choices[0].getValue());
+      const list = [];
+      _.forOwn(values, (key, value) => {
+        list.push({ value: key, label: values[value] })
+      })
+
+      this.choices[1].clearChoices();
+      this.choices[1].setChoices(list);
     });
   }
 

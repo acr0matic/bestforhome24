@@ -406,8 +406,10 @@
         <div class="row">
           <div class="col-6 col-md-3 mb-4">
             <div class="portfolio__picture position-relative">
-              <img src="img/misc/preloader.svg" class="preloader" alt="">
-              <img data-src="img/portfolio/3.jpg" alt="" class="portfolio__image image image--cover lazy">
+              <a data-fslightbox href="">
+                <img src="img/misc/preloader.svg" class="preloader" alt="">
+                <img data-src="img/portfolio/3.jpg" alt="" class="portfolio__image image image--cover lazy">
+              </a>
             </div>
             <!-- /.portfolio__picture -->
           </div>
@@ -415,8 +417,10 @@
 
           <div class="col-6 col-md-3 mb-4">
             <div class="portfolio__picture position-relative">
-              <img src="img/misc/preloader.svg" class="preloader" alt="">
-              <img data-src="img/portfolio/3.jpg" alt="" class="portfolio__image image image--cover lazy">
+              <a data-fslightbox href="">
+                <img src="img/misc/preloader.svg" class="preloader" alt="">
+                <img data-src="img/portfolio/3.jpg" alt="" class="portfolio__image image image--cover lazy">
+              </a>
             </div>
             <!-- /.portfolio__picture -->
           </div>
@@ -424,8 +428,10 @@
 
           <div class="col-6 col-md-3 mb-4">
             <div class="portfolio__picture position-relative">
-              <img src="img/misc/preloader.svg" class="preloader" alt="">
-              <img data-src="img/portfolio/3.jpg" alt="" class="portfolio__image image image--cover lazy">
+              <a data-fslightbox href="">
+                <img src="img/misc/preloader.svg" class="preloader" alt="">
+                <img data-src="img/portfolio/3.jpg" alt="" class="portfolio__image image image--cover lazy">
+              </a>
             </div>
             <!-- /.portfolio__picture -->
           </div>
@@ -433,44 +439,54 @@
 
           <div class="col-6 col-md-3 mb-4">
             <div class="portfolio__picture position-relative">
-              <img src="img/misc/preloader.svg" class="preloader" alt="">
-              <img data-src="img/portfolio/3.jpg" alt="" class="portfolio__image image image--cover lazy">
+              <a data-fslightbox href="">
+                <img src="img/misc/preloader.svg" class="preloader" alt="">
+                <img data-src="img/portfolio/3.jpg" alt="" class="portfolio__image image image--cover lazy">
+              </a>
             </div>
             <!-- /.portfolio__picture -->
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-6 col-md-3 mb-4 md-0">
+          <div class="col-6 col-md-3 mb-4">
             <div class="portfolio__picture position-relative">
-              <img src="img/misc/preloader.svg" class="preloader" alt="">
-              <img data-src="img/portfolio/3.jpg" alt="" class="portfolio__image image image--cover lazy">
+              <a data-fslightbox href="">
+                <img src="img/misc/preloader.svg" class="preloader" alt="">
+                <img data-src="img/portfolio/3.jpg" alt="" class="portfolio__image image image--cover lazy">
+              </a>
             </div>
             <!-- /.portfolio__picture -->
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-6 col-md-3 mb-4 md-0">
+          <div class="col-6 col-md-3 mb-4">
             <div class="portfolio__picture position-relative">
-              <img src="img/misc/preloader.svg" class="preloader" alt="">
-              <img data-src="img/portfolio/3.jpg" alt="" class="portfolio__image image image--cover lazy">
+              <a data-fslightbox href="">
+                <img src="img/misc/preloader.svg" class="preloader" alt="">
+                <img data-src="img/portfolio/3.jpg" alt="" class="portfolio__image image image--cover lazy">
+              </a>
             </div>
             <!-- /.portfolio__picture -->
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-6 col-md-3">
+          <div class="col-6 col-md-3 mb-0">
             <div class="portfolio__picture position-relative">
-              <img src="img/misc/preloader.svg" class="preloader" alt="">
-              <img data-src="img/portfolio/3.jpg" alt="" class="portfolio__image image image--cover lazy">
+              <a data-fslightbox href="">
+                <img src="img/misc/preloader.svg" class="preloader" alt="">
+                <img data-src="img/portfolio/3.jpg" alt="" class="portfolio__image image image--cover lazy">
+              </a>
             </div>
             <!-- /.portfolio__picture -->
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-6 col-md-3">
+          <div class="col-6 col-md-3 mb-0">
             <div class="portfolio__picture position-relative">
-              <img src="img/misc/preloader.svg" class="preloader" alt="">
-              <img data-src="img/portfolio/3.jpg" alt="" class="portfolio__image image image--cover lazy">
+              <a data-fslightbox href="">
+                <img src="img/misc/preloader.svg" class="preloader" alt="">
+                <img data-src="img/portfolio/3.jpg" alt="" class="portfolio__image image image--cover lazy">
+              </a>
             </div>
             <!-- /.portfolio__picture -->
           </div>

@@ -11,13 +11,12 @@
                 <div class="col-12 col-md-6 mb-4 mb-md-0">
                   <div class="calculator__wrapper">
                     <h3 class="calculator__title">
-                      Категория услуги
+                      Категория изделия
                     </h3>
 
                     <div class="input">
                       <select class="input__select" data-trigger name="calculator_type">
-                        <option value="">Выберите из списка</option>
-                        <option value="nets">Москитные сетки</option>
+                        <option value="mosquito">Москитные сетки</option>
                         <option value="curtains">Рулонные шторы</option>
                       </select>
                       <!-- /.input -->
@@ -31,16 +30,20 @@
                 <div class="col-12 col-md-6">
                   <div class="calculator__wrapper">
                     <h3 class="calculator__title">
-                      Вид услуги
+                      Вид изделия
                     </h3>
 
                     <div class="input">
                       <select class="input__select" data-trigger name="calculator_type">
-                        <option value="">Выберите из списка</option>
-                        <option value="english">Английский язык</option>
-                        <option value="сhess">Шахматы</option>
-                        <option value="speech">Логопед</option>
-                        <option value="music">Музыкальная студия</option>
+                        <option value="common">Рамочная сетка</option>
+                        <option value="inner">Внутренняя сетка</option>
+                        <option value="provedal">Раздвижная сетка</option>
+                        <option value="door">Дверная сетка</option>
+                        <option value="standart">Стандарт</option>
+                        <option value="antidust">Антипыль</option>
+                        <option value="antipollen">Антипыльца</option>
+                        <option value="anticat">Антикошка</option>
+                        <option value="ultraview">Ультравью</option>
                       </select>
                       <!-- /.input -->
                     </div>
@@ -277,9 +280,8 @@
                           <td>Нет</td>
                           <td>0р</td>
                         </tr>
-                        <tr>
-                          <td>Тип сетки</td>
-                          <td>Классическая</td>
+                        <tr style="background-color: #fafafa;">
+                          <td style="text-align: right;" colspan="2">Итого:</td>
                           <td>0р</td>
                         </tr>
                       </tbody>
