@@ -32,6 +32,12 @@
     }
   }
 
+  &__list {
+    &--dropdown {
+      z-index: 10;
+    }
+  }
+
   &__placeholder {
     opacity: 1;
     color: $text-gray;

@@ -153,6 +153,52 @@ const calculator = new Swiper('.slider-calculator', {
   }
 });
 
+const calculatorInner = new Swiper('.slider-calculator-inner', {
+  slidesPerView: 1,
+  spaceBetween: 25,
+  autoHeight: true,
+  allowTouchMove: false,
+  speed: 300,
+
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+
+  on: {
+    afterInit: (slider) => {
+      const container = slider.el;
+      const slides = container.querySelectorAll('.swiper-slide');
+
+      _.forEach(slides, (slide, index) => {
+        if (index !== slider.realIndex) {
+          const disable = slide.querySelectorAll('input');
+          _.forEach(disable, input => input.disabled = true);
+        }
+      })
+    },
+
+    slideChangeTransitionStart: (slider) => {
+      const container = slider.el;
+
+      const currentIndex = slider.activeIndex;
+      const prevIndex = slider.previousIndex;
+      const slides = container.querySelectorAll('.swiper-slide');
+
+      const disable = slides[prevIndex].querySelectorAll('input');
+      _.forEach(disable, input => input.disabled = true);
+
+      const enable = slides[currentIndex].querySelectorAll('input');
+      _.forEach(enable, input => input.removeAttribute('disabled'));
+    },
+
+    slideChangeTransitionEnd: () => {
+      calculator.el.querySelector('.swiper-wrapper').style.transitionDuration = '300ms';
+      calculator.updateAutoHeight();
+    },
+  }
+});
+
 if (window.matchMedia('(max-width: 576px)').matches) {
   const portfolio = new Swiper('.slider-portfolio', {
     slidesPerView: 'auto',
