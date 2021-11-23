@@ -17,7 +17,7 @@
                     <div class="input">
                       <select class="input__select" data-trigger name="calculator_type">
                         <option value="mosquito">Москитные сетки</option>
-                        <option value="curtains">Рулонные шторы</option>
+                        <!-- <option value="curtains">Рулонные шторы</option> -->
                       </select>
                       <!-- /.input -->
                     </div>
@@ -397,7 +397,7 @@
                     <div class="calculator__additional">
                       <div class="calculator__service me-4">
                         <label class="checkbox">
-                          <input type="checkbox">
+                          <input name="Доставка" value="Да" checked type="checkbox">
                           <span class="checkbox__mark"></span>
                           <span class="checkbox__label">Доставка</span>
                         </label>
@@ -406,7 +406,7 @@
 
                       <div class="calculator__service">
                         <label class="checkbox">
-                          <input type="checkbox">
+                          <input name="Установка" value="Да" checked type="checkbox">
                           <span class="checkbox__mark"></span>
                           <span class="checkbox__label">Установка</span>
                         </label>

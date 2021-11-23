@@ -88,6 +88,7 @@ class CalculatorController {
 
     this.fields = ref.querySelectorAll('input, select');
     this.sizeFields = _.filter(Array.from(this.fields), { 'type': 'number', 'disabled': false });
+    this.checkbox = _.filter(Array.from(this.fields), { 'type': 'checkbox', 'disabled': false });
     this.radioGroup = _.invokeMap(this.groups, 'querySelectorAll', 'input[type=radio]');
     this.choices = _.map(this.select, (select) => new Choices(select, {
       searchEnabled: false,
@@ -95,6 +96,7 @@ class CalculatorController {
       noChoicesText: 'Нет элементов',
     }));
 
+    this.table = ref.querySelector('.table tbody');
 
     this.Init();
     this.Events();
@@ -103,27 +105,39 @@ class CalculatorController {
   Init() {
     this.UpdateType(this.choices[0].getValue(true));
 
-    const priceData = data.production[this.current].price;
-    const priceKeys = _.keys(priceData);
+    const priceData = data.production[this.current];
+    const priceKeys = _.keys(priceData.price);
+    const advancedKeys = _.keys(priceData.advanced);
 
-    // Установка цены в инпуты
+    // Установка цены в радиокнопка
     _.forEach(priceKeys, price => {
       const picked = this.calc.querySelectorAll(`input[name=${price}]`)
-      _.forEach(picked, item => item.dataset.cost = priceData[price][item.value]);
+      _.forEach(picked, item => {
+        item.dataset.cost = priceData.price[price][item.value];
+      });
+    });
+
+    // Установка цены в чекбоксы
+    _.forEach(advancedKeys, price => {
+      const picked = this.calc.querySelectorAll(`input[name=${price}]`)
+      _.forEach(picked, item => {
+        item.dataset.cost = priceData.advanced[item.name];
+      });
     });
 
     // Установка цены в объект с ценами из инпутов
     _.forEach(this.fields, field => {
-      if (field.type === 'radio' && field.checked && !field.disabled) {
+      if ((field.type === 'radio' || field.type === 'checkbox') && field.checked && !field.disabled)
         this.UpdatePrice(field.name, field.value, field.dataset.cost);
-      }
     })
 
     this.UpdateService(this.choices[1].getValue(true));
+    this.UpdateTable();
   }
 
   Events() {
     _.forEach(this.sizeFields, field => field.addEventListener('input', () => this.CalculateSize(this.sizeFields)));
+    _.forEach(this.checkbox, field => field.addEventListener('change', () => this.UpdateCheckbox(field)));
 
     _.forEach(this.radioGroup, (group) => {
       _.forEach(group, (radio) => radio.addEventListener('change', () => this.UpdateRadio(group)));
@@ -184,6 +198,23 @@ class CalculatorController {
       this.UpdateService(this.choices[1].getValue(true));
   }
 
+  UpdateCheckbox(checkbox) {
+    const price = checkbox.dataset.cost;
+    const name = checkbox.parentNode.querySelector('.checkbox__label').innerHTML;
+
+    if (checkbox.checked) {
+      checkbox.value = 'Да';
+      this.UpdatePrice(name, checkbox.value, price);
+    }
+
+    else {
+      checkbox.value = 'Нет';
+      this.UpdatePrice(name, checkbox.value, 0);
+    }
+
+    this.UpdateTotal();
+  }
+
   UpdateType(type) {
     if (type) this.calc.dataset.current = type;
     this.current = this.calc.dataset.current;
@@ -204,8 +235,9 @@ class CalculatorController {
     this.CalculateSize(this.fields);
   }
 
-  UpdatePrice(key, value, cost) {
-    calculatorData[key] = [value, cost];
+  UpdatePrice(key, value, additional) {
+    if (additional !== undefined) calculatorData[key] = [value, additional];
+    else calculatorData[key] = value;
   }
 
   ResetPrice() {
@@ -218,10 +250,45 @@ class CalculatorController {
     _.forEach(calculatorData, (key, value) => {
       if (value !== 'Итого') calculatorData['Итого'] += parseInt(key[1]);
     });
+
+    this.UpdateTable();
   }
 
   UpdateTable() {
+    const dataLength = _.keys(calculatorData).length - 1;
+    let index = 0;
+    this.table.innerHTML = '';
 
+    _.forEach(calculatorData, (key, value) => {
+      if (index !== dataLength) {
+        if (_.isArray(key)) {
+          this.table.innerHTML +=
+            `<tr>
+            <td>${value}</td>
+            <td>${key[0]}</td>
+            <td>${key[1]}р</td>
+          </tr>`;
+        }
+
+        else {
+          this.table.innerHTML +=
+            `<tr>
+            <td colspan="2">${value}</td>
+            <td>${key}р</td>
+          </tr>`;
+        }
+      }
+
+      else {
+        this.table.innerHTML +=
+          `<tr>
+            <td colspan="2">${value}</td>
+            <td>${key}р</td>
+          </tr>`;
+      }
+
+      index++;
+    });
   }
 
   CalculateSize(fields) {
