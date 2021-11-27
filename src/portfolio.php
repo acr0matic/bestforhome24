@@ -13,7 +13,7 @@
 
       <div class="portfolio">
         <div class="row">
-          <div class="col-12 col-md-3 mb-4 mb-md-0">
+          <div class="col-12 col-md-3 mb-4 mb-md-0" style="display: none;">
             <div class="portfolio__menu">
               <div class="portfolio__wrapper custom-scrollbar">
                 <div class="portfolio__category">Москитные сетки</div>
@@ -47,7 +47,7 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-12 col-md-9">
+          <div class="col-12">
             <div class="portfolio__gallery">
               <div class="row">
                 <div class="col-6 col-md-4 mb-4">

@@ -44,7 +44,7 @@
 
               <div class="showcase__action">
                 <button data-micromodal-trigger="modal-callback" class="button button-outline me-md-3 mb-2 mb-md-0">Заказать</button>
-                <button class="button button-primary">Калькулятор</button>
+                <button class="button button-primary">Цены</button>
               </div>
               <!-- /.showcase__action -->
             </div>
@@ -59,7 +59,104 @@
     <!-- /.showcase -->
   </section>
 
-  <?php include_once('partials/calculator.php'); ?>
+  <section class="section" id="calculator-small">
+    <div class="container">
+      <h2 class="section__title">Наши расценки</h2>
+
+      <form class="calculator">
+        <div class="calculator__body pt-0">
+          <div class="row">
+            <div class="col-12 mb-4 mb-md-0 col-md-6">
+              <div class="calculator__wrapper">
+                <h3 class="calculator__title">
+                  Цены
+                </h3>
+
+                <table class="table table--calculator">
+                  <thead>
+                    <tr>
+                      <th>Услуга</th>
+                      <th>Цена</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>Размеры</td>
+                      <td>499р</td>
+                    </tr>
+                    <tr>
+                      <td>Цвет</td>
+                      <td>0р</td>
+                    </tr>
+                    <tr>
+                      <td>Крепеж</td>
+                      <td>0р</td>
+                    </tr>
+                    <tr>
+                      <td>Установка</td>
+                      <td>0р</td>
+                    </tr>
+                    <tr>
+                      <td>Доставка</td>
+                      <td>0р</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <p class="calculator__info mt-4">
+                  Cтоимость указанная в калькуляторе не является публичной офертой.
+                  <br>
+                  Итоговая стоимость определяется после проведения оценочных работ.
+                </p>
+              </div>
+              <!-- /.calculator__wrapper -->
+            </div>
+            <!-- /.col-6 -->
+
+            <div class="col-12 col-md-6">
+              <div class="calculator__wrapper">
+                <h3 class="calculator__title">
+                  Оставить заявку
+                </h3>
+
+                <p>Укажите свои контактные данные и мы свяжемся с Вами в ближайшее рабочее время по поводу интересующей услуги.</p>
+
+                <div class="input mb-3 mt-4">
+                  <input placeholder="Ваше имя" autocomplete="off" type="text" name="user_name" class="input__field">
+                  <img data-tippy-content="Имя содержит недопустимые символы" class="input__warning" src="img/icons/misc/warning.svg" alt="">
+                </div>
+                <!-- /.input -->
+
+                <div class="input mb-4">
+                  <input data-required placeholder="Ваш телефон" autocomplete="off" type="tel" name="user_phone" class="input__field">
+                  <img data-tippy-content="Номер телефона указан не полностью или содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">
+                </div>
+                <!-- /.input -->
+
+                <div class="input mb-4 pb-1">
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__privacy">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">Я согласен на обработку моих персональных данных. <br> <a href="policy.html" class="checkbox__policy">Открыть политику конфиденциальности</a></span>
+                  </label>
+                </div>
+                <!-- /.input -->
+
+                <button data-sending="Отправка..." class="form__button button button-primary mb-4" type="submit">Отправить заявку</button>
+              </div>
+              <!-- /.calculator__wrapper -->
+            </div>
+            <!-- /.col-6 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.calculator__body -->
+      </form>
+      <!-- /.callback -->
+    </div>
+    <!-- /.container -->
+  </section>
 
   <section class="section" id="textblock">
     <div class="container">
@@ -285,63 +382,6 @@
         <!-- /.row -->
       </div>
       <!-- /.callback -->
-    </div>
-    <!-- /.container -->
-  </section>
-
-  <section class="section" id="portfolio">
-    <div class="container">
-      <div class="portfolio">
-        <h2 class="section__title">Фотографии</h2>
-        <p class="section__description">Подробная схема рассказывающая и объясняющая, каким образом происходит заказ и его обработка. Предлагаем Вам с ней ознакомиться, чтобы иметь лучшее представление о том, как работает наша компания.</p>
-
-        <div class="slider">
-          <div class="swiper swiper--mobile slider-portfolio">
-            <div class="swiper-wrapper row">
-              <div class="swiper-slide col-3">
-                <div class="portfolio__picture position-relative">
-                  <img src="img/misc/preloader.svg" class="preloader" alt="">
-                  <img data-src="img/portfolio/1.jpg" alt="" class="portfolio__image image image--cover lazy">
-                </div>
-                <!-- /.portfolio__picture -->
-              </div>
-              <!-- /.swiper-slide col-3 -->
-
-              <div class="swiper-slide col-3">
-                <div class="portfolio__picture position-relative">
-                  <img src="img/misc/preloader.svg" class="preloader" alt="">
-                  <img data-src="img/portfolio/2.jpg" alt="" class="portfolio__image image image--cover lazy">
-                </div>
-                <!-- /.portfolio__picture -->
-              </div>
-              <!-- /.swiper-slide col-3 -->
-
-
-              <div class="swiper-slide col-3">
-                <div class="portfolio__picture position-relative">
-                  <img src="img/misc/preloader.svg" class="preloader" alt="">
-                  <img data-src="img/portfolio/3.jpg" alt="" class="portfolio__image image image--cover lazy">
-                </div>
-                <!-- /.portfolio__picture -->
-              </div>
-              <!-- /.swiper-slide col-3 -->
-
-              <div class="swiper-slide col-3">
-                <div class="portfolio__picture position-relative">
-                  <img src="img/misc/preloader.svg" class="preloader" alt="">
-                  <img data-src="img/portfolio/4.jpg" alt="" class="portfolio__image image image--cover lazy">
-                </div>
-                <!-- /.portfolio__picture -->
-              </div>
-              <!-- /.swiper-slide col-3 -->
-            </div>
-            <!-- /.swiper-wrapper -->
-          </div>
-          <!-- /.swiper swiper--mobile -->
-        </div>
-        <!-- /.slider -->
-      </div>
-      <!-- /.portfolio -->
     </div>
     <!-- /.container -->
   </section>
