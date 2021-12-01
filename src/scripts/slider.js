@@ -86,10 +86,6 @@ const material = new Swiper('.slider-material', {
     996: {
       slidesPerView: 3,
     },
-
-    1200: {
-      slidesPerView: 3,
-    },
   },
 
   navigation: {
@@ -121,6 +117,8 @@ const calculator = new Swiper('.slider-calculator', {
       const container = slider.el.parentNode;
       const prevButton = container.querySelector('.calculator__prev');
       const nextButton = container.querySelector('.calculator__next');
+
+      slider.updateAutoHeight();
 
       prevButton.addEventListener('click', () => {
         slider.slidePrev();

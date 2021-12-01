@@ -9,17 +9,16 @@ const browsersync = require('browser-sync');
 const paths = require('../gulpfile');
 
 task('html', () => src(paths.html.src)
-  .pipe(useref())
+  .pipe(useref({ searchPath: paths.scripts.src }))
   .pipe(debug({
     title: 'Replaced:',
     showCount: false,
   }))
-  .pipe(gulpif('*.{html,php}', htmlMin({
+  .pipe(htmlMin({
     sortAttributes: true,
     sortClassName: true,
     collapseWhitespace: false, // Отключить, если требуется посадка верстки на CMS
   }))
-  )
   .pipe(debug({
     title: 'Minified:',
     showCount: false,

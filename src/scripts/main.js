@@ -4,8 +4,6 @@
 const Calculator = document.getElementById('calculator');
 if (Calculator) new CalculatorController(Calculator);
 
-calculator.updateAutoHeight();
-
 const preloader = document.getElementById('page-loader');
 document.addEventListener("DOMContentLoaded", function () {
   window.setTimeout(function () {
