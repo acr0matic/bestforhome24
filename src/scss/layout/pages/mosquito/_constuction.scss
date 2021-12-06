@@ -19,7 +19,6 @@
 
     @include breakpoint($breakpoint-mobile--large) {
       flex-direction: column;
-      height: 100%;
     }
   }
 
@@ -45,8 +44,7 @@
 
     @include breakpoint($breakpoint-mobile--large) {
       width: 100%;
-
-      padding: 10px 0;
+      padding: 0;
     }
   }
 
@@ -90,6 +88,8 @@
     overflow: hidden;
 
     @include breakpoint($breakpoint-mobile--large) {
+      margin-bottom: 15px;
+
       font-size: $text-size--small;
       line-height: 180%;
     }

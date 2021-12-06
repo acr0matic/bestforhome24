@@ -3,12 +3,12 @@
 <main id="catalog">
   <section id="hero" class="section">
     <div class="hero">
-      <div class="hero__background">
-        <img src="img/page/mosquito/hero/banner.jpg" alt="" class="hero__image image image--cover">
-      </div>
-      <!-- /.hero__background -->
-
       <div class="container">
+        <div class="hero__background">
+          <img src="img/page/mosquito/hero/banner.jpg" alt="" class="hero__image image image--cover">
+        </div>
+        <!-- /.hero__background -->
+
         <div class="hero__content">
           <div class="section__header">
             <h1 class="hero__title section__title page__title">Москитные сетки</h1>
@@ -39,11 +39,19 @@
     <!-- /.hero -->
   </section>
 
+  <?php include_once('partials/calculator.php'); ?>
+
   <section id="constuction" class="section">
     <div class="container">
       <div class="constuction">
-        <h2 class="section__title">Виды конструкций</h2>
+        <h2 class="section__title">Варианты изделий</h2>
+        <p class="section__description">
+          Наша компания изготавливает москитные сетки и рулонные шторы уже больше 10 лет. Каждая сетка или штора делается строго индивидуально под Ваши окна. В нашем каталоге тысячи цветов и вариаций рисунков для штор, а также, все возможные виды антимоскитного полотна для любой формы москитной сетки.
+        </p>
+
         <div class="constuction__slider position-relative">
+          <h3 class="section__subtitle">По конструкции</h3>
+
           <div class="swiper swiper--shadow slider-constuction">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -155,25 +163,17 @@
           </div>
           <!-- /.swiper constuction-slider -->
 
-          <div class="swiper__control">
+          <div class="swiper__control swiper__control--heading">
             <div class="swiper-button-prev slider-constuction__prev"></div>
             <div class="swiper-button-next slider-constuction__next"></div>
           </div>
           <!-- /.swiper__control -->
         </div>
         <!-- /.constuction__slider -->
-      </div>
-      <!-- /.constuction -->
-    </div>
-    <!-- /.container -->
-  </section>
 
-  <section id="material" class="section">
-    <div class="container">
-      <div class="material">
-        <h2 class="section__title">Виды полотна</h2>
+        <div class="constuction__slider position-relative mt-5">
+          <h3 class="section__subtitle">По полотну</h3>
 
-        <div class="material__slider position-relative">
           <div class="swiper swiper--shadow slider-material">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -384,7 +384,7 @@
           </div>
           <!-- /.swiper constuction-slider -->
 
-          <div class="swiper__control">
+          <div class="swiper__control swiper__control--heading">
             <div class="swiper-button-prev slider-material__prev"></div>
             <div class="swiper-button-next slider-material__next"></div>
           </div>
@@ -392,12 +392,10 @@
         </div>
         <!-- /.constuction__slider -->
       </div>
-      <!-- /.material -->
+      <!-- /.constuction -->
     </div>
     <!-- /.container -->
   </section>
-
-  <?php include_once('partials/calculator.php'); ?>
 
   <section id="usage" class="section">
     <div class="container">

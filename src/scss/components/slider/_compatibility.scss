@@ -1,0 +1,13 @@
+.slider-compatibility {
+  .swiper-slide {
+    height: initial;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 80%;
+    }
+
+    & > div {
+      height: 100%;
+    }
+  }
+}

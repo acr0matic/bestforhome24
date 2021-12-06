@@ -5,7 +5,12 @@
   .hero {
     &__background {
       width: 100%;
-      height: 350px;
+      height: 295px;
+
+      border-bottom-right-radius: $border-radius--large;
+      border-bottom-left-radius: $border-radius--large;
+
+      overflow: hidden;
 
       @include breakpoint($breakpoint-mobile--large) {
         height: 200px;

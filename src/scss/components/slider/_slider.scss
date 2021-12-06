@@ -63,6 +63,33 @@
     justify-content: center;
 
     margin-top: 20px;
+
+    &--heading {
+      .swiper-button-prev {
+        left: 90%;
+      }
+
+      .swiper-button-next {
+        right: 0;
+      }
+
+      .swiper-button-prev,
+      .swiper-button-next {
+        top: 18px;
+
+        width: 36px;
+        height: 36px;
+
+        &::after {
+          font-size: 18px;
+        }
+
+        @include breakpoint($breakpoint-laptop--large) {
+          position: absolute;
+          margin-top: -21px;
+        }
+      }
+    }
   }
 
   &-button {

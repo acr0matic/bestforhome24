@@ -53,6 +53,13 @@ $margin--mobile: 15px;
     }
   }
 
+  &__subtitle {
+    font-size: $heading-size--small - 3;
+    font-weight: $weight-Medium;
+
+    margin-bottom: 20px;
+  }
+
   &__description {
     margin-bottom: $margin;
 

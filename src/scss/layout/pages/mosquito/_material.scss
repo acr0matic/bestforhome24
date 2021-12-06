@@ -97,6 +97,13 @@
 
   &__content {
     margin: 10px 0;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 100%;
+      padding: 0;
+
+      margin-bottom: 0;
+    }
   }
 
   &__description {
@@ -108,13 +115,19 @@
     @include breakpoint($breakpoint-mobile--large) {
       margin-top: 5px;
       margin-bottom: 15px;
+
       font-size: $text-size--small;
+      line-height: 180%;
     }
   }
 
   &__action {
     margin-top: auto;
     text-align: right;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      text-align: left;
+    }
   }
 
   &__link {

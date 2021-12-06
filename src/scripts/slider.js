@@ -202,4 +202,10 @@ if (window.matchMedia('(max-width: 576px)').matches) {
     slidesPerView: 'auto',
     spaceBetween: 25,
   });
+
+  const compatibility = new Swiper('.slider-compatibility', {
+    slidesPerView: 'auto',
+    spaceBetween: 25,
+    autoHeight: true,
+  });
 }
