@@ -17,7 +17,7 @@
                     <div class="input">
                       <select class="input__select" data-trigger name="calculator_type">
                         <option value="mosquito">Москитные сетки</option>
-                        <!-- <option value="curtains">Рулонные шторы</option> -->
+                        <option value="curtains">Рулонные шторы</option>
                       </select>
                       <!-- /.input -->
                     </div>
@@ -90,17 +90,6 @@
                               <!-- /.input -->
                             </div>
                             <!-- /.col-6 -->
-
-                            <!--
-                            <div class="col-12 mt-4">
-                              <select class="input__select" data-trigger name="calculator_type">
-                                <option value="">Вид полотна</option>
-                                <option value="english">Английский язык</option>
-                                <option value="сhess">Шахматы</option>
-                                <option value="speech">Логопед</option>
-                                <option value="music">Музыкальная студия</option>
-                              </select>
-                            </div> -->
 
                             <div class="col-12">
                               <div class="calculator__preview">

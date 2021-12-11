@@ -4,7 +4,7 @@ const data = {
       'price': {
         'Изделие': {
           'Стандарт': [499, 999],
-          'Рамочная': [599, 1299],
+          'Рамочная сетка': [599, 1299],
         },
 
         'Рама': {
@@ -33,24 +33,12 @@ const data = {
         'Доставка': 500,
         'Установка': 500,
       },
-
-      'naming': {
-        'standart': 'Стандарт',
-        'antidust': 'Антипыль',
-        'antipollen': 'Антипыльца',
-        'anticat': 'Антикошка',
-        'ultraview': 'Ультравью',
-        'common': 'Рамочная сетка',
-        'inner': 'Внутренняя сетка',
-        'provedal': 'Раздвижная сетка',
-        'door': 'Дверная сетка'
-      }
     },
 
     'curtains': {
       'price': {
         'Изделие': {
-          "Рулонная": 500,
+          'Вертикальные жалюзи': [499, 999],
         },
       },
 
@@ -58,21 +46,7 @@ const data = {
         'Доставка': 500,
         'Установка': 500,
       },
-
-      'naming': {
-        'jalusie': 'Вертикальные жалюзи',
-        'jalusie-h': 'Горизонтальные жалюзи',
-        'zebra': 'День-ночь',
-        'plisse': 'Плиссе',
-        'grand': 'Гранд',
-        'grand-zebra': 'Гранд день-ночь',
-        'grand-plisse': 'Гранд плиссе',
-      }
     },
-  },
-
-  'service': {
-
   },
 }
 
@@ -109,7 +83,7 @@ class CalculatorController {
     const priceKeys = _.keys(priceData.price);
     const advancedKeys = _.keys(priceData.advanced);
 
-    // Установка цены в радиокнопка
+    // Установка цены в радиокнопки
     _.forEach(priceKeys, price => {
       const picked = this.calc.querySelectorAll(`input[name=${price}]`)
       _.forEach(picked, item => {
@@ -131,6 +105,7 @@ class CalculatorController {
         this.UpdatePrice(field.name, field.value, field.dataset.cost);
     })
 
+    this.UpdateChoices();
     this.UpdateService(this.choices[1].getValue(true));
     this.UpdateTable();
   }
@@ -144,16 +119,6 @@ class CalculatorController {
     });
 
     this.select[0].addEventListener('change', () => {
-      const current = this.choices[0].getValue(true);
-      const values = data['production'][current]['naming'];
-
-      const list = [];
-      _.forOwn(values, (key, value) => {
-        list.push({ value: key, label: values[value] })
-      })
-
-      this.choices[1].clearChoices();
-      this.choices[1].setChoices(list);
       calculatorInner.slideTo(this.choices[0].getValue()['choiceId'] - 1);
 
       this.UpdateType(this.choices[0].getValue(true));
@@ -182,6 +147,18 @@ class CalculatorController {
 
       this.UpdateService(value);
     });
+  }
+
+  UpdateChoices() {
+    const current = this.choices[0].getValue(true);
+    const keys = _.keys(data['production'][current].price['Изделие']);
+    const firstItem = _.values(keys)[0];
+
+    const list = _.map(keys, (key) => ({ 'value': key, 'label': key }));
+
+    this.choices[1].clearChoices();
+    this.choices[1].setChoices(list);
+    this.choices[1].setChoiceByValue(firstItem);
   }
 
   UpdateRadio(group) {
@@ -218,6 +195,8 @@ class CalculatorController {
   UpdateType(type) {
     if (type) this.calc.dataset.current = type;
     this.current = this.calc.dataset.current;
+
+    this.UpdateChoices();
 
     this.ResetPrice();
     _.forEach(this.radioGroup, (group) => this.UpdateRadio(group))
