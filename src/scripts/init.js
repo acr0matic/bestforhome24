@@ -18,3 +18,7 @@ const scrollController = new SmoothScroll('a[href*="#"]', {
   speed: 500,
   speedAsDuration: true,
 });
+
+AOS.init({
+  once: true,
+});

@@ -160,7 +160,7 @@
 
         <h3 class="section__subtitle">По конструкции</h3>
 
-        <div class="swiper swiper--shadow swiper--mobile slider-compatibility">
+        <div data-aos="fade-up" class="swiper swiper--shadow swiper--mobile slider-compatibility">
           <div class="swiper-wrapper row">
             <div class="swiper-slide col-12 col-md-6 mb-4">
               <div class="constuction__item">
@@ -307,7 +307,7 @@
 
         <h3 class="section__subtitle mt-5">Москитные полотна</h3>
 
-        <div class="swiper swiper--shadow swiper--mobile slider-compatibility">
+        <div data-aos="fade-up" class="swiper swiper--shadow swiper--mobile slider-compatibility">
           <div class="swiper-wrapper row">
             <div class="swiper-slide col-12 col-md-4 mb-4">
               <div class="material__item">
@@ -580,7 +580,7 @@
   <section class="section" id="textblock">
     <div class="container">
       <div class="textblock">
-        <div class="textblock__item">
+        <div data-aos="fade-left" class="textblock__item">
           <div class="row flex-column-reverse flex-md-row">
             <div class="col-12 col-md-6">
               <h2 class="textblock__title section__title">Заголовок</h2>
@@ -605,7 +605,7 @@
         </div>
         <!-- /.textblock__item -->
 
-        <div class="textblock__item">
+        <div data-aos="fade-right" class="textblock__item">
           <div class="row flex-md-row-reverse flex-column-reverse">
             <div class="col-12 col-md-6">
               <h2 class="textblock__title section__title">Заголовок</h2>
@@ -654,7 +654,7 @@
         </p>
 
         <div class="row">
-          <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-5">
+          <div data-aos="fade-up" class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-5">
             <div class="card">
               <div class="card__picture position-relative">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
@@ -678,7 +678,7 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-5">
+          <div data-aos="fade-up" class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-5">
             <div class="card">
               <div class="card__picture position-relative">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
@@ -702,7 +702,7 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-5">
+          <div data-aos="fade-up" class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-5">
             <div class="card">
               <div class="card__picture position-relative">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
@@ -726,7 +726,7 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-0">
+          <div data-aos="fade-up" class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-0">
             <div class="card">
               <div class="card__picture position-relative">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
@@ -750,7 +750,7 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-0">
+          <div data-aos="fade-up" class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-0">
             <div class="card">
               <div class="card__picture position-relative">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
@@ -774,7 +774,7 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-12 col-sm-6 col-lg-4">
+          <div data-aos="fade-up" class="col-12 col-sm-6 col-lg-4">
             <div class="card">
               <div class="card__picture position-relative">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">

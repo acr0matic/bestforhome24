@@ -5,7 +5,7 @@
         <p class="section__description">Подробная схема объясняющая, каким образом происходит заказ и его обработка в нашей компании. Ознакомьтесь с ней, чтобы иметь лучшее представление о том, как мы работаем.</p>
 
         <ul class="order__list">
-          <li class="order__item">
+          <li data-aos="fade-up" class="order__item">
             <div class="row">
               <div class="col-12 col-md-6">
                 <div class="order__picture position-relative">
@@ -29,7 +29,7 @@
           </li>
           <!-- /.order-list__item -->
 
-          <li class="order__item">
+          <li data-aos="fade-up" class="order__item">
             <div class="row">
               <div class="col-12 col-md-6">
                 <div class="order__picture position-relative">
@@ -53,7 +53,7 @@
           </li>
           <!-- /.order-list__item -->
 
-          <li class="order__item">
+          <li data-aos="fade-up" class="order__item">
             <div class="row">
               <div class="col-12 col-md-6">
                 <div class="order__picture position-relative">
@@ -77,7 +77,7 @@
           </li>
           <!-- /.order-list__item -->
 
-          <li class="order__item">
+          <li data-aos="fade-up" class="order__item">
             <div class="row">
               <div class="col-12 col-md-6">
                 <div class="order__picture position-relative">
@@ -102,7 +102,7 @@
           </li>
           <!-- /.order-list__item -->
 
-          <li class="order__item">
+          <li data-aos="fade-up" class="order__item">
             <div class="row">
               <div class="col-12 col-md-6">
                 <div class="order__picture position-relative">

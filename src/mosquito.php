@@ -49,7 +49,7 @@
           Наша компания изготавливает москитные сетки и рулонные шторы уже больше 10 лет. Каждая сетка или штора делается строго индивидуально под Ваши окна. В нашем каталоге тысячи цветов и вариаций рисунков для штор, а также, все возможные виды антимоскитного полотна для любой формы москитной сетки.
         </p>
 
-        <div class="constuction__slider position-relative">
+        <div data-aos="fade-up" class="constuction__slider position-relative">
           <h3 class="section__subtitle">По конструкции</h3>
 
           <div class="swiper swiper--shadow slider-constuction">
@@ -171,7 +171,7 @@
         </div>
         <!-- /.constuction__slider -->
 
-        <div class="constuction__slider position-relative mt-5">
+        <div data-aos="fade-up" class="constuction__slider position-relative mt-5">
           <h3 class="section__subtitle">По полотну</h3>
 
           <div class="swiper swiper--shadow slider-material">
@@ -402,7 +402,7 @@
       <div class="usage">
         <h2 class="section__title">Варианты установки</h2>
         <div class="row">
-          <div class="col-12 col-sm-6 col-lg-3 mb-4">
+          <div data-aos="fade-up" data-aos-delay="100" class="col-12 col-sm-6 col-lg-3 mb-4">
             <div class="card">
               <div class="card__picture position-relative">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
@@ -426,7 +426,7 @@
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-12 col-sm-6 col-lg-3 mb-4">
+          <div data-aos="fade-up" data-aos-delay="200" class="col-12 col-sm-6 col-lg-3 mb-4">
             <div class="card">
               <div class="card__picture position-relative">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
@@ -450,7 +450,7 @@
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-12 col-sm-6 col-lg-3 mb-4">
+          <div data-aos="fade-up" data-aos-delay="300" class="col-12 col-sm-6 col-lg-3 mb-4">
             <div class="card">
               <div class="card__picture position-relative">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
@@ -474,7 +474,7 @@
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-12 col-sm-6 col-lg-3 mb-4">
+          <div data-aos="fade-up" data-aos-delay="400" class="col-12 col-sm-6 col-lg-3 mb-4">
             <div class="card">
               <div class="card__picture position-relative">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
@@ -498,7 +498,7 @@
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
+          <div data-aos="fade-up" data-aos-delay="500" class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
             <div class="card">
               <div class="card__picture position-relative">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
@@ -522,7 +522,7 @@
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
+          <div data-aos="fade-up" data-aos-delay="600" class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
             <div class="card">
               <div class="card__picture position-relative">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
@@ -546,7 +546,7 @@
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
+          <div data-aos="fade-up" data-aos-delay="700" class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
             <div class="card">
               <div class="card__picture position-relative">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
@@ -570,7 +570,7 @@
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-12 col-sm-6 col-lg-3">
+          <div data-aos="fade-up" data-aos-delay="800" class="col-12 col-sm-6 col-lg-3">
             <div class="card">
               <div class="card__picture position-relative">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
@@ -601,7 +601,7 @@
     <!-- /.container -->
   </section>
 
-  <section class="section" id="service">
+  <section data-aos="fade-up" class="section" id="service">
     <div class="container">
       <div class="service">
         <div class="section__header">

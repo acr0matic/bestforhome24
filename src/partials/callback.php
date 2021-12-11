@@ -1,4 +1,4 @@
-<section class="section" id="callback">
+<section data-aos="fade-up" class="section" id="callback">
   <div class="container">
     <div class="callback">
       <div class="row">

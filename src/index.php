@@ -189,7 +189,7 @@
         </p>
 
         <div class="row">
-          <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-5">
+          <div data-aos="fade-up" class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-5">
             <div class="card">
               <div class="card__picture position-relative">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
@@ -213,7 +213,7 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-5">
+          <div data-aos="fade-up" class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-5">
             <div class="card">
               <div class="card__picture position-relative">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
@@ -237,7 +237,7 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-5">
+          <div data-aos="fade-up" class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-5">
             <div class="card">
               <div class="card__picture position-relative">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
@@ -261,7 +261,7 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-0">
+          <div data-aos="fade-up" class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-0">
             <div class="card">
               <div class="card__picture position-relative">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
@@ -285,7 +285,7 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-0">
+          <div data-aos="fade-up" class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-0">
             <div class="card">
               <div class="card__picture position-relative">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
@@ -309,7 +309,7 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-12 col-sm-6 col-lg-4">
+          <div data-aos="fade-up" class="col-12 col-sm-6 col-lg-4">
             <div class="card">
               <div class="card__picture position-relative">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
@@ -404,7 +404,7 @@
 
       <div class="portfolio">
         <div class="row">
-          <div class="col-6 col-md-3 mb-4">
+          <div data-aos="fade-up" data-aos-delay="100" class="col-6 col-md-3 mb-4">
             <div class="portfolio__picture position-relative">
               <a data-fslightbox href="">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
@@ -415,7 +415,7 @@
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-6 col-md-3 mb-4">
+          <div data-aos="fade-up" data-aos-delay="200" class="col-6 col-md-3 mb-4">
             <div class="portfolio__picture position-relative">
               <a data-fslightbox href="">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
@@ -426,7 +426,7 @@
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-6 col-md-3 mb-4">
+          <div data-aos="fade-up" data-aos-delay="300" class="col-6 col-md-3 mb-4">
             <div class="portfolio__picture position-relative">
               <a data-fslightbox href="">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
@@ -437,7 +437,7 @@
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-6 col-md-3 mb-4">
+          <div data-aos="fade-up" data-aos-delay="400" class="col-6 col-md-3 mb-4">
             <div class="portfolio__picture position-relative">
               <a data-fslightbox href="">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
@@ -448,7 +448,7 @@
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-6 col-md-3 mb-4">
+          <div data-aos="fade-up" data-aos-delay="500" class="col-6 col-md-3 mb-4">
             <div class="portfolio__picture position-relative">
               <a data-fslightbox href="">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
@@ -459,7 +459,7 @@
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-6 col-md-3 mb-4">
+          <div data-aos="fade-up" data-aos-delay="600" class="col-6 col-md-3 mb-4">
             <div class="portfolio__picture position-relative">
               <a data-fslightbox href="">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
@@ -470,7 +470,7 @@
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-6 col-md-3 mb-0">
+          <div data-aos="fade-up" data-aos-delay="700" class="col-6 col-md-3 mb-0">
             <div class="portfolio__picture position-relative">
               <a data-fslightbox href="">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
@@ -481,7 +481,7 @@
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-6 col-md-3 mb-0">
+          <div data-aos="fade-up" data-aos-delay="800" class="col-6 col-md-3 mb-0">
             <div class="portfolio__picture position-relative">
               <a data-fslightbox href="">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
@@ -501,7 +501,7 @@
 
   <?php include_once('partials/order.php'); ?>
 
-  <section class="section" id="useful">
+  <section data-aos="fade-up" class="section" id="useful">
     <div class="container">
       <div class="useful">
         <div class="section__header">

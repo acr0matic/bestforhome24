@@ -1,4 +1,4 @@
-  <section id="faq" class="section">
+  <section data-aos="fade-up" id="faq" class="section">
     <div class="container">
       <h2 class="section__title">Часто задаваемые вопросы</h2>
 
