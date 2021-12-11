@@ -1,0 +1,64 @@
+#not-found {
+}
+
+.not-found {
+  padding-top: 65px;
+  padding-bottom: 85px;
+
+  @include breakpoint($breakpoint-tablet--large) {
+    padding-top: 65px;
+    padding-bottom: 85px;
+    text-align: center;
+  }
+
+  @include breakpoint($breakpoint-mobile--large) {
+    padding: 0;
+  }
+
+  &__title {
+    margin-bottom: 35px;
+
+    @include breakpoint($breakpoint-laptop--large) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 50px;
+
+    @include breakpoint($breakpoint-laptop--large) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__button {
+    @include breakpoint($breakpoint-mobile--large) {
+      margin: 0 auto;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 350px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+    @include breakpoint($breakpoint-laptop--large) {
+      max-width: 300px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-top: 30px;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      max-width: 180px;
+    }
+  }
+}
