@@ -12,8 +12,16 @@ body {
   line-height: 180%;
 
   color: $text-black;
+
+  @include breakpoint($breakpoint-mobile--large) {
+    line-height: 160%;
+  }
 }
 
 p {
   font-size: $text-size--medium;
+
+  @include breakpoint($breakpoint-mobile--large) {
+    font-size: $text-size--small;
+  }
 }

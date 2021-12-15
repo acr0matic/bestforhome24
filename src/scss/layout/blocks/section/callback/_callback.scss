@@ -13,6 +13,10 @@
     margin: 5px 0 15px 0;
 
     font-size: $heading-size--small;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: $text-size--large;
+    }
   }
 
   &__picture {

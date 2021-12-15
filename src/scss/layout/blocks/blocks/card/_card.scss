@@ -45,6 +45,10 @@
   &__title {
     font-weight: $weight-Medium;
     font-size: $text-size--large;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: $text-size--medium;
+    }
   }
 
   &__link {

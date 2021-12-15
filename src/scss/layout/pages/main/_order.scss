@@ -39,8 +39,9 @@
     font-weight: $weight-Regular;
 
     @include breakpoint($breakpoint-mobile--large) {
-      margin-bottom: 15px;
-      font-size: $text-size--large;
+      margin-bottom: 5px;
+      font-size: $text-size--medium;
+      font-weight: $weight-Medium;
     }
   }
 

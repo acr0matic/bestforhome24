@@ -208,4 +208,10 @@ if (window.matchMedia('(max-width: 576px)').matches) {
     spaceBetween: 25,
     autoHeight: true,
   });
+
+  const service = new Swiper('.slider-service', {
+    slidesPerView: 'auto',
+    spaceBetween: 25,
+    autoHeight: true,
+  });
 }

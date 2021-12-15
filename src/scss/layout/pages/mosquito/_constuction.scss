@@ -56,8 +56,8 @@
   &__help {
     display: none;
 
-    width: 20px;
-    margin-left: 15px;
+    width: 18px;
+    margin-left: 10px;
 
     @include breakpoint($breakpoint-mobile--large) {
       display: block;
@@ -69,7 +69,7 @@
     font-weight: $weight-Medium;
 
     @include breakpoint($breakpoint-mobile--large) {
-      font-size: $text-size--large;
+      font-size: $text-size--medium;
     }
   }
 

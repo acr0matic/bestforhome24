@@ -162,8 +162,8 @@
       <div class="mobile-menu__wrapper">
         <nav class="mobile-menu__nav nav nav--mobile">
           <ul class="nav__list">
-            <li class="nav__item mb-2"><a href="index.php" class="nav__link">Главная</a></li>
-            <li class="nav__item mb-2">
+            <li class="nav__item mb-3"><a href="index.php" class="nav__link">Главная</a></li>
+            <li class="nav__item mb-3">
               <div class="handorgel handorgel--menu">
                 <div class="handorgel__header">
                   <div class="handorgel__header__button">
@@ -200,7 +200,7 @@
               <!-- /.handorgel-->
             </li>
 
-            <li class="nav__item mb-2">
+            <li class="nav__item mb-3">
               <div class="handorgel handorgel--menu">
                 <div class="handorgel__header">
                   <div class="handorgel__header__button">
@@ -235,7 +235,7 @@
               <!-- /.handorgel-->
             </li>
 
-            <li class="nav__item mb-2">
+            <li class="nav__item mb-3">
               <div class="handorgel handorgel--menu">
                 <div class="handorgel__header">
                   <div class="handorgel__header__button">
@@ -267,8 +267,8 @@
               </div>
               <!-- /.handorgel-->
             </li>
-            <li class="nav__item nav__item--disabled mb-2"><a href="portfolio.php" class="nav__link">Портфолио</a></li>
-            <li class="nav__item mb-2"><a href="blog.php" class="nav__link">Статьи</a></li>
+            <li class="nav__item nav__item--disabled mb-3"><a href="portfolio.php" class="nav__link">Портфолио</a></li>
+            <li class="nav__item mb-3"><a href="blog.php" class="nav__link">Статьи</a></li>
           </ul>
         </nav>
 

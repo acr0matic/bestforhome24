@@ -1,8 +1,4 @@
-.slider-useful {
-  @include breakpoint($breakpoint-mobile--large) {
-    overflow: initial;
-  }
-
+.slider-service {
   .swiper-slide {
     height: initial;
 

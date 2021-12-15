@@ -30,6 +30,10 @@ $margin--mobile: 15px;
 
     .link {
       color: $text-gray;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        font-size: $text-size--small;
+      }
     }
   }
 
@@ -66,7 +70,7 @@ $margin--mobile: 15px;
     font-size: $text-size--large;
 
     @include breakpoint($breakpoint-laptop--medium) {
-      font-size: $text-size--medium;
+      font-size: $text-size--small;
     }
   }
 }

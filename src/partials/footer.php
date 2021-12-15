@@ -178,7 +178,7 @@
 
       <main class="modal__content">
         <p class="modal__description">
-          Оставьте свои контактные данные и  мы свяжемся <br> с Вами в ближайшее рабочее время.
+          Оставьте свои контактные данные и мы свяжемся <br> с Вами в ближайшее рабочее время.
         </p>
 
         <form class="form" action="">
@@ -198,7 +198,7 @@
             <label class="checkbox">
               <input type="checkbox" class="checkbox__privacy">
               <span class="checkbox__mark"></span>
-              <span class="checkbox__label">Я согласен на обработку моих персональных данных. <br> <a href="policy.html" class="checkbox__policy">Открыть политику конфиденциальности</a></span>
+              <span class="checkbox__label">Я согласен на <a href="policy.html" class="checkbox__policy">обработку</a> моих персональных данных.</span>
             </label>
           </div>
           <!-- /.input -->

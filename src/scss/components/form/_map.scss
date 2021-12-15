@@ -4,4 +4,10 @@
       display: none;
     }
   }
+
+  .form__button {
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 100%;
+    }
+  }
 }

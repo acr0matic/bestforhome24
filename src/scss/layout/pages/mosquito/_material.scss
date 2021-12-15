@@ -43,8 +43,8 @@
   }
 
   &__help {
-    width: 20px;
-    margin-left: 15px;
+    width: 18px;
+    margin-left: 10px;
   }
 
   &__header {
@@ -72,7 +72,7 @@
 
     @include breakpoint($breakpoint-mobile--large) {
       margin-top: 0;
-      font-size: $text-size--large;
+      font-size: $text-size--medium;
     }
   }
 
