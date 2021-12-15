@@ -397,6 +397,8 @@
     <!-- /.container -->
   </section>
 
+  <?php include_once('partials/textblock.php'); ?>
+
   <section id="usage" class="section">
     <div class="container">
       <div class="usage">

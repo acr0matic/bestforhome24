@@ -8,6 +8,12 @@
   }
 }
 
+#calculator-small {
+  .calculator__body {
+    border-bottom: none;
+  }
+}
+
 .calculator {
   padding: 45px;
   border-radius: $border-radius--large;
