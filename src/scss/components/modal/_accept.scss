@@ -1,0 +1,26 @@
+.modal-accept {
+  .modal__overlay {
+    @include breakpoint($breakpoint-laptop--large) {
+      align-items: center;
+    }
+  }
+
+  .modal__container {
+    max-width: 600px;
+    margin: 0 10px;
+
+    @include breakpoint($breakpoint-laptop--large) {
+      border-radius: 10px;
+    }
+  }
+
+  .modal__title {
+    @include breakpoint($breakpoint-laptop--large) {
+      width: 80%;
+    }
+
+    span {
+      color: $text-yellow;
+    }
+  }
+}

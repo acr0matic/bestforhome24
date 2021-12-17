@@ -1,22 +1,24 @@
-let calculatorData = {
-
-};
+let calculatorData = {};
 
 class CalculatorController {
   constructor(ref) {
     this.calc = ref;
     this.groups = ref.querySelectorAll('.calculator__group');
-    this.select = ref.querySelectorAll('[data-trigger]');
+    this.radioGroup = _.invokeMap(this.groups, 'querySelectorAll', 'input[type=radio]');
 
     this.fields = ref.querySelectorAll('input, select');
-    this.sizeFields = _.filter(Array.from(this.fields), { 'type': 'number', 'disabled': false });
+    this.sizeFields = _.filter(this.fields, { 'type': 'number', 'disabled': false });
     this.checkbox = _.filter(Array.from(this.fields), { 'type': 'checkbox', 'disabled': false });
-    this.radioGroup = _.invokeMap(this.groups, 'querySelectorAll', 'input[type=radio]');
+
+    this.select = ref.querySelectorAll('[data-trigger]');
     this.choices = _.map(this.select, (select) => new Choices(select, {
       searchEnabled: false,
       itemSelectText: 'Выбрать',
       noChoicesText: 'Нет элементов',
     }));
+
+    this.width = null;
+    this.height = null;
 
     this.table = ref.querySelector('.table tbody');
 
@@ -27,25 +29,8 @@ class CalculatorController {
   Init() {
     this.UpdateType(this.choices[0].getValue(true));
 
-    const priceData = data.production[this.current];
-    const priceKeys = _.keys(priceData.price);
-    const advancedKeys = _.keys(priceData.advanced);
-
-    // Установка цены в радиокнопки
-    _.forEach(priceKeys, price => {
-      const picked = this.calc.querySelectorAll(`input[name=${price}]`)
-      _.forEach(picked, item => {
-        item.dataset.cost = priceData.price[price][item.value];
-      });
-    });
-
-    // Установка цены в чекбоксы
-    _.forEach(advancedKeys, price => {
-      const picked = this.calc.querySelectorAll(`input[name=${price}]`)
-      _.forEach(picked, item => {
-        item.dataset.cost = priceData.advanced[item.name];
-      });
-    });
+    const priceKeys = _.keys(data.production[this.current].price);
+    this.SetPrice(priceKeys, "price")
 
     // Установка цены в объект с ценами из инпутов
     _.forEach(this.fields, field => {
@@ -97,6 +82,26 @@ class CalculatorController {
     });
   }
 
+  SetPrice(keys, property) {
+    _.forEach(keys, price => {
+      if (price === "Дополнительно") {
+        const current = data.production[this.current].price[price];
+        const currentKeys = _.keys(current);
+        _.forEach(currentKeys, key => {
+          const picked = this.calc.querySelector(`input[name=${key}]`)
+          picked.dataset.cost = current[key];
+        });
+      }
+
+      else {
+        const picked = this.calc.querySelectorAll(`input[name=${price}]`)
+        _.forEach(picked, item => {
+          item.dataset.cost = data.production[this.current][property][item.name][item.value];
+        });
+      }
+    });
+  }
+
   UpdateChoices() {
     const current = this.choices[0].getValue(true);
     const keys = _.keys(data['production'][current].price['Изделие']);
@@ -144,6 +149,10 @@ class CalculatorController {
     if (type) this.calc.dataset.current = type;
     this.current = this.calc.dataset.current;
 
+    this.sizeFields = _.filter(this.fields, { 'type': 'number', 'disabled': false });
+    this.width = _.find(this.sizeFields, ['name', 'Ширина']);
+    this.height = _.find(this.sizeFields, ['name', 'Высота']);
+
     this.UpdateChoices();
 
     this.ResetPrice();
@@ -164,7 +173,6 @@ class CalculatorController {
 
   UpdatePrice(key, value, additional) {
     if (additional !== undefined) calculatorData[key] = [value, additional];
-    else calculatorData[key] = value;
   }
 
   ResetPrice() {
@@ -218,12 +226,15 @@ class CalculatorController {
     });
   }
 
-  CalculateSize(fields) {
+  CalculateSize() {
     const price = data.production[this.current].price['Изделие'];
 
-    const fieldsArray = Array.from(fields);
-    const width = _.find(fieldsArray, ['name', 'width']).value || 0;
-    const height = _.find(fieldsArray, ['name', 'height']).value || 0;
+    const width = this.width.value || 0;
+    const height = this.height.value || 0;
+    let sizeString;
+
+    if (width === 0 || height === 0) sizeString = 'Не указаны';
+    else sizeString = `${width} x ${height} см.`;
 
     const addPriceValue = (price[this.service][1] / 100) * 10;
 
@@ -232,18 +243,18 @@ class CalculatorController {
         const multiplier = Math.ceil((width * height) / 1000 - 10);
 
         if (multiplier != 0)
-          calculatorData['Изделие'] = [this.service, Math.floor(price[this.service][1] + multiplier * addPriceValue)];
+          calculatorData['Размеры'] = [sizeString, Math.floor(price[this.service][1] + multiplier * addPriceValue)];
 
-        else calculatorData['Изделие'] = [this.service, price[this.service][1]];
+        else calculatorData['Размеры'] = [sizeString, price[this.service][1]];
       }
 
       else if (width * height > 2500)
-        calculatorData['Изделие'] = [this.service, price[this.service][1]];
+        calculatorData['Размеры'] = [sizeString, price[this.service][1]];
 
-      else calculatorData['Изделие'] = [this.service, price[this.service][0]];
+      else calculatorData['Размеры'] = [sizeString, price[this.service][0]];
     }
 
-    else calculatorData['Изделие'] = [this.service, price[this.service][0]];
+    else calculatorData['Размеры'] = [sizeString, price[this.service][0]];
 
 
     this.UpdateTotal();

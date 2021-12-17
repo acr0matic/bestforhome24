@@ -145,11 +145,12 @@ class Form {
     const additional = this.form.getAttribute('data-additional');
 
     data.append('target', target);
+    if (target === 'calculator') data.append('data' ,calculatorData);
     if (additional) data.append('additional', additional);
 
-    // for (var pair of data.entries()) {
-    //   console.log(pair[0]+ ', ' + pair[1]);
-    // }
+    for (var pair of data.entries()) {
+      console.log(pair[0]+ ', ' + pair[1]);
+    }
 
     try {
       let response = await fetch(this.action, {
@@ -160,28 +161,12 @@ class Form {
       if (response.ok) {
         if (this.redirect) window.location.href = this.redirect;
 
-
-        MicroModal.show('modal-thank', {
-          disableFocus: true,
-          awaitCloseAnimation: true,
-        });
+        MicroModal.close('modal-callback', modalParams);
+        MicroModal.show('modal-accept', modalParams);
 
         setTimeout(() => {
-          MicroModal.close('modal-thank', {
-            disableFocus: true,
-            awaitCloseAnimation: true,
-          });
-
-          MicroModal.close('modal-promotions', {
-            disableFocus: true,
-            awaitCloseAnimation: true,
-          });
-
-          MicroModal.close('modal-callback', {
-            disableFocus: true,
-            awaitCloseAnimation: true,
-          });
-        }, 2000);
+          MicroModal.close('modal-accept', modalParams);
+        }, 3000);
       }
 
       let result = await response.json();

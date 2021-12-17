@@ -30,15 +30,26 @@ const mobileMenuButton = document.querySelector('.header__mobile');
 const mobileBurger = mobileMenuButton.querySelector('.hamburger')
 const mobileMenu = document.getElementById('mobile-menu');
 const mobileOverlay = mobileMenu.querySelector('.mobile-menu__overlay');
+const mobileCallback = mobileMenu.querySelector('button');
+
+const mobileClasses = {
+  "open": "mobile-menu--open",
+  "burger": "is-active",
+}
 
 mobileMenuButton.addEventListener('click', () => {
-  mobileBurger.classList.toggle('is-active');
-  mobileMenu.classList.toggle('mobile-menu--open');
+  mobileBurger.classList.toggle(mobileClasses.burger);
+  mobileMenu.classList.toggle(mobileClasses.open);
 });
 
 mobileOverlay.addEventListener('click', () => {
-  mobileBurger.classList.remove('is-active');
-  mobileMenu.classList.remove('mobile-menu--open');
+  mobileBurger.classList.remove(mobileClasses.burger);
+  mobileMenu.classList.remove(mobileClasses.open);
+});
+
+mobileCallback.addEventListener('click', () => {
+  mobileBurger.classList.remove(mobileClasses.burger);
+  mobileMenu.classList.remove(mobileClasses.open);
 });
 
 const widget = document.getElementById('widget');

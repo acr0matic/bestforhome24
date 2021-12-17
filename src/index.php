@@ -358,7 +358,7 @@
           <!-- /.col-6 -->
 
           <div class="col-12 col-lg-6 col-xl-5">
-            <form class="form form-map" action="">
+            <form class="form form-map" action="php/mail.php" data-target="callback" data-additional="map">
               <h3 class="form__title">Не увидели свой район или город?</h3>
               <p class="form__description">Оставьте заявку, и наш менеджер перезвонит Вам и уточнит территорию по которой мы работаем!</p>
 

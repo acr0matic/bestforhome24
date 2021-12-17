@@ -1,7 +1,7 @@
 <script>
   var data = {
     'production': {
-      'mosquito': {
+      'Москитная сетка': {
         'price': {
           'Изделие': {
             'Стандарт': [499, 999],
@@ -27,16 +27,16 @@
           'Углы': {
             'Пластик': 0,
             'Металл': 200,
-          }
-        },
+          },
 
-        'advanced': {
-          'Доставка': 500,
-          'Установка': 500,
+          'Дополнительно': {
+            'Доставка': 500,
+            'Установка': 500,
+          },
         },
       },
 
-      'curtains': {
+      'Рулонная штора': {
         'price': {
           'Изделие': {
             'Вертикальные жалюзи': [499, 999],
@@ -56,7 +56,7 @@
   <div class="container">
     <h2 class="section__title">Рассчитайте стоимость самостоятельно</h2>
 
-    <form class="calculator">
+    <form action="php/mail.php" data-target="calculator" class="calculator">
       <div class="swiper slider-calculator calculator__slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -69,9 +69,9 @@
                     </h3>
 
                     <div class="input">
-                      <select class="input__select" data-trigger name="calculator_type">
-                        <option value="mosquito">Москитные сетки</option>
-                        <option value="curtains">Рулонные шторы</option>
+                      <select class="input__select" data-trigger name="Тип изделия">
+                        <option value="Москитная сетка">Москитные сетки</option>
+                        <option value="Рулонная штора">Рулонные шторы</option>
                       </select>
                       <!-- /.input -->
                     </div>
@@ -88,7 +88,7 @@
                     </h3>
 
                     <div class="input">
-                      <select class="input__select" data-trigger name="calculator_type">
+                      <select class="input__select" data-trigger name="Вид изделия">
                         <option value="Рамочная">Рамочная сетка</option>
                         <option value="Внутренняя">Внутренняя сетка</option>
                         <option value="Раздвижная">Раздвижная сетка</option>
@@ -129,7 +129,7 @@
                           <div class="row">
                             <div class="col-6">
                               <div class="input">
-                                <input placeholder="Ширина в мм." autocomplete="off" type="number" name="width" class="input__field">
+                                <input placeholder="Ширина в см." autocomplete="off" type="number" name="Ширина" class="input__field">
                                 <img data-tippy-content="" class="input__warning" src="img/icons/misc/warning.svg" alt="">
                               </div>
                               <!-- /.input -->
@@ -138,7 +138,7 @@
 
                             <div class="col-6">
                               <div class="input">
-                                <input placeholder="Высота в мм." autocomplete="off" type="number" name="height" class="input__field">
+                                <input placeholder="Высота в см." autocomplete="off" type="number" name="Высота" class="input__field">
                                 <img data-tippy-content="" class="input__warning" src="img/icons/misc/warning.svg" alt="">
                               </div>
                               <!-- /.input -->
@@ -297,7 +297,7 @@
                               <div class="row">
                                 <div class="col-6">
                                   <div class="input">
-                                    <input placeholder="Ширина в мм." autocomplete="off" type="number" name="width" class="input__field">
+                                    <input placeholder="Ширина в см." autocomplete="off" type="number" name="Ширина" class="input__field">
                                     <img data-tippy-content="" class="input__warning" src="img/icons/misc/warning.svg" alt="">
                                   </div>
                                   <!-- /.input -->
@@ -306,7 +306,7 @@
 
                                 <div class="col-6">
                                   <div class="input">
-                                    <input placeholder="Высота в мм." autocomplete="off" type="number" name="height" class="input__field">
+                                    <input placeholder="Высота в см." autocomplete="off" type="number" name="Высота" class="input__field">
                                     <img data-tippy-content="" class="input__warning" src="img/icons/misc/warning.svg" alt="">
                                   </div>
                                   <!-- /.input -->
@@ -385,45 +385,7 @@
                       </thead>
 
                       <tbody>
-                        <tr>
-                          <td>Размеры</td>
-                          <td>50x50</td>
-                          <td>499р</td>
-                        </tr>
-                        <tr>
-                          <td>Цвет</td>
-                          <td>Белый</td>
-                          <td>0р</td>
-                        </tr>
-                        <tr>
-                          <td>Крепеж</td>
-                          <td>Пластик</td>
-                          <td>0р</td>
-                        </tr>
-                        <tr>
-                          <td>Углы</td>
-                          <td>Пластик</td>
-                          <td>0р</td>
-                        </tr>
-                        <tr>
-                          <td>Ручки</td>
-                          <td>Пластик</td>
-                          <td>0р</td>
-                        </tr>
-                        <tr>
-                          <td>Установка</td>
-                          <td>Нет</td>
-                          <td>0р</td>
-                        </tr>
-                        <tr>
-                          <td>Доставка</td>
-                          <td>Нет</td>
-                          <td>0р</td>
-                        </tr>
-                        <tr style="background-color: #fafafa;">
-                          <td style="text-align: right;" colspan="2">Итого:</td>
-                          <td>0р</td>
-                        </tr>
+                        <!--- ДИНАМИЧЕСКИЙ КОНТЕНТ -->
                       </tbody>
                     </table>
                   </div>
