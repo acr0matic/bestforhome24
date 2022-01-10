@@ -126,7 +126,7 @@
               <!-- /.dropdown__content -->
             </li>
             <li class="nav__item"><a class="nav__link link link--nav" href="portfolio.php">Портфолио</a></li>
-            <li class="nav__item nav__item--disabled"><a class="nav__link link link--nav" href="blog.php">Статьи</a></li>
+            <li class="nav__item"><a class="nav__link link link--nav" href="blog.php">Статьи</a></li>
           </ul>
         </nav>
         <!-- /.header__nav nav -->
@@ -267,7 +267,7 @@
               </div>
               <!-- /.handorgel-->
             </li>
-            <li class="nav__item nav__item--disabled mb-3"><a href="portfolio.php" class="nav__link">Портфолио</a></li>
+            <li class="nav__item mb-3"><a href="portfolio.php" class="nav__link">Портфолио</a></li>
             <li class="nav__item mb-3"><a href="blog.php" class="nav__link">Статьи</a></li>
           </ul>
         </nav>

@@ -1,5 +1,6 @@
 .slider-constuction {
   .swiper-slide {
+    width: 40%;
     height: initial;
 
     @include breakpoint($breakpoint-mobile--large) {

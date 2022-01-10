@@ -145,7 +145,7 @@ class Form {
     const additional = this.form.getAttribute('data-additional');
 
     data.append('target', target);
-    if (target === 'calculator') data.append('data' ,calculatorData);
+    if (target === 'calculator') data.append('data', JSON.stringify(calculatorData));
     if (additional) data.append('additional', additional);
 
     for (var pair of data.entries()) {

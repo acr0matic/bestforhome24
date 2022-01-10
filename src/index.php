@@ -504,162 +504,114 @@
 
   <?php include_once('partials/order.php'); ?>
 
-  <section data-aos="fade-up" class="section" id="useful">
+  <section data-aos="fade-up" id="blog" class="section">
     <div class="container">
-      <div class="useful">
-        <div class="section__header">
-          <h2 class="section__title">Полезные статьи</h2>
-          <a href="" class="link link--nav link--arrow">
-            Все статьи
-            <svg class="link__arrow svg ms-2" width="13" height="10" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.83007 0.139209L9.86053 3.16392C10.0465 3.34953 10.0465 3.65047 9.86053 3.83608L6.83007 6.86079C6.64411 7.0464 6.3426 7.0464 6.15663 6.86079C5.97067 6.67518 5.97067 6.37424 6.15663 6.18863L8.37418 3.97529L0 3.97529L0 3.02471L8.37418 3.02471L6.15663 0.811367C5.97067 0.625755 5.97067 0.32482 6.15663 0.139209C6.3426 -0.0464029 6.64411 -0.0464029 6.83007 0.139209Z" fill="#969696"></path>
-            </svg>
-          </a>
-        </div>
-        <!-- /.section__header -->
+      <div class="section__header">
+        <h2 class="section__title">Полезные статьи</h2>
+        <a href="" class="link link--nav link--arrow">
+          Все статьи
+          <svg class="link__arrow svg ms-2" width="13" height="10" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.83007 0.139209L9.86053 3.16392C10.0465 3.34953 10.0465 3.65047 9.86053 3.83608L6.83007 6.86079C6.64411 7.0464 6.3426 7.0464 6.15663 6.86079C5.97067 6.67518 5.97067 6.37424 6.15663 6.18863L8.37418 3.97529L0 3.97529L0 3.02471L8.37418 3.02471L6.15663 0.811367C5.97067 0.625755 5.97067 0.32482 6.15663 0.139209C6.3426 -0.0464029 6.64411 -0.0464029 6.83007 0.139209Z" fill="#969696"></path>
+          </svg>
+        </a>
+      </div>
+      <!-- /.section__header -->
 
+      <div class="blog">
         <div class="slider">
-
-          <div class="swiper swiper--shadow slider-useful">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="useful__card">
-                  <div class="useful__picture">
-                    <img class="image image--cover" src="img/page/main/useful/1.jpg" alt="">
+          <div class="swiper swiper--shadow swiper--mobile slider-useful">
+            <div class="swiper-wrapper row">
+              <div class="swiper-slide col-12 col-md-3">
+                <div class="blog__card blog-card mb-4">
+                  <div class="blog-card__picture">
+                    <img src="img/page/main/useful/1.jpg" alt="" class="blog-card__image image image--cover">
                   </div>
-                  <!-- /.useful__picture -->
+                  <!-- /.blog-card__picture -->
 
-                  <div class="useful__wrapper">
-                    <h3 class="useful__title">Как установить изделие м ак установить изделие ак установить изделие</h3>
-                    <div class="useful__info">
-                      <time class="useful__date">26.09.21</time>
-                      <span class="useful__views">
-                        1200
-                        <img class="ms-2" src="img/icons/misc/eye.svg" alt="">
-                      </span>
+                  <div class="blog-card__content">
+                    <h3 class="blog-card__title">Как установить москитную сетку</h3>
+                    <p class="blog-card__description">Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Точках маленькая скатился речью, то домах языком несколько пор продолжил обеспечивает если за, страну агентство подпоясал мир строчка рыбными вдали решила заглавных текстами текстов ipsum они жаренные бросил дорогу. Они?</p>
+                    <div class="blog-card__action">
+                      <button class="blog-card__button button button-outline">Читать</button>
                     </div>
-                    <!-- /.useful__info -->
-                    <button class="useful__button button button-primary">Подробнее</button>
+                    <!-- /.blog-card__action -->
                   </div>
-                  <!-- /.useful__wrapper -->
+                  <!-- /.blog-card__content -->
                 </div>
-                <!-- /.useful__card -->
+                <!-- /.blog__card blog-card -->
               </div>
               <!-- /.swiper-slide -->
 
-              <div class="swiper-slide">
-                <div class="useful__card">
-                  <div class="useful__picture">
-                    <img class="image image--cover" src="img/page/main/useful/1.jpg" alt="">
+              <div class="swiper-slide col-12 col-md-3">
+                <div class="blog__card blog-card mb-4">
+                  <div class="blog-card__picture">
+                    <img src="img/page/main/useful/1.jpg" alt="" class="blog-card__image image image--cover">
                   </div>
-                  <!-- /.useful__picture -->
+                  <!-- /.blog-card__picture -->
 
-                  <div class="useful__wrapper">
-                    <h3 class="useful__title">Как установить изделие м ак установить изделие ак установить изделие</h3>
-                    <div class="useful__info">
-                      <time class="useful__date">26.09.21</time>
-                      <span class="useful__views">
-                        1200
-                        <img class="ms-2" src="img/icons/misc/eye.svg" alt="">
-                      </span>
+                  <div class="blog-card__content">
+                    <h3 class="blog-card__title">Как установить москитную сетку</h3>
+                    <p class="blog-card__description">Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Точках маленькая скатился речью, то домах языком несколько пор продолжил обеспечивает если за, страну агентство подпоясал мир строчка рыбными вдали решила заглавных текстами текстов ipsum они жаренные бросил дорогу. Они?</p>
+                    <div class="blog-card__action">
+                      <button class="blog-card__button button button-outline">Читать</button>
                     </div>
-                    <!-- /.useful__info -->
-                    <button class="useful__button button button-primary">Подробнее</button>
+                    <!-- /.blog-card__action -->
                   </div>
-                  <!-- /.useful__wrapper -->
+                  <!-- /.blog-card__content -->
                 </div>
-                <!-- /.useful__card -->
+                <!-- /.blog__card blog-card -->
               </div>
               <!-- /.swiper-slide -->
 
-              <div class="swiper-slide">
-                <div class="useful__card">
-                  <div class="useful__picture">
-                    <img class="image image--cover" src="img/page/main/useful/1.jpg" alt="">
+              <div class="swiper-slide col-12 col-md-3">
+                <div class="blog__card blog-card mb-4">
+                  <div class="blog-card__picture">
+                    <img src="img/page/main/useful/1.jpg" alt="" class="blog-card__image image image--cover">
                   </div>
-                  <!-- /.useful__picture -->
+                  <!-- /.blog-card__picture -->
 
-                  <div class="useful__wrapper">
-                    <h3 class="useful__title">Как установить изделие м ак установить изделие ак установить изделие</h3>
-                    <div class="useful__info">
-                      <time class="useful__date">26.09.21</time>
-                      <span class="useful__views">
-                        1200
-                        <img class="ms-2" src="img/icons/misc/eye.svg" alt="">
-                      </span>
+                  <div class="blog-card__content">
+                    <h3 class="blog-card__title">Как установить москитную сетку</h3>
+                    <p class="blog-card__description">Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Точках маленькая скатился речью, то домах языком несколько пор продолжил обеспечивает если за, страну агентство подпоясал мир строчка рыбными вдали решила заглавных текстами текстов ipsum они жаренные бросил дорогу. Они?</p>
+                    <div class="blog-card__action">
+                      <button class="blog-card__button button button-outline">Читать</button>
                     </div>
-                    <!-- /.useful__info -->
-                    <button class="useful__button button button-primary">Подробнее</button>
+                    <!-- /.blog-card__action -->
                   </div>
-                  <!-- /.useful__wrapper -->
+                  <!-- /.blog-card__content -->
                 </div>
-                <!-- /.useful__card -->
+                <!-- /.blog__card blog-card -->
               </div>
               <!-- /.swiper-slide -->
 
-              <div class="swiper-slide">
-                <div class="useful__card">
-                  <div class="useful__picture">
-                    <img class="image image--cover" src="img/page/main/useful/1.jpg" alt="">
+              <div class="swiper-slide col-12 col-md-3">
+                <div class="blog__card blog-card mb-4">
+                  <div class="blog-card__picture">
+                    <img src="img/page/main/useful/1.jpg" alt="" class="blog-card__image image image--cover">
                   </div>
-                  <!-- /.useful__picture -->
+                  <!-- /.blog-card__picture -->
 
-                  <div class="useful__wrapper">
-                    <h3 class="useful__title">Как установить изделие</h3>
-                    <div class="useful__info">
-                      <time class="useful__date">27.09.21</time>
-                      <span class="useful__views">
-                        340
-                        <img class="ms-2" src="img/icons/misc/eye.svg" alt="">
-                      </span>
+                  <div class="blog-card__content">
+                    <h3 class="blog-card__title">Как установить москитную сетку</h3>
+                    <p class="blog-card__description">Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Точках маленькая скатился речью, то домах языком несколько пор продолжил обеспечивает если за, страну агентство подпоясал мир строчка рыбными вдали решила заглавных текстами текстов ipsum они жаренные бросил дорогу. Они?</p>
+                    <div class="blog-card__action">
+                      <button class="blog-card__button button button-outline">Читать</button>
                     </div>
-                    <!-- /.useful__info -->
-                    <button class="useful__button button button-primary">Подробнее</button>
+                    <!-- /.blog-card__action -->
                   </div>
-                  <!-- /.useful__wrapper -->
+                  <!-- /.blog-card__content -->
                 </div>
-                <!-- /.useful__card -->
-              </div>
-              <!-- /.swiper-slide -->
-
-              <div class="swiper-slide">
-                <div class="useful__card">
-                  <div class="useful__picture">
-                    <img class="image image--cover" src="img/page/main/useful/1.jpg" alt="">
-                  </div>
-                  <!-- /.useful__picture -->
-
-                  <div class="useful__wrapper">
-                    <h3 class="useful__title">Как установить изделие</h3>
-                    <div class="useful__info">
-                      <time class="useful__date">27.09.21</time>
-                      <span class="useful__views">
-                        340
-                        <img class="ms-2" src="img/icons/misc/eye.svg" alt="">
-                      </span>
-                    </div>
-                    <!-- /.useful__info -->
-                    <button class="useful__button button button-primary">Подробнее</button>
-                  </div>
-                  <!-- /.useful__wrapper -->
-                </div>
-                <!-- /.useful__card -->
+                <!-- /.blog__card blog-card -->
               </div>
               <!-- /.swiper-slide -->
             </div>
             <!-- /.swiper-wrapper -->
           </div>
           <!-- /.swiper swiper--overflow slider-useful -->
-
-          <div class="swiper__control">
-            <div class="swiper-button-prev slider-useful__prev"></div>
-            <div class="swiper-button-next slider-useful__next"></div>
-          </div>
-          <!-- /.swiper__control -->
         </div>
         <!-- /.slider -->
       </div>
-      <!-- /.callback -->
+      <!-- /.blog -->
     </div>
     <!-- /.container -->
   </section>

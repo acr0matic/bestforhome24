@@ -65,6 +65,10 @@
     @include breakpoint($breakpoint-mobile--large) {
       font-size: $text-size--small;
       line-height: 160%;
+
+      br {
+        display: none;
+      }
     }
   }
 
