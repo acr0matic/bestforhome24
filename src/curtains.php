@@ -5,13 +5,13 @@
     <div class="hero">
       <div class="container">
         <div class="hero__background">
-          <img src="img/page/mosquito/hero/banner.jpg" alt="" class="hero__image image image--cover">
+          <img src="img/page/curtains/hero/banner.jpg" alt="" class="hero__image image image--cover">
         </div>
         <!-- /.hero__background -->
 
         <div class="hero__content">
           <div class="section__header">
-            <h1 class="hero__title section__title page__title">Москитные сетки</h1>
+            <h1 class="hero__title section__title page__title">Рулонные шторы</h1>
             <nav class="nav nav--section">
               <ul class="nav__list">
                 <li class="nav__item">
@@ -44,13 +44,13 @@
   <section id="constuction" class="section">
     <div class="container">
       <div class="constuction">
-        <h2 class="section__title">Варианты изделий</h2>
+        <h2 class="section__title">Конструкция изделий</h2>
         <p class="section__description">
           Наша компания изготавливает москитные сетки и рулонные шторы уже больше 10 лет. Каждая сетка или штора делается строго индивидуально под Ваши окна. В нашем каталоге тысячи цветов и вариаций рисунков для штор, а также, все возможные виды антимоскитного полотна для любой формы москитной сетки.
         </p>
 
         <div data-aos="fade-up" class="constuction__slider position-relative">
-          <h3 class="section__subtitle">По конструкции</h3>
+          <h3 class="section__subtitle">Виды и формы штор</h3>
 
           <div class="swiper swiper--shadow slider-constuction">
             <div class="swiper-wrapper">
@@ -171,228 +171,118 @@
         </div>
         <!-- /.constuction__slider -->
 
-        <div data-aos="fade-up" class="constuction__slider position-relative mt-5">
-          <h3 class="section__subtitle">По полотну</h3>
-
-          <div class="swiper swiper--shadow slider-material">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="material__item">
-                  <div class="material__header">
-                    <div class="material__picture">
-                      <img src="img/catalog/mosquito/material/standart.svg" alt="" class="material__image image">
-                    </div>
-                    <!-- /.material__picture -->
-
-                    <div class="material__wrapper">
-                      <div class="material__head">
-                        <h3 class="material__name">
-                          <a href="" class="link link--nav">Стандарт</a>
-                        </h3>
-
-                        <a class="material__lightbox" data-fslightbox="id-1" href="img/catalog/mosquito/constuction/standart.svg">
-                          <img src="img/icons/misc/help.svg" alt="" class="material__help">
-                        </a>
-                      </div>
-                      <!-- /.material__head -->
-                      <span class="material__price">От 1 000р</span>
-
-                      <div class="material__params">
-                        <div class="material__param">Размер ячейки: <span class="material__value">1.1 х 1.1 мм.</span></div>
-                        <div class="material__param">Толщина нити: <span class="material__value">0.28 мм.</span></div>
-                      </div>
-                      <!-- /.material__params -->
-                    </div>
-                    <!-- /.material__wrapper -->
+        <div data-aos="fade-up" class="constuction__slider position-relative mt-5 mt-md-4">
+          <div class="section__header mb-0">
+            <h3 class="section__subtitle">Светопропускаемость ткани</h3>
+            <a href="" class="link link--nav link--arrow">
+              Подробнее
+              <svg class="link__arrow svg ms-2" width="13" height="10" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.83007 0.139209L9.86053 3.16392C10.0465 3.34953 10.0465 3.65047 9.86053 3.83608L6.83007 6.86079C6.64411 7.0464 6.3426 7.0464 6.15663 6.86079C5.97067 6.67518 5.97067 6.37424 6.15663 6.18863L8.37418 3.97529L0 3.97529L0 3.02471L8.37418 3.02471L6.15663 0.811367C5.97067 0.625755 5.97067 0.32482 6.15663 0.139209C6.3426 -0.0464029 6.64411 -0.0464029 6.83007 0.139209Z" fill="#969696"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="swiper swiper--shadow swiper--mobile slider-illumination">
+            <div class="swiper-wrapper row">
+              <div class="swiper-slide col-12 col-md-2">
+                <div class="illumination mb-4">
+                  <div class="illumination__picture">
+                    <img src="img/catalog/curtains/illumination/85.svg" alt="" class="illumination__image image image--cover">
                   </div>
-                  <!-- /.material__header -->
-
-                  <div class="material__content">
-                    <p class="material__description">
-                      Устойчиво к повышенной влажности и солнечному излучению.
-                    </p>
-                  </div>
-                  <!-- /.material__content -->
-
-                  <div class="material__action">
-                    <a href="" class="material__link link link--nav link--arrow">
-                      Подробнее
-                      <svg class="link__arrow svg ms-2" width="13" height="10" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.83007 0.139209L9.86053 3.16392C10.0465 3.34953 10.0465 3.65047 9.86053 3.83608L6.83007 6.86079C6.64411 7.0464 6.3426 7.0464 6.15663 6.86079C5.97067 6.67518 5.97067 6.37424 6.15663 6.18863L8.37418 3.97529L0 3.97529L0 3.02471L8.37418 3.02471L6.15663 0.811367C5.97067 0.625755 5.97067 0.32482 6.15663 0.139209C6.3426 -0.0464029 6.64411 -0.0464029 6.83007 0.139209Z" fill="#969696"></path>
-                      </svg>
-                    </a>
-                  </div>
-                  <!-- /.material__action -->
+                  <!-- /.illumination__picture -->
                 </div>
-                <!-- /.material___item -->
+                <!-- /.illumination -->
               </div>
               <!-- /.swiper-slide -->
 
-              <div class="swiper-slide">
-                <div class="material__item">
-                  <div class="material__header">
-                    <div class="material__picture">
-                      <img src="img/catalog/mosquito/material/dust.svg" alt="" class="material__image image">
-                    </div>
-                    <!-- /.material__picture -->
-
-                    <div class="material__wrapper">
-                      <div class="material__head">
-                        <h3 class="material__name">
-                          <a href="" class="link link--nav">Антипыль</a>
-                        </h3>
-
-                        <a class="material__lightbox" data-fslightbox="id-1" href="img/catalog/mosquito/constuction/dust.svg">
-                          <img src="img/icons/misc/help.svg" alt="" class="material__help">
-                        </a>
-                      </div>
-                      <!-- /.material__head -->
-
-                      <span class="material__price">От 1 000р</span>
-
-                      <div class="material__params">
-                        <div class="material__param">Размер ячейки: <span class="material__value">1.25</span></div>
-                        <div class="material__param">Толщина нити: <span class="material__value">1.25x1.25</span></div>
-                      </div>
-                      <!-- /.material__params -->
-                    </div>
-                    <!-- /.material__wrapper -->
+              <div class="swiper-slide col-12 col-md-2">
+                <div class="illumination mb-4">
+                  <div class="illumination__picture">
+                    <img src="img/catalog/curtains/illumination/70.svg" alt="" class="illumination__image image image--cover">
                   </div>
-                  <!-- /.material__header -->
-
-                  <div class="material__content">
-                    <p class="material__description">
-                      Недорогое обычное полотно из стекловолокна с размером ячеек 1,2х1,2 мм. Подходит для разных систем, устойчиво к повышенной влажности и солнечному излучению.
-                    </p>
-                  </div>
-                  <!-- /.material__content -->
-
-                  <div class="material__action">
-                    <a href="" class="material__link link link--nav link--arrow">
-                      Подробнее
-                      <svg class="link__arrow svg ms-2" width="13" height="10" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.83007 0.139209L9.86053 3.16392C10.0465 3.34953 10.0465 3.65047 9.86053 3.83608L6.83007 6.86079C6.64411 7.0464 6.3426 7.0464 6.15663 6.86079C5.97067 6.67518 5.97067 6.37424 6.15663 6.18863L8.37418 3.97529L0 3.97529L0 3.02471L8.37418 3.02471L6.15663 0.811367C5.97067 0.625755 5.97067 0.32482 6.15663 0.139209C6.3426 -0.0464029 6.64411 -0.0464029 6.83007 0.139209Z" fill="#969696"></path>
-                      </svg>
-                    </a>
-                  </div>
-                  <!-- /.material__action -->
+                  <!-- /.illumination__picture -->
                 </div>
-                <!-- /.material___item -->
+                <!-- /.illumination -->
               </div>
               <!-- /.swiper-slide -->
 
-              <div class="swiper-slide">
-                <div class="material__item">
-                  <div class="material__header">
-                    <div class="material__picture">
-                      <img src="img/catalog/mosquito/material/pollen.svg" alt="" class="material__image image">
-                    </div>
-                    <!-- /.material__picture -->
-
-                    <div class="material__wrapper">
-                      <div class="material__head">
-                        <h3 class="material__name">
-                          <a href="" class="link link--nav">Антипыльца</a>
-                        </h3>
-
-                        <a class="material__lightbox" data-fslightbox="id-1" href="img/catalog/mosquito/constuction/pollen.svg">
-                          <img src="img/icons/misc/help.svg" alt="" class="material__help">
-                        </a>
-                      </div>
-                      <!-- /.material__head -->
-
-                      <span class="material__price">От 1 000р</span>
-
-                      <div class="material__params">
-                        <div class="material__param">Размер ячейки: <span class="material__value">1.25</span></div>
-                        <div class="material__param">Толщина нити: <span class="material__value">1.25x1.25</span></div>
-                      </div>
-                      <!-- /.material__params -->
-                    </div>
-                    <!-- /.material__wrapper -->
+              <div class="swiper-slide col-12 col-md-2">
+                <div class="illumination mb-4">
+                  <div class="illumination__picture">
+                    <img src="img/catalog/curtains/illumination/55.svg" alt="" class="illumination__image image image--cover">
                   </div>
-                  <!-- /.material__header -->
-
-                  <div class="material__content">
-                    <p class="material__description">
-                      Рекомендована для нижних этажей многоэтажек. Ячейки 0,7х1 мм для защиты как от насекомых, так и частиц крупной, мелкой пыли. Устанавливается на окнах и дверях балконов, террас, частных домов.
-                    </p>
-                  </div>
-                  <!-- /.material__content -->
-
-                  <div class="material__action">
-                    <a href="" class="material__link link link--nav link--arrow">
-                      Подробнее
-                      <svg class="link__arrow svg ms-2" width="13" height="10" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.83007 0.139209L9.86053 3.16392C10.0465 3.34953 10.0465 3.65047 9.86053 3.83608L6.83007 6.86079C6.64411 7.0464 6.3426 7.0464 6.15663 6.86079C5.97067 6.67518 5.97067 6.37424 6.15663 6.18863L8.37418 3.97529L0 3.97529L0 3.02471L8.37418 3.02471L6.15663 0.811367C5.97067 0.625755 5.97067 0.32482 6.15663 0.139209C6.3426 -0.0464029 6.64411 -0.0464029 6.83007 0.139209Z" fill="#969696"></path>
-                      </svg>
-                    </a>
-                  </div>
-                  <!-- /.material__action -->
+                  <!-- /.illumination__picture -->
                 </div>
-                <!-- /.material___item -->
+                <!-- /.illumination -->
               </div>
               <!-- /.swiper-slide -->
 
-              <div class="swiper-slide">
-                <div class="material__item">
-                  <div class="material__header">
-                    <div class="material__picture">
-                      <img src="img/catalog/mosquito/material/standart.svg" alt="" class="material__image image">
-                    </div>
-                    <!-- /.material__picture -->
-
-                    <div class="material__wrapper">
-                      <h3 class="material__name">
-                        <a href="" class="link link--nav">Стандарт</a>
-                      </h3>
-
-                      <span class="material__price">От 1 000р</span>
-
-                      <div class="material__params">
-                        <div class="material__param">Размер ячейки: <span class="material__value">1.25</span></div>
-                        <div class="material__param">Толщина нити: <span class="material__value">1.25x1.25</span></div>
-                      </div>
-                      <!-- /.material__params -->
-                    </div>
-                    <!-- /.material__wrapper -->
+              <div class="swiper-slide col-12 col-md-2">
+                <div class="illumination mb-4">
+                  <div class="illumination__picture">
+                    <img src="img/catalog/curtains/illumination/35.svg" alt="" class="illumination__image image image--cover">
                   </div>
-                  <!-- /.material__header -->
-
-                  <div class="material__content">
-                    <p class="material__description">
-                      Недорогое обычное полотно из стекловолокна с размером ячеек 1,2х1,2 мм. Подходит для разных систем, устойчиво к повышенной влажности и солнечному излучению.
-                    </p>
-                  </div>
-                  <!-- /.material__content -->
-
-                  <div class="material__action">
-                    <a href="" class="material__link link link--nav link--arrow">
-                      Подробнее
-                      <svg class="link__arrow svg ms-2" width="13" height="10" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.83007 0.139209L9.86053 3.16392C10.0465 3.34953 10.0465 3.65047 9.86053 3.83608L6.83007 6.86079C6.64411 7.0464 6.3426 7.0464 6.15663 6.86079C5.97067 6.67518 5.97067 6.37424 6.15663 6.18863L8.37418 3.97529L0 3.97529L0 3.02471L8.37418 3.02471L6.15663 0.811367C5.97067 0.625755 5.97067 0.32482 6.15663 0.139209C6.3426 -0.0464029 6.64411 -0.0464029 6.83007 0.139209Z" fill="#969696"></path>
-                      </svg>
-                    </a>
-                  </div>
-                  <!-- /.material__action -->
+                  <!-- /.illumination__picture -->
                 </div>
-                <!-- /.material___item -->
+                <!-- /.illumination -->
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide col-12 col-md-2">
+                <div class="illumination mb-4">
+                  <div class="illumination__picture">
+                    <img src="img/catalog/curtains/illumination/15.svg" alt="" class="illumination__image image image--cover">
+                  </div>
+                  <!-- /.illumination__picture -->
+                </div>
+                <!-- /.illumination -->
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide col-12 col-md-2">
+                <div class="illumination mb-4">
+                  <div class="illumination__picture">
+                    <img src="img/catalog/curtains/illumination/0.svg" alt="" class="illumination__image image image--cover">
+                  </div>
+                  <!-- /.illumination__picture -->
+                </div>
+                <!-- /.illumination -->
               </div>
               <!-- /.swiper-slide -->
             </div>
             <!-- /.swiper-wrapper -->
           </div>
-          <!-- /.swiper constuction-slider -->
-
-          <div class="swiper__control swiper__control--heading">
-            <div class="swiper-button-prev slider-material__prev"></div>
-            <div class="swiper-button-next slider-material__next"></div>
-          </div>
-          <!-- /.swiper__control -->
+          <!-- /.swiper swiper--overflow slider-useful -->
         </div>
         <!-- /.constuction__slider -->
       </div>
       <!-- /.constuction -->
+    </div>
+    <!-- /.container -->
+  </section>
+
+  <section id="catalog" class="section">
+    <div class="container">
+      <div class="catalog">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6">
+            <div class="catalog__picture position-relative">
+              <img src="img/misc/preloader.svg" class="preloader" alt="">
+              <img data-src="img/page/curtains/catalog.jpg" alt="" class="catalog__image image image--cover lazy">
+            </div>
+            <!-- /.catalog__picture -->
+          </div>
+          <!-- /.col-6 -->
+
+          <div class="col-12 col-md-5">
+            <h2 class="catalog__title">Отправьте заявку на вызов <br> дизайнера с каталогами тканей</h2>
+            <p class="catalog__description">Наш дизайнер приедет к Вам с каталогами, расскажет и поможет подобрать лучшее решение для вашего интерьера. Также, проведет замер.</p>
+            <button class="button button-primary">Вызвать</button>
+          </div>
+          <!-- /.col-6 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.catalog -->
     </div>
     <!-- /.container -->
   </section>

@@ -40,6 +40,12 @@ const constuction = new Swiper('.slider-constuction', {
   spaceBetween: 25,
   autoHeight: true,
 
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+  },
+
   navigation: {
     nextEl: '.slider-constuction__next',
     prevEl: '.slider-constuction__prev',
@@ -50,6 +56,12 @@ const constuction = new Swiper('.slider-constuction', {
 const material = new Swiper('.slider-material', {
   slidesPerView: 'auto',
   spaceBetween: 25,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+    },
+  },
 
   navigation: {
     nextEl: '.slider-material__next',
@@ -178,6 +190,12 @@ if (window.matchMedia('(max-width: 576px)').matches) {
   });
 
   const service = new Swiper('.slider-service', {
+    slidesPerView: 'auto',
+    spaceBetween: 25,
+    autoHeight: true,
+  });
+
+  const illumination = new Swiper('.slider-illumination', {
     slidesPerView: 'auto',
     spaceBetween: 25,
     autoHeight: true,
