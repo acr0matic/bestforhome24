@@ -89,9 +89,9 @@
     <!-- /.container -->
   </section>
 
-  <section class="section" id="catalog">
+  <section class="section" id="production">
     <div class="container">
-      <div class="catalog">
+      <div class="production">
         <div class="section__header">
           <h2 class="section__title">Что мы производим?</h2>
           <span class="link">
@@ -102,18 +102,18 @@
 
         <div class="row mb-4">
           <div class="col-12 col-md-6 mb-3 mb-md-0">
-            <div class="catalog__item">
-              <div class="catalog__picture position-relative">
+            <div class="production__item">
+              <div class="production__picture position-relative">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
-                <img data-src="img/section/catalog/nets.jpg" alt="" class="catalog__image image image--cover lazy">
+                <img data-src="img/section/catalog/nets.jpg" alt="" class="production__image image image--cover lazy">
               </div>
               <!-- /.catalog__picture -->
 
-              <div class="catalog__content">
-                <h3 class="catalog__title mb-2">Москитные сетки и двери</h3>
-                <div class="catalog__wrapper">
-                  <p class="catalog__description">Любые виды и формы изделий</p>
-                  <span class="catalog__link link link--arrow">Подробнее
+              <div class="production__content">
+                <h3 class="production__title mb-2">Москитные сетки и двери</h3>
+                <div class="production__wrapper">
+                  <p class="production__description">Любые виды и формы изделий</p>
+                  <span class="production__link link link--arrow">Подробнее
                     <svg class="link__arrow svg ms-2" width="13" height="10" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M6.83007 0.139209L9.86053 3.16392C10.0465 3.34953 10.0465 3.65047 9.86053 3.83608L6.83007 6.86079C6.64411 7.0464 6.3426 7.0464 6.15663 6.86079C5.97067 6.67518 5.97067 6.37424 6.15663 6.18863L8.37418 3.97529L0 3.97529L0 3.02471L8.37418 3.02471L6.15663 0.811367C5.97067 0.625755 5.97067 0.32482 6.15663 0.139209C6.3426 -0.0464029 6.64411 -0.0464029 6.83007 0.139209Z" fill="#969696"></path>
                     </svg>
@@ -130,18 +130,18 @@
           <!-- /.col-6 -->
 
           <div class="col-12 col-md-6 mb-3 mb-md-0">
-            <div class="catalog__item">
-              <div class="catalog__picture position-relative">
+            <div class="production__item">
+              <div class="production__picture position-relative">
                 <img src="img/misc/preloader.svg" class="preloader" alt="">
-                <img data-src="img/section/catalog/curtains.jpg" alt="" class="catalog__image image image--cover lazy">
+                <img data-src="img/section/catalog/curtains.jpg" alt="" class="production__image image image--cover lazy">
               </div>
               <!-- /.catalog__picture -->
 
-              <div class="catalog__content">
-                <h3 class="catalog__title mb-2">Рулонные шторы и Жалюзи</h3>
-                <div class="catalog__wrapper">
-                  <p class="catalog__description">Любые виды и формы изделий</p>
-                  <span class="catalog__link link link--arrow">Подробнее
+              <div class="production__content">
+                <h3 class="production__title mb-2">Рулонные шторы и Жалюзи</h3>
+                <div class="production__wrapper">
+                  <p class="production__description">Любые виды и формы изделий</p>
+                  <span class="production__link link link--arrow">Подробнее
                     <svg class="link__arrow svg ms-2" width="13" height="10" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M6.83007 0.139209L9.86053 3.16392C10.0465 3.34953 10.0465 3.65047 9.86053 3.83608L6.83007 6.86079C6.64411 7.0464 6.3426 7.0464 6.15663 6.86079C5.97067 6.67518 5.97067 6.37424 6.15663 6.18863L8.37418 3.97529L0 3.97529L0 3.02471L8.37418 3.02471L6.15663 0.811367C5.97067 0.625755 5.97067 0.32482 6.15663 0.139209C6.3426 -0.0464029 6.64411 -0.0464029 6.83007 0.139209Z" fill="#969696"></path>
                     </svg>
