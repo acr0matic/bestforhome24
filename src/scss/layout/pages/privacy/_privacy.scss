@@ -1,0 +1,41 @@
+#privacy {
+  padding-top: 60px;
+
+  @include breakpoint($breakpoint-mobile--large) {
+    padding-top: 30px;
+  }
+}
+
+.privacy {
+  &__header {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__heading {
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 45px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    color: #333333;
+
+    @include breakpoint($breakpoint-laptop--large) {
+      margin-bottom: 15px;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      text-align: left;
+      font-size: $text-size--large;
+    }
+  }
+
+  &__text {
+  }
+}
