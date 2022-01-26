@@ -1,0 +1,45 @@
+.modal-portfolio {
+  .modal__container {
+    max-width: 920px;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      max-height: initial;
+    }
+  }
+
+  .modal__section {
+    &:not(:last-child) {
+      border-bottom: $border-primary;
+
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+  .modal__subtitle {
+    margin-bottom: 10px;
+    font-weight: $weight-Medium;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: $text-size--medium;
+    }
+  }
+
+  .modal__list {
+    .list__item {
+      margin-bottom: 0;
+      color: $text-gray;
+
+      font-size: $text-size--medium;
+
+      @include breakpoint($breakpoint-mobile--large) {
+        margin-bottom: 5px;
+        font-size: $text-size--small;
+      }
+
+      span {
+        color: $text-black;
+      }
+    }
+  }
+}

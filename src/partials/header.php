@@ -57,7 +57,7 @@
   <!-- endbuild -->
 </head>
 
-<body>
+<body class="custom-scrollbar custom-scrollbar--wide">
   <!-- Шапка -->
   <header id="header">
     <div class="container">
@@ -94,13 +94,13 @@
                   <!-- /.col-6 -->
 
                   <div class="col-6 d-flex flex-column align-items-start">
-                    <a class="link link--nav dropdown__item" href="mosquito.php">Рулонные шторы</a>
-                    <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="">Жалюзи</a>
-                    <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="">День-Ночь</a>
-                    <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="">Плиссе</a>
-                    <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="">Гранд</a>
-                    <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="">Гранд День-Ночь</a>
-                    <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="">Плиссе</a>
+                    <a class="link link--nav dropdown__item" href="curtains.php">Рулонные шторы</a>
+                    <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="curtains-item.php">Жалюзи</a>
+                    <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="curtains-item.php">День-Ночь</a>
+                    <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="curtains-item.php">Плиссе</a>
+                    <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="curtains-item.php">Гранд</a>
+                    <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="curtains-item.php">Гранд День-Ночь</a>
+                    <a class="link link--nav dropdown__item link link--nav dropdown__item--sub" href="curtains-item.php">Плиссе</a>
                   </div>
                   <!-- /.col-6 -->
                 </div>
