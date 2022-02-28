@@ -41,11 +41,11 @@
   <meta content="index,follow" name="robots" />
 
   <!-- Покраска адресной строки в мобильных Chrome, Firefox OS и Opera -->
-  <meta content="#4285f4" name="theme-color" />
+  <meta content="#ffffff" name="theme-color" />
 
   <!-- Покраска для iOS Safari -->
   <meta content="yes" name="apple-mobile-web-app-capable" />
-  <meta content="#4285f4" name="apple-mobile-web-app-status-bar-style">
+  <meta content="#ffffff" name="apple-mobile-web-app-status-bar-style">
 
   <!-- Место для счетков и аналитики -->
 
@@ -274,7 +274,7 @@
 
         <div class="mobile-menu__action">
           <div class="d-flex flex-column mb-3 mt-4">
-            <a class="header__phone link link--contact" href="tel:+">+7 926 630-45-56</a>
+            <a class="header__phone link link--contact mb-2" href="tel:+">+7 926 630-45-56</a>
             <a class="header__phone link link--contact" href="tel:+">+7 977 415-28-17</a>
           </div>
 

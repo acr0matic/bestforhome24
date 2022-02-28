@@ -28,6 +28,16 @@
     object-fit: cover;
   }
 
+  p,
+  ul,
+  ol {
+    font-size: 16px;
+
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: 14px;
+    }
+  }
+
   ul {
     list-style-type: disc;
   }

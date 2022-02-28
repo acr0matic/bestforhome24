@@ -23,14 +23,15 @@ if (portfolio) {
     parameters.innerHTML = list;
     description.innerHTML = text;
     gallery.innerHTML = '';
-    
+
     _.forEach(images, (image) => {
       gallery.innerHTML +=
         `
         <div class="col-4">
-          <div class="modal__picture">
+          <div class="modal__picture position-relative">
               <a href="${image.dataset.full}" data-fslightbox="">
-                <img src="${image.src}" alt="" class="modal__image image image--cover">
+                <img alt="" class="preloader" src="/wp-content/themes/bestforhome/assets/img/misc/preloader.svg">
+                <img data-src="${image.src}" alt="" class="modal__image image image--cover lazy">
               </a>
             </div>
             <!-- /.modal__picture -->
@@ -38,5 +39,8 @@ if (portfolio) {
         <!-- /.col-4 -->
         `;
     });
+
+    lazyLoadInstance.update();
+    refreshFsLightbox();
   }
 }

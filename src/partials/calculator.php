@@ -127,7 +127,7 @@
                           </h3>
 
                           <div class="row">
-                            <div class="col-6">
+                            <div class="col-12 col-md-6 mb-3 mb-md-0">
                               <div class="input">
                                 <input placeholder="Ширина в см." autocomplete="off" type="number" name="Ширина" class="input__field">
                                 <img data-tippy-content="" class="input__warning" src="img/icons/misc/warning.svg" alt="">
@@ -136,7 +136,7 @@
                             </div>
                             <!-- /.col-6 -->
 
-                            <div class="col-6">
+                            <div class="col-12 col-md-6">
                               <div class="input">
                                 <input placeholder="Высота в см." autocomplete="off" type="number" name="Высота" class="input__field">
                                 <img data-tippy-content="" class="input__warning" src="img/icons/misc/warning.svg" alt="">
@@ -161,7 +161,7 @@
 
                       <div class="col-xl-8 ps-md-4">
                         <div class="row mb-4 mb-md-5">
-                          <div class="col-6 col-md-5">
+                          <div class="col-12 col-lg-6 col-md-5">
                             <div class="calculator__wrapper">
                               <h3 class="calculator__title">Цвет рамы</h3>
                               <div data-field="color" class="calculator__group custom-scrollbar">
@@ -186,7 +186,7 @@
                           </div>
                           <!-- /.col-6 -->
 
-                          <div class="col-6 col-md-7">
+                          <div class="col-12 col-lg-6 col-md-7">
                             <div class="calculator__wrapper">
                               <h3 class="calculator__title">Крепежи</h3>
                               <div data-price="" class="calculator__group custom-scrollbar">
@@ -217,7 +217,7 @@
                         <!-- /.row -->
 
                         <div class="row">
-                          <div class="col-6 col-md-5">
+                          <div class="col-12 col-lg-6 col-md-5">
                             <div class="calculator__wrapper">
                               <h3 class="calculator__title">Ручки</h3>
                               <div data-price="" class="calculator__group custom-scrollbar">
@@ -239,7 +239,7 @@
                           </div>
                           <!-- /.col-6 -->
 
-                          <div class="col-6 col-md-7">
+                          <div class="col-12 col-lg-6 col-md-7">
                             <div class="calculator__wrapper">
                               <h3 class="calculator__title">Углы</h3>
                               <div data-price="" class="calculator__group custom-scrollbar">
