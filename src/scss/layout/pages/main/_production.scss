@@ -12,11 +12,11 @@
 
       @media (hover: hover) {
         &:hover {
-          .catalog__image {
-            transform: scale(1.05);
+          .production__image {
+            transform: scale(1.025);
           }
 
-          .catalog__link {
+          .production__link {
             color: $palette-yellow;
 
             .link__arrow {
@@ -48,6 +48,10 @@
     }
 
     &__content {
+      @include breakpoint($breakpoint-mobile--large) {
+        padding: 15px 10px 5px;
+      }
+
       width: 100%;
 
       padding: 15px;
@@ -68,11 +72,7 @@
 
     &__title {
       font-weight: $weight-Medium;
-      font-size: $heading-size--small;
-
-      @include breakpoint($breakpoint-laptop--medium) {
-        font-size: $heading-size--small - 3;
-      }
+      font-size: $heading-size--small - 3;
 
       @include breakpoint($breakpoint-mobile--large) {
         font-size: $text-size--large;
@@ -80,15 +80,14 @@
     }
 
     &__link {
+      @include breakpoint($breakpoint-mobile--large) {
+        margin-top: 10px;
+      }
+
       color: $text-gray;
     }
 
     &__description {
-      font-size: $text-size--large;
-
-      @include breakpoint($breakpoint-laptop--medium) {
-        font-size: $text-size--medium;
-      }
     }
   }
 }

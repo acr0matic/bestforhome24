@@ -5,42 +5,38 @@ if (portfolio) {
 
   const cards = portfolio.querySelectorAll('.portfolio__item');
   _.forEach(cards, (card) => {
-    const list = card.querySelector('.portfolio__content .list').innerHTML;
-    const text = card.querySelector('.portfolio__content .text').innerHTML;
-    const images = card.querySelectorAll('.portfolio__content .gallery img');
+    const list = card.querySelector('.portfolio__content .list--main').innerHTML;
+    const add = card.querySelector('.portfolio__content .list--additional').innerHTML;
+    const images = card.querySelectorAll('.portfolio__content .gallery .picture');
 
     card.addEventListener('click', () => {
-      UpdateModal(modal, list, text, images);
-      MicroModal.show('modal-portfolio', modalParams);
+      const parameters = modal.querySelector('.modal__list--main');
+      const additional = modal.querySelector('.modal__list--additional');
+      const gallery = modal.querySelectorAll('.modal__gallery .swiper-slide');
+
+      parameters.innerHTML = list;
+      additional.innerHTML = add;
+
+      _.forEach(gallery, (image, index) => {
+        if (images[index]) {
+          image.innerHTML = images[index].outerHTML;
+          image.style.display = 'block';
+        }
+
+        else image.style.display = 'none';
+      });
+
+      _.forEach(images, (image, index) => {
+        if (image) {
+          gallery[index] = image.innerHTML;
+          gallery[index].style.display = 'block';
+        }
+
+        else gallery[index].style.display = 'none';
+      });
+
+      lazyLoadInstance.update();
+      refreshFsLightbox();
     });
   });
-
-  function UpdateModal(modal, list, text, images) {
-    const parameters = modal.querySelector('.modal__list');
-    const description = modal.querySelector('.modal__description');
-    const gallery = modal.querySelector('.modal__gallery');
-
-    parameters.innerHTML = list;
-    description.innerHTML = text;
-    gallery.innerHTML = '';
-
-    _.forEach(images, (image) => {
-      gallery.innerHTML +=
-        `
-        <div class="col-4">
-          <div class="modal__picture position-relative">
-              <a href="${image.dataset.full}" data-fslightbox="">
-                <img alt="" class="preloader" src="/wp-content/themes/bestforhome/assets/img/misc/preloader.svg">
-                <img data-src="${image.src}" alt="" class="modal__image image image--cover lazy">
-              </a>
-            </div>
-            <!-- /.modal__picture -->
-          </div>
-        <!-- /.col-4 -->
-        `;
-    });
-
-    lazyLoadInstance.update();
-    refreshFsLightbox();
-  }
 }

@@ -1,0 +1,48 @@
+#editor {
+  & > * {
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: $text-size--small;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  h2,
+  h3,
+  h4 {
+    font-weight: $weight-Medium;
+  }
+
+  h2,
+  h3 {
+    line-height: $line-height-main;
+  }
+
+  h2 {
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: $heading-size--small - 3px;
+    }
+
+    font-size: $heading-size--medium;
+  }
+
+  h3 {
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: $heading-size--small - 6px;
+    }
+
+    font-size: $heading-size--small;
+  }
+
+  ul,
+  ol {
+    padding-left: 20px;
+    list-style: initial;
+  }
+
+  a {
+    color: $text-yellow;
+  }
+}

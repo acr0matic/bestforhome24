@@ -1,6 +1,8 @@
 .blog-card {
   display: flex;
   flex-direction: column;
+
+  height: 100%;
   background-color: $section-primary;
 
   border-radius: $border-radius--medium;
@@ -27,6 +29,10 @@
   }
 
   &__content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
     padding: 15px;
   }
 
@@ -45,12 +51,14 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
 
+    margin-bottom: 20px;
+
     font-size: $text-size--small;
     line-height: 180%;
   }
 
   &__action {
-    margin-top: 20px;
+    margin-top: auto;
   }
 
   &__button {

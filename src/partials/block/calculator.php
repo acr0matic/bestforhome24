@@ -54,8 +54,13 @@
 
 <section class="section" id="calculator" data-current="mosquito">
   <div class="container">
-    <h2 class="section__title">Рассчитайте стоимость самостоятельно</h2>
-
+    <div class="section__header">
+      <h2 class="section__title">Рассчитайте стоимость самостоятельно</h2>
+      <a href="" class="link link--nav">
+        Вызвать замерщика
+      </a>
+    </div>
+    <!-- /.section__header -->
     <form action="php/mail.php" data-target="calculator" class="calculator">
       <div class="swiper slider-calculator calculator__slider">
         <div class="swiper-wrapper">

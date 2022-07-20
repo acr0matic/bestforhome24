@@ -9,11 +9,11 @@
     }
 
     @include breakpoint($breakpoint-mobile--large) {
-      font-size: $heading-size--small - 3;
+      font-size: $heading-size--small;
     }
 
     @include breakpoint($breakpoint-mobile) {
-      font-size: $heading-size--small - 6;
+      font-size: $heading-size--small - 3;
     }
   }
 }

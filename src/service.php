@@ -63,7 +63,7 @@
     <div class="container">
       <h2 class="section__title">Наши расценки</h2>
 
-      <form class="calculator">
+      <form action="" data-target="" class="calculator">
         <div class="calculator__body pt-0">
           <div class="row">
             <div class="col-12 mb-4 mb-md-0 col-md-6">
@@ -161,7 +161,7 @@
     <!-- /.container -->
   </section>
 
-  <?php include_once('partials/textblock.php'); ?>
+  <?php include_once('partials/block/textblock.php'); ?>
 
   <section class="section" id="service">
     <div class="container">
@@ -336,11 +336,11 @@
     <!-- /.container -->
   </section>
 
-  <?php include_once('partials/order.php'); ?>
+  <?php include_once('partials/block/order.php'); ?>
 
-  <?php include_once('partials/faq.php'); ?>
+  <?php include_once('partials/block/faq.php'); ?>
 
-  <?php include_once('partials/callback.php'); ?>
+  <?php include_once('partials/block/callback.php'); ?>
 </main>
 
 <?php include_once('partials/footer.php'); ?>

@@ -22,6 +22,7 @@
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   @include breakpoint($breakpoint-mobile--large) {
     justify-content: space-between;

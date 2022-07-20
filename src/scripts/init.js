@@ -17,3 +17,10 @@ const scrollController = new SmoothScroll('a[href*="#"]', {
 AOS.init({
   once: true,
 });
+
+const modalTrigger = document.querySelectorAll('[data-micromodal-trigger]');
+_.forEach(modalTrigger, trigger => {
+  trigger.addEventListener('click', () => {
+    currentModal = trigger.dataset.micromodalTrigger;
+  });
+})

@@ -39,7 +39,7 @@
     <!-- /.hero -->
   </section>
 
-  <?php include_once('partials/calculator.php'); ?>
+  <?php include_once('partials/block/calculator.php'); ?>
 
   <section id="constuction" class="section">
     <div class="container">
@@ -260,9 +260,9 @@
     <!-- /.container -->
   </section>
 
-  <?php include_once('partials/catalog.php'); ?>
+  <?php include_once('partials/block/catalog.php'); ?>
 
-  <?php include_once('partials/textblock.php'); ?>
+  <?php include_once('partials/block/textblock.php'); ?>
 
   <section id="usage" class="section">
     <div class="container">
@@ -641,11 +641,11 @@
     <!-- /.container -->
   </section>
 
-  <?php include_once('partials/order.php'); ?>
+  <?php include_once('partials/block/order.php'); ?>
 
-  <?php include_once('partials/faq.php'); ?>
+  <?php include_once('partials/block/faq.php'); ?>
 
-  <?php include_once('partials/callback.php'); ?>
+  <?php include_once('partials/block/callback.php'); ?>
 </main>
 
 <?php include_once('partials/footer.php'); ?>
