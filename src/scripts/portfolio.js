@@ -12,7 +12,7 @@ if (portfolio) {
     card.addEventListener('click', () => {
       const parameters = modal.querySelector('.modal__list--main');
       const additional = modal.querySelector('.modal__list--additional');
-      const gallery = modal.querySelectorAll('.modal__gallery .swiper-slide');
+      const gallery = modal.querySelectorAll('.modal__gallery .swiper-slide .modal__picture');
 
       parameters.innerHTML = list;
       additional.innerHTML = add;
