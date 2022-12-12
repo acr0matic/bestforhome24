@@ -4,9 +4,12 @@ const imageminPngquant = require('imagemin-pngquant');
 const imageminZopfli = require('imagemin-zopfli');
 const imageminMozjpeg = require('imagemin-mozjpeg');
 const browsersync = require('browser-sync');
-const debug = require('gulp-debug');
 
 const paths = require('../gulpfile');
+
+/*
+- Оптимизация и сжатие изображений и SVG
+*/
 
 gulp.task('images', () => gulp.src(paths.images.src)
   .pipe(imagemin([
@@ -35,7 +38,4 @@ gulp.task('images', () => gulp.src(paths.images.src)
     }),
   ]))
   .pipe(gulp.dest(paths.images.dist))
-  .pipe(debug({
-    title: 'Compressed',
-  }))
   .on('end', browsersync.reload));

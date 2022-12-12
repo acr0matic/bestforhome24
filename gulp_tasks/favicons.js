@@ -4,7 +4,10 @@ const favicons = require('gulp-favicons');
 
 const paths = require('../gulpfile');
 
-// Задача по созданию иконок вкладки браузера для сайта
+/*
+- Генерация фавиконок для разных устройств
+*/
+
 task('favicons', () => src(paths.favicons.src)
   .pipe(
     favicons({
@@ -24,5 +27,6 @@ task('favicons', () => src(paths.favicons.src)
   )
   .pipe(debug({
     title: 'Favicon Created:',
+    showCount: false,
   }))
   .pipe(dest(paths.favicons.dist)));

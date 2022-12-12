@@ -29,6 +29,7 @@ build/Release
 # Dependency directory
 # https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
 node_modules
+vendor
 
 # Optional npm cache directory
 .npm
@@ -144,10 +145,6 @@ sftp-config.json
 # Visual Studio Code - https://code.visualstudio.com/
 .settings/
 .vscode/
-
-### Code ###
-# JetBrains WebStorm
-.idea/
 
 ### Other ###
 */*/compiled/*.js
