@@ -142,15 +142,17 @@ class Form {
     const data = new FormData(this.form);
 
     const target = this.form.getAttribute('data-target');
-    const additional = this.form.getAttribute('data-additional');
+    const subject = this.form.getAttribute('data-subject');
 
     data.append('target', target);
-    if (target === 'calculator') data.append('data', JSON.stringify(calculatorData));
-    if (additional) data.append('additional', additional);
+    data.append('page', document.title);
 
-    for (var pair of data.entries()) {
-      console.log(pair[0]+ ', ' + pair[1]);
-    }
+    if (target === 'calculator') data.append('data', JSON.stringify(calculatorData));
+    if (subject) data.append('subject', subject);
+
+    // for (var pair of data.entries()) {
+    //   console.log(pair[0] + ', ' + pair[1]);
+    // }
 
     try {
       let response = await fetch(this.action, {
@@ -161,11 +163,11 @@ class Form {
       if (response.ok) {
         if (this.redirect) window.location.href = this.redirect;
 
-        MicroModal.close('modal-callback', modalParams);
-        MicroModal.show('modal-accept', modalParams);
+        if (currentModal) MicroModal.close(currentModal, modalParams);
+        MicroModal.show('modal-success', modalParams);
 
         setTimeout(() => {
-          MicroModal.close('modal-accept', modalParams);
+          MicroModal.close('modal-success', modalParams);
         }, 3000);
       }
 
@@ -176,8 +178,8 @@ class Form {
     }
 
     // Логируем ошибку, если возникла
-    catch (error) {
-      console.error('Ошибка: ' + error);
+    catch (e) {
+      console.error('Ошибка ' + e.name + ":" + e.message + "\n" + e.stack);
     }
 
     // В любом случае убрать стили "отправки"

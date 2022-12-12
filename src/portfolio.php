@@ -10,18 +10,18 @@
 
       <div class="portfolio">
         <div class="portfolio__gallery">
-          <div class="row">
-            <div class="col-12 col-md-4 mb-4">
+          <div class="row gy-4">
+            <div class="col-12 col-md-4">
               <?php include('partials/template/portfolio-item.php') ?>
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-12 col-md-4 mb-4">
+            <div class="col-12 col-md-4">
               <?php include('partials/template/portfolio-item.php') ?>
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-12 col-md-4 mb-4">
+            <div class="col-12 col-md-4">
               <?php include('partials/template/portfolio-item.php') ?>
             </div>
             <!-- /.col-4 -->

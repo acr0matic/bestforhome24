@@ -9,10 +9,10 @@ gulp.task('serve', () => {
   // Убрать параметр server и в proxy указать адрес на котором
   // размещен сайт в локальном сервере
   browserSync.init({
-    server: './src/',
+    // server: './src/',
     port: 4000,
     notify: false,
-    // proxy: localhost
+    proxy: 'bestforhome24.layout'
   });
 
   gulp.watch(paths.html.watch).on('all', reload);
